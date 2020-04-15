@@ -1,0 +1,161 @@
+package model;
+
+import java.util.Map;
+
+// TODO: Auto-generated Javadoc
+/**
+ * The Class Human.
+ * 
+ * @author Gordon Tran
+ * @version October 2018
+ */
+public class Human extends AbstractVehicle implements Vehicle {
+    
+    /** Dead for this many turns.*/
+    private static final int DEATH_TIME = 25;
+    
+    /**
+     * Instantiates a new human.
+     *
+     * @param theX the the X
+     * @param theY the the Y
+     * @param theDir the the direction
+     */
+    public Human(final int theX, final int theY, final Direction theDir) {
+        super(theX, theY, theDir);
+        myDeathTime = DEATH_TIME;
+    }
+    
+    @Override
+    public boolean canPass(final Terrain theTerrain, final Light theLight) {
+        // TODO Auto-generated method stub
+        if (theTerrain.equals(Terrain.GRASS)) {
+            return true;
+        }
+        if (theTerrain.equals(Terrain.CROSSWALK)) {
+            if (theLight.equals(Light.RED) || theLight.equals(Light.YELLOW)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    @Override
+    public Direction chooseDirection(final Map<Direction, Terrain> theNeighbors) {
+        // TODO Auto-generated method stub
+//        if (theNeighbors.get(myDir) == Terrain.CROSSWALK) {
+//            return myDir;
+//        }   
+//        
+//        if (theNeighbors.get(myDir.left()) == Terrain.CROSSWALK) {
+//            return myDir.left();
+//        }
+//        
+//        if (theNeighbors.get(myDir.right()) == Terrain.CROSSWALK) {
+//            return myDir.right();
+//        }
+        for (Map.Entry<Direction, Terrain> entry : theNeighbors.entrySet()) {
+            if (!entry.getKey().equals(myDir.reverse())) {
+                if (entry.getValue() == Terrain.CROSSWALK) {
+                    return entry.getKey();
+                }
+            }
+        }
+        
+        Direction buffer = Direction.random();
+        while (buffer.equals(myDir.reverse())) {
+            if (theNeighbors.get(myDir) != Terrain.GRASS 
+                            || theNeighbors.get(myDir) != Terrain.CROSSWALK) {
+                return buffer;
+            }
+            buffer = Direction.random();
+        }
+        return buffer;
+    }
+
+    /* (non-Javadoc)
+     * @see model.AbstractVehicle#collide(model.Vehicle)
+     */
+    @Override
+    public void collide(final Vehicle theOther) {
+        super.collide(theOther);
+    }
+    
+    @Override
+    public int getDeathTime() {
+        // TODO Auto-generated method stub
+        return myDeathTime;
+    }
+
+    @Override
+    public String getImageFileName() {
+        // TODO Auto-generated method stub
+        if (myLife) {
+            return "human.gif";
+        }
+        return "human_dead.gif";
+    }
+
+    @Override
+    public Direction getDirection() {
+        // TODO Auto-generated method stub
+        return myDir;
+    }
+
+    @Override
+    public int getX() {
+        // TODO Auto-generated method stub
+        return myX;
+    }
+
+    @Override
+    public int getY() {
+        // TODO Auto-generated method stub
+        return myY;
+    }
+
+    @Override
+    public boolean isAlive() {
+        if (myDeathTime == DEATH_TIME) {
+            myLife = true;
+        }
+        return super.isAlive();
+    }
+
+    @Override
+    public void poke() {
+        // TODO Auto-generated method stub
+        super.poke();
+    }
+
+    @Override
+    public void reset() {
+        super.reset();
+    }
+
+    @Override
+    public void setDirection(final Direction theDir) {
+        // TODO Auto-generated method stub
+        super.setDirection(theDir);
+    }
+
+    @Override
+    public void setX(final int theX) {
+        // TODO Auto-generated method stub
+        super.setX(theX);
+    }
+
+    @Override
+    public void setY(final int theY) {
+        // TODO Auto-generated method stub
+        super.setY(theY);
+    }
+
+    @Override
+    public String toString() {
+        String buffer = super.toString();
+        buffer = "Human" + buffer;
+        return buffer;
+    }
+    
+}

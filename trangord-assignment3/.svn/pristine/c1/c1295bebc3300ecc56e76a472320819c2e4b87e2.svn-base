@@ -1,0 +1,170 @@
+package model;
+
+import java.util.Map;
+
+/**
+ * The Class Atv.
+ * 
+ * @author Gordon Tran
+ * @version October 2018
+ */
+public class Atv extends AbstractVehicle implements Vehicle {
+
+    /** Dead for this many turns.*/
+    private static final int DEATH_TIME = 15;
+    
+    /**
+     * Instantiates a new atv.
+     *
+     * @param theX the the X
+     * @param theY the the Y
+     * @param theDir the the dir
+     */
+    public Atv(final int theX, final int theY, final Direction theDir) {
+        super(theX, theY, theDir);
+        myDeathTime = DEATH_TIME;
+    }
+    
+    /**
+     * Can pass through anything but walls.
+     * 
+     * @param theTerrain Terrain type
+     * @param theLight Light status
+     */
+    @Override
+    public boolean canPass(final Terrain theTerrain, final Light theLight) {
+        if (theTerrain.equals(Terrain.WALL)) {
+            return false;
+        }
+        return true;
+    }
+
+    /**
+     * Randomly chooses direction except reverse.
+     * 
+     * @param theNeighbors Neighboring Map of direction and terrain
+     * @return buffer The direction chosen
+     */
+    @Override
+    public Direction chooseDirection(final Map<Direction, Terrain> theNeighbors) {
+        Direction buffer = Direction.random();
+        while (buffer.equals(myDir.reverse())) {
+            buffer = Direction.random();
+        }
+        return buffer;
+    }
+
+    /* (non-Javadoc)
+     * @see model.AbstractVehicle#collide(model.Vehicle)
+     */
+    @Override
+    public void collide(final Vehicle theOther) {
+        // TODO Auto-generated method stub
+        super.collide(theOther);
+    }
+
+    /* (non-Javadoc)
+     * @see model.AbstractVehicle#getDeathTime()
+     */
+    @Override
+    public int getDeathTime() {
+        // TODO Auto-generated method stub
+        return super.getDeathTime();
+    }
+
+    /* (non-Javadoc)
+     * @see model.AbstractVehicle#getImageFileName()
+     */
+    @Override
+    public String getImageFileName() {
+        // TODO Auto-generated method stub
+        if (myLife) {
+            return "atv.gif";
+        }
+        return "atv_dead.gif";    }
+
+    /* (non-Javadoc)
+     * @see model.AbstractVehicle#getDirection()
+     */
+    @Override
+    public Direction getDirection() {
+        // TODO Auto-generated method stub
+        return super.getDirection();
+    }
+
+    /* (non-Javadoc)
+     * @see model.AbstractVehicle#getX()
+     */
+    @Override
+    public int getX() {
+        // TODO Auto-generated method stub
+        return super.getX();
+    }
+
+    /* (non-Javadoc)
+     * @see model.AbstractVehicle#getY()
+     */
+    @Override
+    public int getY() {
+        // TODO Auto-generated method stub
+        return super.getY();
+    }
+
+    /* (non-Javadoc)
+     * @see model.AbstractVehicle#isAlive()
+     */
+    @Override
+    public boolean isAlive() {
+        // TODO Auto-generated method stub
+        if (myDeathTime == DEATH_TIME) {
+            myLife = true;
+        }
+        return super.isAlive();
+    }
+
+    /* (non-Javadoc)
+     * @see model.AbstractVehicle#poke()
+     */
+    @Override
+    public void poke() {
+        // TODO Auto-generated method stub
+        super.poke();
+    }
+
+    /* (non-Javadoc)
+     * @see model.AbstractVehicle#reset()
+     */
+    @Override
+    public void reset() {
+        super.reset();
+    }
+
+    /* (non-Javadoc)
+     * @see model.AbstractVehicle#setDirection(model.Direction)
+     */
+    @Override
+    public void setDirection(final Direction theDir) {
+        // TODO Auto-generated method stub
+        super.setDirection(theDir);
+    }
+
+    @Override
+    public void setX(final int theX) {
+        // TODO Auto-generated method stub
+        super.setX(theX);
+    }
+
+
+    @Override
+    public void setY(final int theY) {
+        // TODO Auto-generated method stub
+        super.setY(theY);
+    }
+
+    @Override
+    public String toString() {
+        String buffer = super.toString();
+        buffer = "ATV" + buffer;
+        return buffer;
+    }
+}

@@ -1,0 +1,29 @@
+1543940148634	Rename local variable 'myData'
+1543940158169	Rename local variable 'myLoop'
+1543940168702	Rename local variable 'myBackgroundPlayer'
+1543940455415	Rename local variable 'myBackgroundMusic'
+1543942737277	Rename field 'myAudioStream'
+1543946078586	Move file
+1543967529149	Rename field 'myInG'
+1543967565777	Move file
+1544032398251	Rename local variable 'song'
+1544035327610	Delete element
+1544035332751	Delete element
+1544036351220	Delete elements
+1544036427826	Rename method 'soundSetup'
+1544041962367	Rename local variable 'mediaUrl'
+1544042028133	Rename field 'myMusic'
+1544042095431	Delete elements
+1544042144775	Move file
+1544042167352	Rename field 'myLoseSong'
+1544042177150	Rename field 'myLoseS'
+1544042182944	Rename field 'myLoseSong'
+1544042203615	Rename resource 'activate.wav'
+1544042359835	Move file
+1544042368321	Rename resource 'addcounter.wav'
+1544042916178	Rename resource 'phase.wav'
+1544043437132	Rename resource 'duellose.mp3'
+1544050043500	Move file
+1544050548425	Rename field 'fxPanel'
+1544050631752	Rename local variable 'hit'
+1544257346467	Rename field 'myGrid'

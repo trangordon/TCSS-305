@@ -1,0 +1,1019 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1-dev-20150306-5afe4d1" sequence="253" timestamp="1544257348443" analysisTimestamp="1544257346644" release="">
+  <Project projectName="trangord-assignment6">
+    <Jar>C:\Users\trang\eclipse-workspace-305\trangord-assignment6\bin\view\BoardPanel.class</Jar>
+    <AuxClasspathEntry>C:\Users\trang\eclipse-workspace-305\trangord-assignment6\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\eclipse\plugins\org.junit_4.12.0.v201504281640\junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\eclipse\plugins\org.hamcrest.core_1.3.0.v201303031735.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\trang\eclipse-workspace-305\trangord-assignment6\wk.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jre1.8.0_151\lib\rt.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\trang\eclipse-workspace-305\trangord-assignment6\src</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE" first="1">
+    <Class classname="model.MovableTetrisPiece">
+      <SourceLine classname="model.MovableTetrisPiece" sourcefile="MovableTetrisPiece.java" sourcepath="model/MovableTetrisPiece.java"/>
+    </Class>
+    <Method classname="model.MovableTetrisPiece" name="getPoints" signature="(Lmodel/Point;)[Lmodel/Point;" isStatic="false">
+      <SourceLine classname="model.MovableTetrisPiece" start="257" end="287" startBytecode="0" endBytecode="380" sourcefile="MovableTetrisPiece.java" sourcepath="model/MovableTetrisPiece.java"/>
+    </Method>
+    <SourceLine classname="model.MovableTetrisPiece" start="262" end="274" startBytecode="39" endBytecode="169" sourcefile="MovableTetrisPiece.java" sourcepath="model/MovableTetrisPiece.java"/>
+    <SourceLine classname="model.MovableTetrisPiece" start="262" end="274" startBytecode="39" endBytecode="169" sourcefile="MovableTetrisPiece.java" sourcepath="model/MovableTetrisPiece.java"/>
+  </BugInstance>
+  <BugInstance type="ICAST_IDIV_CAST_TO_DOUBLE" priority="2" rank="17" abbrev="ICAST" category="STYLE" first="1">
+    <Class classname="view.BoardPanel">
+      <SourceLine classname="view.BoardPanel" sourcefile="BoardPanel.java" sourcepath="view/BoardPanel.java"/>
+    </Class>
+    <Method classname="view.BoardPanel" name="paintComponent" signature="(Ljava/awt/Graphics;)V" isStatic="false">
+      <SourceLine classname="view.BoardPanel" start="63" end="119" startBytecode="0" endBytecode="766" sourcefile="BoardPanel.java" sourcepath="view/BoardPanel.java"/>
+    </Method>
+    <SourceLine classname="view.BoardPanel" start="68" end="68" startBytecode="53" endBytecode="53" sourcefile="BoardPanel.java" sourcepath="view/BoardPanel.java"/>
+    <SourceLine classname="view.BoardPanel" start="68" end="68" startBytecode="53" endBytecode="53" sourcefile="BoardPanel.java" sourcepath="view/BoardPanel.java"/>
+  </BugInstance>
+  <BugInstance type="DE_MIGHT_IGNORE" priority="2" rank="16" abbrev="DE" category="BAD_PRACTICE" first="188" last="188" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Method classname="view.GUI" name="setup" signature="()V" isStatic="false">
+      <SourceLine classname="view.GUI" start="220" end="275" startBytecode="0" endBytecode="694" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Method>
+    <Class classname="java.lang.Exception" role="CLASS_EXCEPTION">
+      <SourceLine classname="java.lang.Exception"/>
+    </Class>
+    <SourceLine classname="view.GUI" start="265" end="265" startBytecode="431" endBytecode="431" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    <SourceLine classname="view.GUI" start="265" end="265" startBytecode="431" endBytecode="431" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    <SourceLine classname="view.GUI" start="265" end="265" startBytecode="431" endBytecode="431" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" first="151" last="161" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Method classname="view.GUI" name="&lt;init&gt;" signature="()V" isStatic="false">
+      <SourceLine classname="view.GUI" start="202" end="205" startBytecode="0" endBytecode="227" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Method>
+    <LocalVariable name="fxPanel" register="1" pc="478" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="view.GUI" start="203" end="203" startBytecode="477" endBytecode="477" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    <SourceLine classname="view.GUI" start="203" end="203" startBytecode="477" endBytecode="477" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="fxPanel"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" first="149" last="150" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Method classname="view.GUI" name="setup" signature="()V" isStatic="false">
+      <SourceLine classname="view.GUI" start="214" end="300" startBytecode="0" endBytecode="436" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Method>
+    <LocalVariable name="fxPanel" register="1" pc="89" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="view.GUI" start="222" end="222" startBytecode="88" endBytecode="88" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    <SourceLine classname="view.GUI" start="222" end="222" startBytecode="88" endBytecode="88" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="fxPanel"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" first="163" last="164" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Method classname="view.GUI" name="setup" signature="()V" isStatic="false">
+      <SourceLine classname="view.GUI" start="214" end="262" startBytecode="0" endBytecode="200" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Method>
+    <LocalVariable name="fxpanel" register="2" pc="379" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="view.GUI" start="253" end="253" startBytecode="378" endBytecode="378" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    <SourceLine classname="view.GUI" start="253" end="253" startBytecode="378" endBytecode="378" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="fxpanel"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" first="180" last="180" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Method classname="view.GUI" name="setup" signature="()V" isStatic="false">
+      <SourceLine classname="view.GUI" start="215" end="265" startBytecode="0" endBytecode="194" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Method>
+    <LocalVariable name="media" register="3" pc="403" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="view.GUI" start="256" end="256" startBytecode="402" endBytecode="402" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    <SourceLine classname="view.GUI" start="256" end="256" startBytecode="402" endBytecode="402" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="media"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" first="178" last="178" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Method classname="view.GUI" name="setup" signature="()V" isStatic="false">
+      <SourceLine classname="view.GUI" start="215" end="264" startBytecode="0" endBytecode="197" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Method>
+    <LocalVariable name="player" register="3" pc="410" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="view.GUI" start="256" end="256" startBytecode="409" endBytecode="409" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    <SourceLine classname="view.GUI" start="256" end="256" startBytecode="409" endBytecode="409" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="player"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="6" last="6" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Method classname="view.GUI" name="musicSetup" signature="()V" isStatic="false">
+      <SourceLine classname="view.GUI" start="273" end="282" startBytecode="0" endBytecode="8" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Method>
+    <LocalVariable name="mediaStringUrl" register="2" pc="16" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="view.GUI" start="274" end="274" startBytecode="15" endBytecode="15" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    <SourceLine classname="view.GUI" start="274" end="274" startBytecode="15" endBytecode="15" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="mediaStringUrl"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="5" last="5" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Method classname="view.GUI" name="musicSetup" signature="()V" isStatic="false">
+      <SourceLine classname="view.GUI" start="273" end="282" startBytecode="0" endBytecode="5" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Method>
+    <LocalVariable name="mediaUrl" register="1" pc="11" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="view.GUI" start="273" end="273" startBytecode="10" endBytecode="10" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    <SourceLine classname="view.GUI" start="273" end="273" startBytecode="10" endBytecode="10" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="mediaUrl"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="177" last="179" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Method classname="view.GUI" name="setup" signature="()V" isStatic="false">
+      <SourceLine classname="view.GUI" start="215" end="264" startBytecode="0" endBytecode="189" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Method>
+    <LocalVariable name="uriString" register="2" pc="394" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="view.GUI" start="255" end="255" startBytecode="393" endBytecode="393" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    <SourceLine classname="view.GUI" start="255" end="255" startBytecode="393" endBytecode="393" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="uriString"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="11" last="12" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Method classname="view.GUI" name="soundSetup" signature="(Ljava/net/URL;)V" isStatic="false">
+      <SourceLine classname="view.GUI" start="294" end="295" startBytecode="0" endBytecode="3" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Method>
+    <LocalVariable name="mediaStringUrl" register="2" pc="5" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="view.GUI" start="294" end="294" startBytecode="4" endBytecode="4" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    <SourceLine classname="view.GUI" start="294" end="294" startBytecode="4" endBytecode="4" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="mediaStringUrl"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="NP_UNWRITTEN_FIELD" priority="2" rank="8" abbrev="NP" category="CORRECTNESS" first="15" last="176" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Method classname="view.GUI" name="propertyChange" signature="(Ljava/beans/PropertyChangeEvent;)V" isStatic="false">
+      <SourceLine classname="view.GUI" start="373" end="441" startBytecode="0" endBytecode="797" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Method>
+    <Field classname="view.GUI" name="myTimer" signature="Ljavax/swing/Timer;" isStatic="false">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+    <SourceLine classname="view.GUI" start="387" end="387" startBytecode="91" endBytecode="91" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    <SourceLine classname="view.GUI" start="387" end="387" startBytecode="91" endBytecode="91" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" first="25" last="25" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="myGameSong" signature="Ljavafx/scene/media/MediaPlayer;" isStatic="false">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+    <SourceLine classname="view.GUI" start="203" end="203" startBytecode="100" endBytecode="100" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" first="73" last="73" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="myMed" signature="Ljava/awt/Dimension;" isStatic="false">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+    <SourceLine classname="view.GUI" start="153" end="153" startBytecode="366" endBytecode="366" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" first="25" last="25" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="myMenuSong" signature="Ljavafx/scene/media/MediaPlayer;" isStatic="false">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+    <SourceLine classname="view.GUI" start="202" end="202" startBytecode="89" endBytecode="89" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" first="1" last="18" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="myMusic" signature="Z" isStatic="false">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+    <SourceLine classname="view.GUI" start="161" end="161" startBytecode="388" endBytecode="388" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" first="127" last="130" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="myPlayer" signature="Ljavafx/scene/media/MediaPlayer;" isStatic="false">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+    <SourceLine classname="view.GUI" start="205" end="205" startBytecode="498" endBytecode="498" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" first="73" last="73" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="mySmall" signature="Ljava/awt/Dimension;" isStatic="false">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+    <SourceLine classname="view.GUI" start="157" end="157" startBytecode="383" endBytecode="383" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" first="124" last="124" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="mySong" signature="Ljavafx/scene/media/Media;" isStatic="false">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+    <SourceLine classname="view.GUI" start="201" end="201" startBytecode="483" endBytecode="483" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" first="73" last="73" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="mySound" signature="Z" isStatic="false">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+    <SourceLine classname="view.GUI" start="160" end="160" startBytecode="388" endBytecode="388" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="187" last="189" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="media" signature="Ljavafx/scene/media/Media;" isStatic="false">
+      <SourceLine classname="view.GUI" start="201" end="201" startBytecode="0" endBytecode="0" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="22" last="236" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="myAbout" signature="Ljavax/swing/JButton;" isStatic="false">
+      <SourceLine classname="view.GUI" start="99" end="99" startBytecode="0" endBytecode="0" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="22" last="236" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="myBPanel" signature="Lview/BoardPanel;" isStatic="false">
+      <SourceLine classname="view.GUI" start="156" end="156" startBytecode="0" endBytecode="0" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="22" last="236" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="myBar" signature="Ljavax/swing/JMenuBar;" isStatic="false">
+      <SourceLine classname="view.GUI" start="126" end="126" startBytecode="0" endBytecode="0" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="22" last="236" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="myBoard" signature="Lmodel/Board;" isStatic="false">
+      <SourceLine classname="view.GUI" start="78" end="78" startBytecode="0" endBytecode="0" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="75" last="236" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="myButtonSFX" signature="Ljavafx/scene/media/AudioClip;" isStatic="false">
+      <SourceLine classname="view.GUI" start="192" end="192" startBytecode="0" endBytecode="0" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="234" last="236" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="myButtonTSFX" signature="Ljavafx/scene/media/AudioClip;" isStatic="false">
+      <SourceLine classname="view.GUI" start="195" end="195" startBytecode="0" endBytecode="0" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="22" last="236" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="myControl" signature="Ljavax/swing/JPanel;" isStatic="false">
+      <SourceLine classname="view.GUI" start="84" end="84" startBytecode="0" endBytecode="0" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="22" last="236" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="myEnd" signature="Ljavax/swing/JMenuItem;" isStatic="false">
+      <SourceLine classname="view.GUI" start="135" end="135" startBytecode="0" endBytecode="0" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="22" last="236" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="myEndB" signature="Ljavax/swing/JButton;" isStatic="false">
+      <SourceLine classname="view.GUI" start="96" end="96" startBytecode="0" endBytecode="0" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="22" last="236" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="myFrame" signature="Ljavax/swing/JFrame;" isStatic="false">
+      <SourceLine classname="view.GUI" start="75" end="75" startBytecode="0" endBytecode="0" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="154" last="155" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="myFxPanel" signature="LJFXPanel;" isStatic="false">
+      <SourceLine classname="view.GUI" start="196" end="196" startBytecode="0" endBytecode="0" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="22" last="236" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="myGame" signature="Ljavax/swing/JMenu;" isStatic="false">
+      <SourceLine classname="view.GUI" start="129" end="129" startBytecode="0" endBytecode="0" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="22" last="236" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="myGameS" signature="Ljavax/swing/JPanel;" isStatic="false">
+      <SourceLine classname="view.GUI" start="90" end="90" startBytecode="0" endBytecode="0" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="24" last="27" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="myGameSong" signature="Ljavafx/scene/media/MediaPlayer;" isStatic="false">
+      <SourceLine classname="view.GUI" start="167" end="167" startBytecode="0" endBytecode="0" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="22" last="236" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="myGrid" signature="Ljavax/swing/JToggleButton;" isStatic="false">
+      <SourceLine classname="view.GUI" start="102" end="102" startBytecode="0" endBytecode="0" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="22" last="236" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="myInGame" signature="Z" isStatic="false">
+      <SourceLine classname="view.GUI" start="153" end="153" startBytecode="0" endBytecode="0" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="22" last="236" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="myLText" signature="Ljavax/swing/JLabel;" isStatic="false">
+      <SourceLine classname="view.GUI" start="117" end="117" startBytecode="0" endBytecode="0" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="22" last="236" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="myLargB" signature="Ljavax/swing/JRadioButtonMenuItem;" isStatic="false">
+      <SourceLine classname="view.GUI" start="141" end="141" startBytecode="0" endBytecode="0" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="22" last="236" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="myLarge" signature="Ljava/awt/Dimension;" isStatic="false">
+      <SourceLine classname="view.GUI" start="174" end="174" startBytecode="0" endBytecode="0" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="22" last="236" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="myLevel" signature="I" isStatic="false">
+      <SourceLine classname="view.GUI" start="168" end="168" startBytecode="0" endBytecode="0" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="22" last="236" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="myLevelT" signature="Ljavax/swing/JLabel;" isStatic="false">
+      <SourceLine classname="view.GUI" start="111" end="111" startBytecode="0" endBytecode="0" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="75" last="236" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="myLineSFX" signature="Ljavafx/scene/media/AudioClip;" isStatic="false">
+      <SourceLine classname="view.GUI" start="189" end="189" startBytecode="0" endBytecode="0" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="22" last="236" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="myLines" signature="I" isStatic="false">
+      <SourceLine classname="view.GUI" start="171" end="171" startBytecode="0" endBytecode="0" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="75" last="236" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="myLoseSFX" signature="Ljavafx/scene/media/AudioClip;" isStatic="false">
+      <SourceLine classname="view.GUI" start="186" end="186" startBytecode="0" endBytecode="0" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="22" last="22" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="myLoseSong" signature="Ljava/net/URL;" isStatic="false">
+      <SourceLine classname="view.GUI" start="170" end="170" startBytecode="0" endBytecode="0" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="22" last="236" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="myMed" signature="Ljava/awt/Dimension;" isStatic="false">
+      <SourceLine classname="view.GUI" start="177" end="177" startBytecode="0" endBytecode="0" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="22" last="236" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="myMedB" signature="Ljavax/swing/JRadioButtonMenuItem;" isStatic="false">
+      <SourceLine classname="view.GUI" start="144" end="144" startBytecode="0" endBytecode="0" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="190" last="227" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="myMedia" signature="Ljavafx/scene/media/Media;" isStatic="false">
+      <SourceLine classname="view.GUI" start="201" end="201" startBytecode="0" endBytecode="0" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="22" last="22" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="myMenuSong" signature="Ljava/net/URL;" isStatic="false">
+      <SourceLine classname="view.GUI" start="164" end="164" startBytecode="0" endBytecode="0" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="24" last="27" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="myMenuSong" signature="Ljavafx/scene/media/MediaPlayer;" isStatic="false">
+      <SourceLine classname="view.GUI" start="164" end="164" startBytecode="0" endBytecode="0" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="22" last="22" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="myMusic" signature="Z" isStatic="false">
+      <SourceLine classname="view.GUI" start="161" end="161" startBytecode="0" endBytecode="0" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="22" last="236" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="myMute" signature="Ljavax/swing/JToggleButton;" isStatic="false">
+      <SourceLine classname="view.GUI" start="105" end="105" startBytecode="0" endBytecode="0" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="22" last="236" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="myNLine" signature="Ljavax/swing/JLabel;" isStatic="false">
+      <SourceLine classname="view.GUI" start="120" end="120" startBytecode="0" endBytecode="0" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="22" last="236" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="myNPiece" signature="Lview/NextPanel;" isStatic="false">
+      <SourceLine classname="view.GUI" start="159" end="159" startBytecode="0" endBytecode="0" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="22" last="236" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="myNewB" signature="Ljavax/swing/JButton;" isStatic="false">
+      <SourceLine classname="view.GUI" start="93" end="93" startBytecode="0" endBytecode="0" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="22" last="236" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="myPText" signature="Ljavax/swing/JLabel;" isStatic="false">
+      <SourceLine classname="view.GUI" start="114" end="114" startBytecode="0" endBytecode="0" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="22" last="236" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="myPanel" signature="Ljavax/swing/JPanel;" isStatic="false">
+      <SourceLine classname="view.GUI" start="81" end="81" startBytecode="0" endBytecode="0" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="22" last="236" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="myPause" signature="Z" isStatic="false">
+      <SourceLine classname="view.GUI" start="150" end="150" startBytecode="0" endBytecode="0" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="75" last="236" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="myPlaceSFX" signature="Ljavafx/scene/media/AudioClip;" isStatic="false">
+      <SourceLine classname="view.GUI" start="198" end="198" startBytecode="0" endBytecode="0" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="190" last="227" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="myPlayer" signature="Ljavafx/scene/media/MediaPlayer;" isStatic="false">
+      <SourceLine classname="view.GUI" start="204" end="204" startBytecode="0" endBytecode="0" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="22" last="236" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="mySScore" signature="Ljavax/swing/JPanel;" isStatic="false">
+      <SourceLine classname="view.GUI" start="87" end="87" startBytecode="0" endBytecode="0" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="22" last="236" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="myScore" signature="I" isStatic="false">
+      <SourceLine classname="view.GUI" start="165" end="165" startBytecode="0" endBytecode="0" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="22" last="236" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="myScoreT" signature="Ljavax/swing/JLabel;" isStatic="false">
+      <SourceLine classname="view.GUI" start="108" end="108" startBytecode="0" endBytecode="0" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="22" last="236" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="mySizeS" signature="Ljavax/swing/JMenu;" isStatic="false">
+      <SourceLine classname="view.GUI" start="138" end="138" startBytecode="0" endBytecode="0" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="22" last="236" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="mySmall" signature="Ljava/awt/Dimension;" isStatic="false">
+      <SourceLine classname="view.GUI" start="180" end="180" startBytecode="0" endBytecode="0" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="22" last="236" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="mySmlB" signature="Ljavax/swing/JRadioButtonMenuItem;" isStatic="false">
+      <SourceLine classname="view.GUI" start="147" end="147" startBytecode="0" endBytecode="0" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="125" last="126" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="mySong" signature="Ljavafx/scene/media/Media;" isStatic="false">
+      <SourceLine classname="view.GUI" start="201" end="201" startBytecode="0" endBytecode="0" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="50" last="123" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="mySong" signature="Ljavafx/scene/media/MediaPlayer;" isStatic="false">
+      <SourceLine classname="view.GUI" start="201" end="201" startBytecode="0" endBytecode="0" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="75" last="236" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="mySound" signature="Z" isStatic="false">
+      <SourceLine classname="view.GUI" start="183" end="183" startBytecode="0" endBytecode="0" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="22" last="236" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="mySpeed" signature="I" isStatic="false">
+      <SourceLine classname="view.GUI" start="162" end="162" startBytecode="0" endBytecode="0" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="22" last="236" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="myStart" signature="Ljavax/swing/JMenuItem;" isStatic="false">
+      <SourceLine classname="view.GUI" start="132" end="132" startBytecode="0" endBytecode="0" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="22" last="236" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="myTimer" signature="Ljavax/swing/Timer;" isStatic="false">
+      <SourceLine classname="view.GUI" start="123" end="123" startBytecode="0" endBytecode="0" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="187" last="189" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="player" signature="Ljavafx/scene/media/MediaPlayer;" isStatic="false">
+      <SourceLine classname="view.GUI" start="204" end="204" startBytecode="0" endBytecode="0" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UWF_UNWRITTEN_FIELD" priority="2" rank="12" abbrev="UwF" category="CORRECTNESS" first="15" last="176" removedByChange="true">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Field classname="view.GUI" name="myTimer" signature="Ljavax/swing/Timer;" isStatic="false">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Field>
+    <SourceLine classname="view.GUI" start="387" end="387" startBytecode="88" endBytecode="88" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE" first="73" last="73" removedByChange="true">
+    <Class classname="view.GUI$AboutListener">
+      <SourceLine classname="view.GUI$AboutListener" start="552" end="557" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE" first="73" last="73" removedByChange="true">
+    <Class classname="view.GUI$EndGame">
+      <SourceLine classname="view.GUI$EndGame" start="510" end="529" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE" first="73" last="73" removedByChange="true">
+    <Class classname="view.GUI$GridListener">
+      <SourceLine classname="view.GUI$GridListener" start="539" end="543" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE" first="73" last="73" removedByChange="true">
+    <Class classname="view.GUI$MuteListener">
+      <SourceLine classname="view.GUI$MuteListener" start="575" end="581" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE" first="73" last="73" removedByChange="true">
+    <Class classname="view.GUI$SizeLg">
+      <SourceLine classname="view.GUI$SizeLg" start="634" end="647" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE" first="73" last="73" removedByChange="true">
+    <Class classname="view.GUI$SizeMed">
+      <SourceLine classname="view.GUI$SizeMed" start="612" end="625" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE" first="73" last="73" removedByChange="true">
+    <Class classname="view.GUI$SizeSm">
+      <SourceLine classname="view.GUI$SizeSm" start="590" end="603" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="ICAST_IDIV_CAST_TO_DOUBLE" priority="2" rank="17" abbrev="ICAST" category="STYLE" first="1">
+    <Class classname="view.NextPanel">
+      <SourceLine classname="view.NextPanel" sourcefile="NextPanel.java" sourcepath="view/NextPanel.java"/>
+    </Class>
+    <Method classname="view.NextPanel" name="paintComponent" signature="(Ljava/awt/Graphics;)V" isStatic="false">
+      <SourceLine classname="view.NextPanel" start="50" end="75" startBytecode="0" endBytecode="418" sourcefile="NextPanel.java" sourcepath="view/NextPanel.java"/>
+    </Method>
+    <SourceLine classname="view.NextPanel" start="61" end="61" startBytecode="101" endBytecode="101" sourcefile="NextPanel.java" sourcepath="view/NextPanel.java"/>
+    <SourceLine classname="view.NextPanel" start="61" end="61" startBytecode="101" endBytecode="101" sourcefile="NextPanel.java" sourcepath="view/NextPanel.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Sat, 8 Dec 2018 00:22:26 -0800" total_classes="1" referenced_classes="275" total_bugs="3" total_size="74" num_packages="2" java_version="1.8.0_151" vm_version="25.151-b12" cpu_seconds="7.42" clock_seconds="1.80" peak_mbytes="692.30" alloc_mbytes="1024.00" gc_seconds="0.12" priority_2="3">
+    <PackageStats package="view" total_bugs="2" total_types="2" total_size="74" priority_2="2">
+      <ClassStats class="view.BoardPanel" sourceFile="BoardPanel.java" interface="false" size="74" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="492" invocations="1449" avgMicrosecondsPerInvocation="339" maxMicrosecondsPerInvocation="140191" standardDeviationMircosecondsPerInvocation="3958"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="243" invocations="1446" avgMicrosecondsPerInvocation="168" maxMicrosecondsPerInvocation="28955" standardDeviationMircosecondsPerInvocation="814"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="206" invocations="275" avgMicrosecondsPerInvocation="750" maxMicrosecondsPerInvocation="28720" standardDeviationMircosecondsPerInvocation="2207"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="169" invocations="275" avgMicrosecondsPerInvocation="616" maxMicrosecondsPerInvocation="11987" standardDeviationMircosecondsPerInvocation="1297"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="116" invocations="2" avgMicrosecondsPerInvocation="58076" maxMicrosecondsPerInvocation="68794" standardDeviationMircosecondsPerInvocation="10718"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="113" invocations="592" avgMicrosecondsPerInvocation="192" maxMicrosecondsPerInvocation="1776" standardDeviationMircosecondsPerInvocation="204"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="47" invocations="275" avgMicrosecondsPerInvocation="171" maxMicrosecondsPerInvocation="3669" standardDeviationMircosecondsPerInvocation="348"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1544035334639" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1544035334639" release="" codeSize="978" numClasses="21"/>
+    <AppVersion sequence="2" timestamp="1544035377953" release="" codeSize="406" numClasses="11"/>
+    <AppVersion sequence="3" timestamp="1544035406300" release="" codeSize="402" numClasses="11"/>
+    <AppVersion sequence="4" timestamp="1544035412531" release="" codeSize="402" numClasses="11"/>
+    <AppVersion sequence="5" timestamp="1544035670856" release="" codeSize="403" numClasses="11"/>
+    <AppVersion sequence="6" timestamp="1544035712751" release="" codeSize="404" numClasses="11"/>
+    <AppVersion sequence="7" timestamp="1544035928344" release="" codeSize="402" numClasses="11"/>
+    <AppVersion sequence="8" timestamp="1544035936603" release="" codeSize="406" numClasses="11"/>
+    <AppVersion sequence="9" timestamp="1544036027782" release="" codeSize="412" numClasses="11"/>
+    <AppVersion sequence="10" timestamp="1544036054249" release="" codeSize="412" numClasses="11"/>
+    <AppVersion sequence="11" timestamp="1544036117403" release="" codeSize="415" numClasses="11"/>
+    <AppVersion sequence="12" timestamp="1544036119530" release="" codeSize="415" numClasses="11"/>
+    <AppVersion sequence="13" timestamp="1544036196017" release="" codeSize="419" numClasses="11"/>
+    <AppVersion sequence="14" timestamp="1544036198314" release="" codeSize="419" numClasses="11"/>
+    <AppVersion sequence="15" timestamp="1544036218015" release="" codeSize="350" numClasses="11"/>
+    <AppVersion sequence="16" timestamp="1544036238437" release="" codeSize="350" numClasses="11"/>
+    <AppVersion sequence="17" timestamp="1544036245509" release="" codeSize="417" numClasses="11"/>
+    <AppVersion sequence="18" timestamp="1544036329438" release="" codeSize="421" numClasses="11"/>
+    <AppVersion sequence="19" timestamp="1544036390677" release="" codeSize="423" numClasses="11"/>
+    <AppVersion sequence="20" timestamp="1544036438187" release="" codeSize="418" numClasses="11"/>
+    <AppVersion sequence="21" timestamp="1544036474986" release="" codeSize="421" numClasses="11"/>
+    <AppVersion sequence="22" timestamp="1544036581219" release="" codeSize="113" numClasses="11"/>
+    <AppVersion sequence="23" timestamp="1544039011564" release="" codeSize="422" numClasses="11"/>
+    <AppVersion sequence="24" timestamp="1544039149507" release="" codeSize="407" numClasses="11"/>
+    <AppVersion sequence="25" timestamp="1544039221535" release="" codeSize="422" numClasses="11"/>
+    <AppVersion sequence="26" timestamp="1544039228882" release="" codeSize="420" numClasses="11"/>
+    <AppVersion sequence="27" timestamp="1544041521382" release="" codeSize="422" numClasses="11"/>
+    <AppVersion sequence="28" timestamp="1544041939585" release="" codeSize="414" numClasses="11"/>
+    <AppVersion sequence="29" timestamp="1544041951034" release="" codeSize="414" numClasses="11"/>
+    <AppVersion sequence="30" timestamp="1544041954506" release="" codeSize="414" numClasses="11"/>
+    <AppVersion sequence="31" timestamp="1544041963204" release="" codeSize="414" numClasses="11"/>
+    <AppVersion sequence="32" timestamp="1544042011441" release="" codeSize="414" numClasses="11"/>
+    <AppVersion sequence="33" timestamp="1544042028975" release="" codeSize="414" numClasses="11"/>
+    <AppVersion sequence="34" timestamp="1544042081867" release="" codeSize="416" numClasses="11"/>
+    <AppVersion sequence="35" timestamp="1544042145882" release="" codeSize="416" numClasses="11"/>
+    <AppVersion sequence="36" timestamp="1544042204663" release="" codeSize="418" numClasses="11"/>
+    <AppVersion sequence="37" timestamp="1544042237491" release="" codeSize="420" numClasses="11"/>
+    <AppVersion sequence="38" timestamp="1544042285739" release="" codeSize="420" numClasses="11"/>
+    <AppVersion sequence="39" timestamp="1544042306165" release="" codeSize="420" numClasses="11"/>
+    <AppVersion sequence="40" timestamp="1544042472931" release="" codeSize="437" numClasses="11"/>
+    <AppVersion sequence="41" timestamp="1544042760677" release="" codeSize="439" numClasses="11"/>
+    <AppVersion sequence="42" timestamp="1544042784131" release="" codeSize="437" numClasses="11"/>
+    <AppVersion sequence="43" timestamp="1544042936353" release="" codeSize="439" numClasses="11"/>
+    <AppVersion sequence="44" timestamp="1544042972567" release="" codeSize="439" numClasses="11"/>
+    <AppVersion sequence="45" timestamp="1544043067757" release="" codeSize="207" numClasses="1"/>
+    <AppVersion sequence="46" timestamp="1544043127991" release="" codeSize="647" numClasses="12"/>
+    <AppVersion sequence="47" timestamp="1544043400563" release="" codeSize="438" numClasses="11"/>
+    <AppVersion sequence="48" timestamp="1544043452227" release="" codeSize="440" numClasses="11"/>
+    <AppVersion sequence="49" timestamp="1544043487670" release="" codeSize="440" numClasses="11"/>
+    <AppVersion sequence="50" timestamp="1544043696541" release="" codeSize="441" numClasses="11"/>
+    <AppVersion sequence="51" timestamp="1544044064940" release="" codeSize="446" numClasses="11"/>
+    <AppVersion sequence="52" timestamp="1544044127549" release="" codeSize="446" numClasses="11"/>
+    <AppVersion sequence="53" timestamp="1544044545788" release="" codeSize="374" numClasses="11"/>
+    <AppVersion sequence="54" timestamp="1544044616082" release="" codeSize="374" numClasses="11"/>
+    <AppVersion sequence="55" timestamp="1544044620087" release="" codeSize="374" numClasses="11"/>
+    <AppVersion sequence="56" timestamp="1544044676647" release="" codeSize="374" numClasses="11"/>
+    <AppVersion sequence="57" timestamp="1544044720242" release="" codeSize="374" numClasses="11"/>
+    <AppVersion sequence="58" timestamp="1544044725581" release="" codeSize="374" numClasses="11"/>
+    <AppVersion sequence="59" timestamp="1544044737574" release="" codeSize="374" numClasses="11"/>
+    <AppVersion sequence="60" timestamp="1544044761767" release="" codeSize="374" numClasses="11"/>
+    <AppVersion sequence="61" timestamp="1544044767958" release="" codeSize="374" numClasses="11"/>
+    <AppVersion sequence="62" timestamp="1544044776977" release="" codeSize="446" numClasses="11"/>
+    <AppVersion sequence="63" timestamp="1544044898211" release="" codeSize="444" numClasses="11"/>
+    <AppVersion sequence="64" timestamp="1544045029246" release="" codeSize="444" numClasses="11"/>
+    <AppVersion sequence="65" timestamp="1544047289085" release="" codeSize="374" numClasses="11"/>
+    <AppVersion sequence="66" timestamp="1544047331627" release="" codeSize="448" numClasses="11"/>
+    <AppVersion sequence="67" timestamp="1544047381511" release="" codeSize="444" numClasses="11"/>
+    <AppVersion sequence="68" timestamp="1544047588837" release="" codeSize="374" numClasses="11"/>
+    <AppVersion sequence="69" timestamp="1544047593556" release="" codeSize="374" numClasses="11"/>
+    <AppVersion sequence="70" timestamp="1544047607936" release="" codeSize="374" numClasses="11"/>
+    <AppVersion sequence="71" timestamp="1544047687233" release="" codeSize="441" numClasses="11"/>
+    <AppVersion sequence="72" timestamp="1544047689471" release="" codeSize="441" numClasses="11"/>
+    <AppVersion sequence="73" timestamp="1544047790510" release="" codeSize="315" numClasses="11"/>
+    <AppVersion sequence="74" timestamp="1544047865395" release="" codeSize="438" numClasses="11"/>
+    <AppVersion sequence="75" timestamp="1544048251370" release="" codeSize="112" numClasses="11"/>
+    <AppVersion sequence="76" timestamp="1544048278998" release="" codeSize="112" numClasses="11"/>
+    <AppVersion sequence="77" timestamp="1544048288144" release="" codeSize="110" numClasses="11"/>
+    <AppVersion sequence="78" timestamp="1544048299114" release="" codeSize="438" numClasses="11"/>
+    <AppVersion sequence="79" timestamp="1544048317582" release="" codeSize="438" numClasses="11"/>
+    <AppVersion sequence="80" timestamp="1544048346257" release="" codeSize="438" numClasses="11"/>
+    <AppVersion sequence="81" timestamp="1544048352057" release="" codeSize="438" numClasses="11"/>
+    <AppVersion sequence="82" timestamp="1544048361078" release="" codeSize="438" numClasses="11"/>
+    <AppVersion sequence="83" timestamp="1544048384150" release="" codeSize="47" numClasses="1"/>
+    <AppVersion sequence="84" timestamp="1544048504645" release="" codeSize="50" numClasses="1"/>
+    <AppVersion sequence="85" timestamp="1544048521510" release="" codeSize="50" numClasses="1"/>
+    <AppVersion sequence="86" timestamp="1544048759579" release="" codeSize="38" numClasses="1"/>
+    <AppVersion sequence="87" timestamp="1544048764837" release="" codeSize="54" numClasses="1"/>
+    <AppVersion sequence="88" timestamp="1544048824581" release="" codeSize="35" numClasses="1"/>
+    <AppVersion sequence="89" timestamp="1544048843108" release="" codeSize="70" numClasses="1"/>
+    <AppVersion sequence="90" timestamp="1544048873350" release="" codeSize="71" numClasses="1"/>
+    <AppVersion sequence="91" timestamp="1544048897641" release="" codeSize="71" numClasses="1"/>
+    <AppVersion sequence="92" timestamp="1544048938259" release="" codeSize="72" numClasses="1"/>
+    <AppVersion sequence="93" timestamp="1544048951261" release="" codeSize="56" numClasses="1"/>
+    <AppVersion sequence="94" timestamp="1544048961745" release="" codeSize="72" numClasses="1"/>
+    <AppVersion sequence="95" timestamp="1544048966138" release="" codeSize="72" numClasses="1"/>
+    <AppVersion sequence="96" timestamp="1544048971623" release="" codeSize="72" numClasses="1"/>
+    <AppVersion sequence="97" timestamp="1544049006973" release="" codeSize="72" numClasses="1"/>
+    <AppVersion sequence="98" timestamp="1544049010699" release="" codeSize="72" numClasses="1"/>
+    <AppVersion sequence="99" timestamp="1544049015316" release="" codeSize="72" numClasses="1"/>
+    <AppVersion sequence="100" timestamp="1544049039650" release="" codeSize="72" numClasses="1"/>
+    <AppVersion sequence="101" timestamp="1544049043330" release="" codeSize="438" numClasses="11"/>
+    <AppVersion sequence="102" timestamp="1544049141744" release="" codeSize="440" numClasses="11"/>
+    <AppVersion sequence="103" timestamp="1544049176981" release="" codeSize="440" numClasses="11"/>
+    <AppVersion sequence="104" timestamp="1544049209994" release="" codeSize="441" numClasses="11"/>
+    <AppVersion sequence="105" timestamp="1544049293238" release="" codeSize="54" numClasses="1"/>
+    <AppVersion sequence="106" timestamp="1544049297851" release="" codeSize="54" numClasses="1"/>
+    <AppVersion sequence="107" timestamp="1544049312570" release="" codeSize="54" numClasses="1"/>
+    <AppVersion sequence="108" timestamp="1544049368888" release="" codeSize="442" numClasses="11"/>
+    <AppVersion sequence="109" timestamp="1544049434651" release="" codeSize="443" numClasses="11"/>
+    <AppVersion sequence="110" timestamp="1544049475953" release="" codeSize="445" numClasses="11"/>
+    <AppVersion sequence="111" timestamp="1544049548343" release="" codeSize="446" numClasses="11"/>
+    <AppVersion sequence="112" timestamp="1544049553525" release="" codeSize="72" numClasses="1"/>
+    <AppVersion sequence="113" timestamp="1544049571581" release="" codeSize="446" numClasses="11"/>
+    <AppVersion sequence="114" timestamp="1544049582947" release="" codeSize="446" numClasses="11"/>
+    <AppVersion sequence="115" timestamp="1544049847972" release="" codeSize="379" numClasses="11"/>
+    <AppVersion sequence="116" timestamp="1544050011172" release="" codeSize="449" numClasses="11"/>
+    <AppVersion sequence="117" timestamp="1544050014465" release="" codeSize="449" numClasses="11"/>
+    <AppVersion sequence="118" timestamp="1544050153750" release="" codeSize="449" numClasses="11"/>
+    <AppVersion sequence="119" timestamp="1544050167782" release="" codeSize="449" numClasses="11"/>
+    <AppVersion sequence="120" timestamp="1544050229279" release="" codeSize="122" numClasses="11"/>
+    <AppVersion sequence="121" timestamp="1544050237113" release="" codeSize="451" numClasses="11"/>
+    <AppVersion sequence="122" timestamp="1544050258867" release="" codeSize="451" numClasses="11"/>
+    <AppVersion sequence="123" timestamp="1544050297397" release="" codeSize="122" numClasses="11"/>
+    <AppVersion sequence="124" timestamp="1544050306612" release="" codeSize="450" numClasses="11"/>
+    <AppVersion sequence="125" timestamp="1544050327836" release="" codeSize="122" numClasses="11"/>
+    <AppVersion sequence="126" timestamp="1544050344690" release="" codeSize="122" numClasses="11"/>
+    <AppVersion sequence="127" timestamp="1544050354526" release="" codeSize="452" numClasses="11"/>
+    <AppVersion sequence="128" timestamp="1544050364408" release="" codeSize="452" numClasses="11"/>
+    <AppVersion sequence="129" timestamp="1544050378901" release="" codeSize="449" numClasses="11"/>
+    <AppVersion sequence="130" timestamp="1544050427854" release="" codeSize="450" numClasses="11"/>
+    <AppVersion sequence="131" timestamp="1544050441087" release="" codeSize="449" numClasses="11"/>
+    <AppVersion sequence="132" timestamp="1544050508781" release="" codeSize="451" numClasses="11"/>
+    <AppVersion sequence="133" timestamp="1544050516547" release="" codeSize="451" numClasses="11"/>
+    <AppVersion sequence="134" timestamp="1544050550168" release="" codeSize="451" numClasses="11"/>
+    <AppVersion sequence="135" timestamp="1544050591770" release="" codeSize="380" numClasses="11"/>
+    <AppVersion sequence="136" timestamp="1544050632365" release="" codeSize="380" numClasses="11"/>
+    <AppVersion sequence="137" timestamp="1544050644595" release="" codeSize="451" numClasses="11"/>
+    <AppVersion sequence="138" timestamp="1544050727112" release="" codeSize="451" numClasses="11"/>
+    <AppVersion sequence="139" timestamp="1544050729280" release="" codeSize="451" numClasses="11"/>
+    <AppVersion sequence="140" timestamp="1544050737926" release="" codeSize="451" numClasses="11"/>
+    <AppVersion sequence="141" timestamp="1544050743758" release="" codeSize="450" numClasses="11"/>
+    <AppVersion sequence="142" timestamp="1544050766990" release="" codeSize="450" numClasses="11"/>
+    <AppVersion sequence="143" timestamp="1544050779367" release="" codeSize="450" numClasses="11"/>
+    <AppVersion sequence="144" timestamp="1544050781517" release="" codeSize="450" numClasses="11"/>
+    <AppVersion sequence="145" timestamp="1544050864315" release="" codeSize="74" numClasses="1"/>
+    <AppVersion sequence="146" timestamp="1544050887724" release="" codeSize="450" numClasses="11"/>
+    <AppVersion sequence="147" timestamp="1544050896319" release="" codeSize="450" numClasses="11"/>
+    <AppVersion sequence="148" timestamp="1544050900062" release="" codeSize="450" numClasses="11"/>
+    <AppVersion sequence="149" timestamp="1544051008797" release="" codeSize="451" numClasses="11"/>
+    <AppVersion sequence="150" timestamp="1544051035987" release="" codeSize="451" numClasses="11"/>
+    <AppVersion sequence="151" timestamp="1544051166578" release="" codeSize="451" numClasses="11"/>
+    <AppVersion sequence="152" timestamp="1544051207098" release="" codeSize="451" numClasses="11"/>
+    <AppVersion sequence="153" timestamp="1544051220689" release="" codeSize="451" numClasses="11"/>
+    <AppVersion sequence="154" timestamp="1544051246221" release="" codeSize="122" numClasses="11"/>
+    <AppVersion sequence="155" timestamp="1544051251498" release="" codeSize="122" numClasses="11"/>
+    <AppVersion sequence="156" timestamp="1544051261113" release="" codeSize="451" numClasses="11"/>
+    <AppVersion sequence="157" timestamp="1544051335079" release="" codeSize="451" numClasses="11"/>
+    <AppVersion sequence="158" timestamp="1544051376459" release="" codeSize="454" numClasses="11"/>
+    <AppVersion sequence="159" timestamp="1544051389946" release="" codeSize="454" numClasses="11"/>
+    <AppVersion sequence="160" timestamp="1544051407589" release="" codeSize="454" numClasses="11"/>
+    <AppVersion sequence="161" timestamp="1544051437169" release="" codeSize="454" numClasses="11"/>
+    <AppVersion sequence="162" timestamp="1544051456437" release="" codeSize="451" numClasses="11"/>
+    <AppVersion sequence="163" timestamp="1544051502459" release="" codeSize="452" numClasses="11"/>
+    <AppVersion sequence="164" timestamp="1544051698332" release="" codeSize="452" numClasses="11"/>
+    <AppVersion sequence="165" timestamp="1544051879683" release="" codeSize="452" numClasses="11"/>
+    <AppVersion sequence="166" timestamp="1544051896042" release="" codeSize="452" numClasses="11"/>
+    <AppVersion sequence="167" timestamp="1544052090414" release="" codeSize="452" numClasses="11"/>
+    <AppVersion sequence="168" timestamp="1544052571458" release="" codeSize="452" numClasses="11"/>
+    <AppVersion sequence="169" timestamp="1544052739680" release="" codeSize="452" numClasses="11"/>
+    <AppVersion sequence="170" timestamp="1544052822719" release="" codeSize="448" numClasses="11"/>
+    <AppVersion sequence="171" timestamp="1544054911019" release="" codeSize="450" numClasses="11"/>
+    <AppVersion sequence="172" timestamp="1544055033040" release="" codeSize="450" numClasses="11"/>
+    <AppVersion sequence="173" timestamp="1544055053323" release="" codeSize="454" numClasses="11"/>
+    <AppVersion sequence="174" timestamp="1544055059782" release="" codeSize="450" numClasses="11"/>
+    <AppVersion sequence="175" timestamp="1544055070284" release="" codeSize="451" numClasses="11"/>
+    <AppVersion sequence="176" timestamp="1544055089943" release="" codeSize="417" numClasses="11"/>
+    <AppVersion sequence="177" timestamp="1544055096421" release="" codeSize="452" numClasses="11"/>
+    <AppVersion sequence="178" timestamp="1544055122503" release="" codeSize="453" numClasses="11"/>
+    <AppVersion sequence="179" timestamp="1544055156802" release="" codeSize="452" numClasses="11"/>
+    <AppVersion sequence="180" timestamp="1544055227796" release="" codeSize="453" numClasses="11"/>
+    <AppVersion sequence="181" timestamp="1544055338123" release="" codeSize="454" numClasses="11"/>
+    <AppVersion sequence="182" timestamp="1544055357786" release="" codeSize="456" numClasses="11"/>
+    <AppVersion sequence="183" timestamp="1544055446945" release="" codeSize="456" numClasses="11"/>
+    <AppVersion sequence="184" timestamp="1544055454579" release="" codeSize="456" numClasses="11"/>
+    <AppVersion sequence="185" timestamp="1544055514116" release="" codeSize="458" numClasses="11"/>
+    <AppVersion sequence="186" timestamp="1544055544356" release="" codeSize="456" numClasses="11"/>
+    <AppVersion sequence="187" timestamp="1544055616891" release="" codeSize="404" numClasses="11"/>
+    <AppVersion sequence="188" timestamp="1544055638362" release="" codeSize="458" numClasses="11"/>
+    <AppVersion sequence="189" timestamp="1544055710028" release="" codeSize="461" numClasses="11"/>
+    <AppVersion sequence="190" timestamp="1544055728013" release="" codeSize="461" numClasses="11"/>
+    <AppVersion sequence="191" timestamp="1544055796814" release="" codeSize="463" numClasses="11"/>
+    <AppVersion sequence="192" timestamp="1544055865185" release="" codeSize="460" numClasses="11"/>
+    <AppVersion sequence="193" timestamp="1544055914952" release="" codeSize="462" numClasses="11"/>
+    <AppVersion sequence="194" timestamp="1544056096502" release="" codeSize="462" numClasses="11"/>
+    <AppVersion sequence="195" timestamp="1544056187285" release="" codeSize="463" numClasses="11"/>
+    <AppVersion sequence="196" timestamp="1544056221142" release="" codeSize="460" numClasses="11"/>
+    <AppVersion sequence="197" timestamp="1544057141968" release="" codeSize="460" numClasses="11"/>
+    <AppVersion sequence="198" timestamp="1544057364872" release="" codeSize="460" numClasses="11"/>
+    <AppVersion sequence="199" timestamp="1544057415106" release="" codeSize="462" numClasses="11"/>
+    <AppVersion sequence="200" timestamp="1544057424390" release="" codeSize="460" numClasses="11"/>
+    <AppVersion sequence="201" timestamp="1544072328165" release="" codeSize="461" numClasses="11"/>
+    <AppVersion sequence="202" timestamp="1544072387209" release="" codeSize="460" numClasses="11"/>
+    <AppVersion sequence="203" timestamp="1544072401013" release="" codeSize="461" numClasses="11"/>
+    <AppVersion sequence="204" timestamp="1544072535827" release="" codeSize="454" numClasses="11"/>
+    <AppVersion sequence="205" timestamp="1544072550041" release="" codeSize="460" numClasses="11"/>
+    <AppVersion sequence="206" timestamp="1544073019724" release="" codeSize="460" numClasses="11"/>
+    <AppVersion sequence="207" timestamp="1544073206551" release="" codeSize="463" numClasses="11"/>
+    <AppVersion sequence="208" timestamp="1544073726859" release="" codeSize="463" numClasses="11"/>
+    <AppVersion sequence="209" timestamp="1544073924477" release="" codeSize="463" numClasses="11"/>
+    <AppVersion sequence="210" timestamp="1544073995320" release="" codeSize="463" numClasses="11"/>
+    <AppVersion sequence="211" timestamp="1544073997462" release="" codeSize="463" numClasses="11"/>
+    <AppVersion sequence="212" timestamp="1544074005229" release="" codeSize="457" numClasses="11"/>
+    <AppVersion sequence="213" timestamp="1544074030769" release="" codeSize="463" numClasses="11"/>
+    <AppVersion sequence="214" timestamp="1544074095831" release="" codeSize="462" numClasses="11"/>
+    <AppVersion sequence="215" timestamp="1544074106607" release="" codeSize="462" numClasses="11"/>
+    <AppVersion sequence="216" timestamp="1544074452294" release="" codeSize="462" numClasses="11"/>
+    <AppVersion sequence="217" timestamp="1544074485073" release="" codeSize="464" numClasses="11"/>
+    <AppVersion sequence="218" timestamp="1544074540293" release="" codeSize="465" numClasses="11"/>
+    <AppVersion sequence="219" timestamp="1544074552614" release="" codeSize="465" numClasses="11"/>
+    <AppVersion sequence="220" timestamp="1544074578323" release="" codeSize="465" numClasses="11"/>
+    <AppVersion sequence="221" timestamp="1544074651187" release="" codeSize="465" numClasses="11"/>
+    <AppVersion sequence="222" timestamp="1544074722057" release="" codeSize="465" numClasses="11"/>
+    <AppVersion sequence="223" timestamp="1544074746085" release="" codeSize="465" numClasses="11"/>
+    <AppVersion sequence="224" timestamp="1544074751796" release="" codeSize="465" numClasses="11"/>
+    <AppVersion sequence="225" timestamp="1544074759942" release="" codeSize="465" numClasses="11"/>
+    <AppVersion sequence="226" timestamp="1544074843369" release="" codeSize="465" numClasses="11"/>
+    <AppVersion sequence="227" timestamp="1544074963201" release="" codeSize="465" numClasses="11"/>
+    <AppVersion sequence="228" timestamp="1544074975984" release="" codeSize="463" numClasses="11"/>
+    <AppVersion sequence="229" timestamp="1544075054163" release="" codeSize="463" numClasses="11"/>
+    <AppVersion sequence="230" timestamp="1544138349929" release="" codeSize="207" numClasses="1"/>
+    <AppVersion sequence="231" timestamp="1544140095200" release="" codeSize="465" numClasses="11"/>
+    <AppVersion sequence="232" timestamp="1544140324675" release="" codeSize="465" numClasses="11"/>
+    <AppVersion sequence="233" timestamp="1544144401783" release="" codeSize="672" numClasses="12"/>
+    <AppVersion sequence="234" timestamp="1544144751078" release="" codeSize="126" numClasses="11"/>
+    <AppVersion sequence="235" timestamp="1544144768068" release="" codeSize="450" numClasses="11"/>
+    <AppVersion sequence="236" timestamp="1544144782791" release="" codeSize="126" numClasses="11"/>
+    <AppVersion sequence="237" timestamp="1544144787067" release="" codeSize="465" numClasses="11"/>
+    <AppVersion sequence="238" timestamp="1544144887339" release="" codeSize="458" numClasses="11"/>
+    <AppVersion sequence="239" timestamp="1544144943772" release="" codeSize="458" numClasses="11"/>
+    <AppVersion sequence="240" timestamp="1544246223631" release="" codeSize="458" numClasses="11"/>
+    <AppVersion sequence="241" timestamp="1544246230418" release="" codeSize="458" numClasses="11"/>
+    <AppVersion sequence="242" timestamp="1544246246329" release="" codeSize="458" numClasses="11"/>
+    <AppVersion sequence="243" timestamp="1544246518067" release="" codeSize="207" numClasses="1"/>
+    <AppVersion sequence="244" timestamp="1544257119378" release="" codeSize="456" numClasses="11"/>
+    <AppVersion sequence="245" timestamp="1544257121412" release="" codeSize="456" numClasses="11"/>
+    <AppVersion sequence="246" timestamp="1544257128516" release="" codeSize="457" numClasses="11"/>
+    <AppVersion sequence="247" timestamp="1544257149570" release="" codeSize="456" numClasses="11"/>
+    <AppVersion sequence="248" timestamp="1544257155057" release="" codeSize="456" numClasses="11"/>
+    <AppVersion sequence="249" timestamp="1544257162520" release="" codeSize="455" numClasses="11"/>
+    <AppVersion sequence="250" timestamp="1544257198226" release="" codeSize="454" numClasses="11"/>
+    <AppVersion sequence="251" timestamp="1544257234988" release="" codeSize="454" numClasses="11"/>
+    <AppVersion sequence="252" timestamp="1544257237793" release="" codeSize="454" numClasses="11"/>
+  </History>
+</BugCollection>

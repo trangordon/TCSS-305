@@ -1,0 +1,11 @@
+Silly Putty;4.50;3;10.00
+'Java Rules!' button;0.75;10;5.00
+'Java Rules!' bumper sticker;1.20;10;10.00
+Computer science pen;2.00
+Rubik's Cube;10.00
+Mp3, Mp4, FM Music Player;20.00
+Arduino Uno Ultimate Starter Kit;55.00
+LEGO Mindstorms EV3;350.00
+Xbox One;399.00
+PlayStation 4;399.00
+64 inch Plasma HDTV;1300.00

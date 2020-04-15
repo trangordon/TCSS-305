@@ -1,0 +1,149 @@
+package model;
+
+import java.util.Map;
+
+/**
+ * The Class Truck.
+ * 
+ * @author Gordon Tran
+ * @version October 2018
+ */
+public class Truck extends AbstractVehicle implements Vehicle { 
+    
+    
+    
+    /**
+     * Instantiates a new truck.
+     *
+     * @param theX the the X
+     * @param theY the the Y
+     * @param theDir the the dir
+     */
+    public Truck(final int theX, final int theY, final Direction theDir) {
+        super(theX, theY, theDir);
+    }
+
+    /* (non-Javadoc)
+     * @see model.AbstractVehicle#canPass(model.Terrain, model.Light)
+     */
+    @Override
+    public boolean canPass(final Terrain theTerrain, final Light theLight) {
+        return false;
+    }
+
+    /* (non-Javadoc)
+     * @see model.AbstractVehicle#chooseDirection(java.util.Map)
+     */
+    @Override
+    public Direction chooseDirection(final Map<Direction, Terrain> theNeighbors) {
+        return null;
+    }
+
+    /* (non-Javadoc)
+     * @see model.AbstractVehicle#collide(model.Vehicle)
+     */
+    @Override
+    public void collide(final Vehicle theOther) {
+        
+    }
+
+    /* (non-Javadoc)
+     * @see model.AbstractVehicle#getDeathTime()
+     */
+    @Override
+    public int getDeathTime() {
+        return 0;
+    }
+
+    /* (non-Javadoc)
+     * @see model.AbstractVehicle#getImageFileName()
+     */
+    @Override
+    public String getImageFileName() {
+        if (myLife) {
+            return "truck.gif";
+        }
+        return "truck_dead.gif";
+    }
+
+    /* (non-Javadoc)
+     * @see model.AbstractVehicle#getDirection()
+     */
+    @Override
+    public Direction getDirection() {
+        return myDir;
+    }
+
+    /* (non-Javadoc)
+     * @see model.AbstractVehicle#getX()
+     */
+    @Override
+    public int getX() {
+        return myX;
+    }
+
+    /* (non-Javadoc)
+     * @see model.AbstractVehicle#getY()
+     */
+    @Override
+    public int getY() {
+        return myY;
+    }
+
+    /* (non-Javadoc)
+     * @see model.AbstractVehicle#isAlive()
+     */
+    @Override
+    public boolean isAlive() {
+        return true;
+    }
+
+    /* (non-Javadoc)
+     * @see model.AbstractVehicle#poke()
+     */
+    @Override
+    public void poke() {
+
+    }
+
+    /* (non-Javadoc)
+     * @see model.AbstractVehicle#reset()
+     */
+    @Override
+    public void reset() {
+        myX = mySX;
+        myY = mySY;
+        myDir = mySDir;
+    }
+
+    /* (non-Javadoc)
+     * @see model.AbstractVehicle#setDirection(model.Direction)
+     */
+    @Override
+    public void setDirection(final Direction theDir) {
+        myDir = theDir;
+    }
+
+    /* (non-Javadoc)
+     * @see model.AbstractVehicle#setX(int)
+     */
+    @Override
+    public void setX(final int theX) {
+        myX = theX;
+    }
+
+    /* (non-Javadoc)
+     * @see model.AbstractVehicle#setY(int)
+     */
+    @Override
+    public void setY(final int theY) {
+        myY = theY;
+    }
+
+    @Override
+    public String toString() {
+        String buffer = super.toString();
+        buffer = "Truck" + buffer;
+        return buffer;
+    }
+}

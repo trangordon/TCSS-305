@@ -1,0 +1,17 @@
+1543442935054	Rename field 'timer'
+1543442968220	Rename type 'timerAction'
+1543444176087	Rename type 'KeyListenerL'
+1543445478035	Rename field 'myLabel'
+1543448840954	Delete element
+1543504619245	Rename field 'myScore'
+1543508959348	Rename local variable 'myNext'
+1543509229126	Rename local variable 'myBoardS'
+1543511720117	Rename local variable 'i'
+1543520762312	Rename field 'myLevel'
+1543559445251	Copy folder
+1543565563733	Rename local variable 'string'
+1543565978334	Rename local variable 'myGroup'
+1543610646016	Rename local variable 'myGrid'
+1543613457593	Rename method 'MyGrid'
+1543613471099	Rename local variable 'j'
+1543613478159	Rename local variable 'i'

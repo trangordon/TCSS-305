@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1-dev-20150306-5afe4d1" sequence="1" timestamp="1541021745192" analysisTimestamp="1541021743857" release="">
+  <Project projectName="First JFrame example">
+    <Jar>C:\Users\trang\eclipse-workspace-305\First JFrame example\bin</Jar>
+    <AuxClasspathEntry>C:\Users\trang\eclipse-workspace-305\First JFrame example\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\eclipse\plugins\org.junit_4.12.0.v201504281640\junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\eclipse\plugins\org.hamcrest.core_1.3.0.v201303031735.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jre1.8.0_151\lib\rt.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\trang\eclipse-workspace-305\First JFrame example\src</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 31 Oct 2018 14:35:43 -0700" total_classes="3" referenced_classes="272" total_bugs="0" total_size="36" num_packages="1" java_version="1.8.0_151" vm_version="25.151-b12" cpu_seconds="4.47" clock_seconds="1.33" peak_mbytes="908.09" alloc_mbytes="1024.00" gc_seconds="0.07">
+    <PackageStats package="view" total_bugs="0" total_types="3" total_size="36">
+      <ClassStats class="view.FirstJFrame" sourceFile="FirstJFrame.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="view.FirstJFrameMain" sourceFile="FirstJFrameMain.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="view.FirstJFrameMain$1" sourceFile="FirstJFrameMain.java" interface="false" size="8" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="454" invocations="1401" avgMicrosecondsPerInvocation="324" maxMicrosecondsPerInvocation="42119" standardDeviationMircosecondsPerInvocation="1895"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="270" invocations="1398" avgMicrosecondsPerInvocation="193" maxMicrosecondsPerInvocation="23625" standardDeviationMircosecondsPerInvocation="850"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="140" invocations="271" avgMicrosecondsPerInvocation="518" maxMicrosecondsPerInvocation="39549" standardDeviationMircosecondsPerInvocation="2481"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="98" invocations="272" avgMicrosecondsPerInvocation="363" maxMicrosecondsPerInvocation="6332" standardDeviationMircosecondsPerInvocation="759"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="76" invocations="2" avgMicrosecondsPerInvocation="38450" maxMicrosecondsPerInvocation="58612" standardDeviationMircosecondsPerInvocation="20162"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1541021745192" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

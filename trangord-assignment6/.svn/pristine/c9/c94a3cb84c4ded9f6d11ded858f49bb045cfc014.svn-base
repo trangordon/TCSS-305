@@ -1,0 +1,84 @@
+package view;
+
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.geom.Rectangle2D;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+
+/**
+ * Shows next piece.
+ * @author Gordon Tran
+ * @version November 
+ */
+public class NextPanel extends JPanel {
+
+    /**
+     * Generated ID. 
+     */
+    private static final long serialVersionUID = 6108123800894468548L;
+    /**Next piece.*/
+    private String[] myNext = new String[0];
+    
+    /**Constructor to make the label.*/
+    public NextPanel() {
+        super();
+        this.add(new JLabel("Next Piece"));
+    }
+    
+    /**Sets new piece.
+     * @param theNext String of new piece 
+     */
+    public void setMyNext(final String theNext) {
+        final String[] output = theNext.split("\n");
+        myNext = output;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void paintComponent(final Graphics theG) {
+        final Graphics2D g2 = (Graphics2D) theG;
+        super.paintComponent(g2);
+        
+        for (int j = 0; j < myNext.length; j++) {
+            for (int i = 0; i < myNext[j].length(); i++) {
+                if (myNext[j].charAt(i) != ' ') {
+                    switch (myNext[j].charAt(i)) {
+                        case 'I': g2.setColor(Color.CYAN);
+                            break;
+                        case 'J': g2.setColor(Color.ORANGE);
+                            break;
+                        case 'L': g2.setColor(Color.BLUE);
+                            break;
+                        case 'O': g2.setColor(Color.YELLOW);
+                            break;
+                        case 'S': g2.setColor(Color.RED);
+                            break;
+                        case 'T': g2.setColor(Color.MAGENTA);
+                            break;
+                        case 'Z': g2.setColor(Color.GREEN);
+                            break;
+                        default: 
+                            break;
+                    }
+                    g2.fill(new Rectangle2D.Double((i * this.getHeight() / 4) + this.getWidth() / 10, 
+                                                   (j * this.getHeight() / 4) + this.getHeight() / 10, 
+                                                   this.getHeight() / 4, 
+                                                   this.getHeight() / 4));
+                    g2.setColor(Color.BLACK);
+                    g2.draw(new Rectangle2D.Double((i * this.getHeight() / 4) + this.getWidth() / 10,
+                                                   (j * this.getHeight() / 4) + this.getHeight() / 10,
+                                                   this.getHeight() / 4, 
+                                                   this.getHeight() / 4));
+                    
+                }
+            }
+        }
+//        g2.draw(new Line2D.Double(0, 10, 100, 100));
+    }
+    
+}

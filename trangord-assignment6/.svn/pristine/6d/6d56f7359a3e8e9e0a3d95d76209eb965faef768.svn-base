@@ -1,0 +1,261 @@
+/*Gordon Tran
+ * TCSS 305
+ * Assignment 6
+ */
+package view;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.Timer;
+import model.Board;
+
+/**
+ * The Class GUI.
+ * @author Gordon Tran
+ * @version November 2018
+ */
+public class GUI implements PropertyChangeListener {
+    
+    /** The my frame. */
+    private JFrame myFrame = new JFrame("Tetris");
+    
+    /** The my board. */
+    private Board myBoard = new Board();
+    
+    /** The my panel. */
+    private JPanel myPanel = new JPanel(new GridLayout(0, 1));
+    
+    /**Controls.*/
+    private JPanel myControl = new JPanel(new GridLayout(0, 1));
+    
+    /**Score.*/
+    private JPanel mySScore = new JPanel();
+    
+    /**Score String*/
+    private JLabel myScoreT = new JLabel();
+    
+    /** The pause label. */
+    private JLabel myPText = new JLabel();
+    
+    /** The timer. */
+    private Timer myTimer;
+    
+    /**Menu Bar.*/
+    private JMenuBar myBar = new JMenuBar();
+    
+    /**Game option.*/
+    private JMenu myGame = new JMenu("Game");
+    
+    /**Start.*/
+    private JMenuItem myStart = new JMenuItem("New Game");
+    
+    /**End.*/
+    private JMenuItem myEnd = new JMenuItem("End Game");
+    
+    /**Pause indicator.*/
+    private boolean myPause;
+    
+    /**In game.*/
+    private boolean myInG;
+    
+    /**Tetris Panel.*/
+    private BoardPanel myBPanel = new BoardPanel();
+    
+    /**Next piece.*/
+    private BoardPanel myNPiece = new BoardPanel();
+    
+    /**Game speed.*/
+    private int mySpeed = 1000;
+    
+    /**Game score.*/
+    private int myScore;
+    
+    
+    /**
+     * Constructor.
+     */
+    public GUI() {
+        setup();
+    }
+    
+    /**
+     * Start.
+     */
+    public void setup() {
+        myTimer = new Timer(mySpeed, new TimerAction());
+        myBoard.addPropertyChangeListener(this);
+        myFrame.addKeyListener(new MoveKeys());
+        myFrame.add(myBPanel, BorderLayout.CENTER);
+        myBPanel.setBackground(Color.WHITE);
+        myBPanel.setPreferredSize(new Dimension(300,500));
+        
+        myFrame.setJMenuBar(myBar);
+        myBar.add(myGame);
+        myGame.add(myStart);
+        myGame.add(myEnd);
+        myStart.addActionListener(new NewGame());
+        myEnd.addActionListener(new EndGame());
+        myEnd.setEnabled(false);
+        
+        myFrame.add(myPanel, BorderLayout.EAST);
+        myPanel.add(myNPiece);
+        myPanel.add(mySScore);
+        myPanel.add(myControl);
+        myControl.add(new JLabel("Rotate: W/Up arrow"));
+        myControl.add(new JLabel("\nLeft: A/Left arrow"));
+        myControl.add(new JLabel("\nRight: D/Right arrow"));
+        myControl.add(new JLabel(" Down: S/Down arrow"));
+        myControl.add(new JLabel("Drop: Space"));
+        myControl.add(new JLabel("Pause: P"));
+        mySScore.add(myScoreT);
+        myScoreT.setText("Score: " + myScore);
+        myBPanel.add(myPText, BorderLayout.NORTH);
+        
+        
+        myFrame.setResizable(false);
+        myFrame.setSize(new Dimension(500, 500));
+        myFrame.setLocationRelativeTo(null);
+        myFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        myFrame.setVisible(true);
+    }
+    
+    @Override
+    public void propertyChange(final PropertyChangeEvent theEvent) {
+        if (theEvent.getPropertyName().equals("piece moved")) {
+            final String buffer = (String) theEvent.getNewValue();
+//            myBPanel.paintString(buffer);
+            System.out.println(buffer);
+        }
+        
+        if (theEvent.getPropertyName().equals("game over")) {
+            myTimer.stop();
+            if (myInG) {
+                JOptionPane.showMessageDialog(myFrame, "Game Over!", 
+                                              myFrame.getTitle(), JOptionPane.PLAIN_MESSAGE);
+                myInG = false;
+            }
+            myStart.setEnabled((boolean) theEvent.getNewValue());
+        }
+        
+        if (theEvent.getPropertyName().equals("lines cleared")) {
+            myScore += 5;
+            myScoreT.setText("Score: " + myScore);
+            if (myScore%30 == 0) {
+                mySpeed -= 200;
+                myTimer.setDelay(mySpeed);
+            }
+        }
+        
+    }
+
+    /**
+     * Timer action class. 
+     */
+    class TimerAction implements ActionListener {
+        @Override
+        public void actionPerformed(final ActionEvent theEvent) {
+            myBoard.down();
+        }
+    }
+    /**
+     * Key listener class.
+     */
+    class MoveKeys implements KeyListener {
+        
+        @Override
+        public void keyPressed(final KeyEvent theEvent) {
+        }
+        @Override
+        public void keyReleased(final KeyEvent theEvent) {
+            final int key = theEvent.getKeyCode();
+            switch (key) {
+                case KeyEvent.VK_LEFT:
+                    myBoard.left();
+                    break;
+                case KeyEvent.VK_A:
+                    myBoard.left();
+                    break;
+                case KeyEvent.VK_RIGHT:
+                    myBoard.right();
+                    break;
+                case KeyEvent.VK_D:
+                    myBoard.right();
+                    break;
+                case KeyEvent.VK_DOWN:
+                    myBoard.down();
+                    break;
+                case KeyEvent.VK_S:
+                    myBoard.down();
+                    break;
+                case KeyEvent.VK_UP:
+                    myBoard.rotate();
+                    break;
+                case KeyEvent.VK_W:
+                    myBoard.rotate();
+                    break;
+                case KeyEvent.VK_SPACE:
+                    myBoard.drop();
+                    break;
+                case KeyEvent.VK_P:
+                    if (myPause) {
+                        myTimer.start();
+                        myPause = false;
+                        myPText.setText("");
+                    } else if (!myPause && myInG) {
+                        myTimer.stop();
+                        myPause = true;
+                        myPText.setText("Paused");
+                    }
+                    break;
+                default:
+                    break;
+            }
+        }
+        @Override
+        public void keyTyped(final KeyEvent theEvent) {
+        }
+    }
+    /**New game action.*/
+    class NewGame implements ActionListener {
+        @Override
+        public void actionPerformed(final ActionEvent theE) {
+            myBoard.newGame();
+            myTimer.start();
+            myInG = true;
+            myStart.setEnabled(false);
+            myPause = false;
+            myEnd.setEnabled(true);
+            myScore = 0;
+            mySpeed = 1000;
+        }
+    }
+    /**End game action.*/
+    class EndGame implements ActionListener {
+        @Override
+        public void actionPerformed(final ActionEvent theE) {
+            myTimer.stop();
+            if (myInG) {
+                JOptionPane.showMessageDialog(myFrame, "Game Over", 
+                                              myFrame.getTitle(), JOptionPane.PLAIN_MESSAGE);
+                myInG = false;
+            }
+            myStart.setEnabled(true);
+            myEnd.setEnabled(false);
+        }
+    }
+}

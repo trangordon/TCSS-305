@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1-dev-20150306-5afe4d1" sequence="1" timestamp="1543427685599" analysisTimestamp="1543427674628" release="">
+  <Project projectName="2DGraphics examples">
+    <Jar>C:\Users\trang\eclipse-workspace-305\2DGraphics examples\bin</Jar>
+    <AuxClasspathEntry>C:\Users\trang\eclipse-workspace-305\2DGraphics examples\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\eclipse\plugins\org.junit_4.12.0.v201504281640\junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\eclipse\plugins\org.hamcrest.core_1.3.0.v201303031735.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jre1.8.0_151\lib\rt.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\trang\eclipse-workspace-305\2DGraphics examples\src</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <BugInstance type="ICAST_IDIV_CAST_TO_DOUBLE" priority="2" rank="17" abbrev="ICAST" category="STYLE" first="1">
+    <Class classname="view.EllipseAndRectanglePanel">
+      <SourceLine classname="view.EllipseAndRectanglePanel" sourcefile="EllipseAndRectanglePanel.java" sourcepath="view/EllipseAndRectanglePanel.java"/>
+    </Class>
+    <Method classname="view.EllipseAndRectanglePanel" name="paintComponent" signature="(Ljava/awt/Graphics;)V" isStatic="false">
+      <SourceLine classname="view.EllipseAndRectanglePanel" start="61" end="89" startBytecode="0" endBytecode="366" sourcefile="EllipseAndRectanglePanel.java" sourcepath="view/EllipseAndRectanglePanel.java"/>
+    </Method>
+    <SourceLine classname="view.EllipseAndRectanglePanel" start="74" end="74" startBytecode="78" endBytecode="78" sourcefile="EllipseAndRectanglePanel.java" sourcepath="view/EllipseAndRectanglePanel.java"/>
+    <SourceLine classname="view.EllipseAndRectanglePanel" start="74" end="74" startBytecode="78" endBytecode="78" sourcefile="EllipseAndRectanglePanel.java" sourcepath="view/EllipseAndRectanglePanel.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 28 Nov 2018 09:54:31 -0800" total_classes="5" referenced_classes="292" total_bugs="1" total_size="174" num_packages="1" java_version="1.8.0_151" vm_version="25.151-b12" cpu_seconds="64.72" clock_seconds="10.97" peak_mbytes="837.51" alloc_mbytes="1024.00" gc_seconds="0.50" priority_2="1">
+    <PackageStats package="view" total_bugs="1" total_types="5" total_size="174" priority_2="1">
+      <ClassStats class="view.ArcPanel" sourceFile="ArcPanel.java" interface="false" size="37" bugs="0"/>
+      <ClassStats class="view.EllipseAndRectanglePanel" sourceFile="EllipseAndRectanglePanel.java" interface="false" size="43" bugs="1" priority_2="1"/>
+      <ClassStats class="view.PathPanel" sourceFile="PathPanel.java" interface="false" size="40" bugs="0"/>
+      <ClassStats class="view.PathPanel$MyMouseListener" sourceFile="PathPanel.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="view.TextPanel" sourceFile="TextPanel.java" interface="false" size="40" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="3056" invocations="2" avgMicrosecondsPerInvocation="1528320" maxMicrosecondsPerInvocation="2458069" standardDeviationMircosecondsPerInvocation="929749"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="2834" invocations="1468" avgMicrosecondsPerInvocation="1930" maxMicrosecondsPerInvocation="138988" standardDeviationMircosecondsPerInvocation="8704"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="1317" invocations="1465" avgMicrosecondsPerInvocation="899" maxMicrosecondsPerInvocation="414992" standardDeviationMircosecondsPerInvocation="11868"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="625" invocations="292" avgMicrosecondsPerInvocation="2141" maxMicrosecondsPerInvocation="77066" standardDeviationMircosecondsPerInvocation="7115"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="544" invocations="292" avgMicrosecondsPerInvocation="1863" maxMicrosecondsPerInvocation="72642" standardDeviationMircosecondsPerInvocation="5775"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1543427685576" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1-dev-20150306-5afe4d1" sequence="1" timestamp="1543427685599" analysisTimestamp="1543427675289" release="">
+  <Project projectName="FirstPropertyChangeExample">
+    <Jar>C:\Users\trang\eclipse-workspace-305\FirstPropertyChangeExample\bin</Jar>
+    <AuxClasspathEntry>C:\Users\trang\eclipse-workspace-305\FirstPropertyChangeExample\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\eclipse\plugins\org.junit_4.12.0.v201504281640\junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\eclipse\plugins\org.hamcrest.core_1.3.0.v201303031735.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jre1.8.0_151\lib\rt.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\trang\eclipse-workspace-305\FirstPropertyChangeExample\src</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 28 Nov 2018 09:54:34 -0800" total_classes="6" referenced_classes="285" total_bugs="0" total_size="104" num_packages="3" java_version="1.8.0_151" vm_version="25.151-b12" cpu_seconds="61.67" clock_seconds="10.31" peak_mbytes="837.51" alloc_mbytes="1024.00" gc_seconds="0.50">
+    <PackageStats package="controller" total_bugs="0" total_types="2" total_size="18">
+      <ClassStats class="controller.DriverMain" sourceFile="DriverMain.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="controller.DriverMain$1" sourceFile="DriverMain.java" interface="false" size="11" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="model" total_bugs="0" total_types="1" total_size="28">
+      <ClassStats class="model.ChangeableInteger" sourceFile="ChangeableInteger.java" interface="false" size="28" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="view" total_bugs="0" total_types="3" total_size="58">
+      <ClassStats class="view.DecrementAction" sourceFile="DecrementAction.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="view.GUI" sourceFile="GUI.java" interface="false" size="38" bugs="0"/>
+      <ClassStats class="view.IncrementAction" sourceFile="IncrementAction.java" interface="false" size="10" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="3006" invocations="1477" avgMicrosecondsPerInvocation="2035" maxMicrosecondsPerInvocation="133220" standardDeviationMircosecondsPerInvocation="9442"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="2481" invocations="2" avgMicrosecondsPerInvocation="1240936" maxMicrosecondsPerInvocation="1757177" standardDeviationMircosecondsPerInvocation="516241"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="1272" invocations="1474" avgMicrosecondsPerInvocation="863" maxMicrosecondsPerInvocation="414323" standardDeviationMircosecondsPerInvocation="11227"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="560" invocations="285" avgMicrosecondsPerInvocation="1967" maxMicrosecondsPerInvocation="119216" standardDeviationMircosecondsPerInvocation="7736"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="473" invocations="285" avgMicrosecondsPerInvocation="1662" maxMicrosecondsPerInvocation="32255" standardDeviationMircosecondsPerInvocation="4281"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1543427685576" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

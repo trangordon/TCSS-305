@@ -1,0 +1,70 @@
+/* Gordon Tran
+ * 
+ */
+
+package model;
+
+import java.math.BigDecimal;
+
+// TODO: Auto-generated Javadoc
+/**
+ * The Class ShoppingCart.
+ * @author Gordon Tran
+ * @version October 2018
+ */
+public class ShoppingCart {
+
+
+    /**
+     * Instantiates a new shopping cart.
+     */
+    public ShoppingCart() {
+
+    }
+
+
+    
+    /**
+     * Adds to the cart.
+     *
+     * @param theOrder the order
+     */
+    public void add(final ItemOrder theOrder) {
+        
+    }
+
+
+    /**
+     * Sets the membership.
+     *
+     * @param theMembership the new membership
+     */
+    public void setMembership(final boolean theMembership) {
+        
+    }
+
+
+    /**
+     * Calculate total.
+     *
+     * @return the big decimal total
+     */
+    public BigDecimal calculateTotal() {
+
+        return null;
+    }
+    
+    /**
+     * Clear.
+     */
+    public void clear() {
+        
+    }
+
+    @Override
+    public String toString() {
+        
+        return null;
+    }
+
+}

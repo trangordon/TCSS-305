@@ -1,0 +1,109 @@
+package view;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Toolkit;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.ButtonGroup;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JRadioButton;
+import javax.swing.JToolBar;
+
+public class GUI {
+	JFrame myFrame = new JFrame();
+    Dimension myScreenSize = Toolkit.getDefaultToolkit().getScreenSize();
+    
+	ImageIcon myImage = new ImageIcon("paint_icon.png");
+	
+	JPanel myPanel = new JPanel();
+
+	JToolBar myToolbar = new JToolBar();
+	JButton myPencil = makeButton("Pencil", new AboutPane());
+	JButton myLine = makeButton("Line", new AboutPane());
+	JButton myRectangle = makeButton("Rectangle", new AboutPane());
+	JButton myEllipse = makeButton("Ellipse", new AboutPane());
+	
+	ButtonGroup myToolGroup = makeGroup();
+	ButtonGroup myMenuGroup = makeGroup();
+	
+	JMenuBar myMenuBar =  new JMenuBar();
+	JMenu myOptions = new JMenu("Options");
+	
+	JMenu myTools = new JMenu("Tools");
+	JRadioButton myRPencil = makeRButton("Pencil", new AboutPane());
+	JRadioButton myRLine = makeRButton("Line", new AboutPane());
+	JRadioButton myRRectangle = makeRButton("Rectangle", new AboutPane());
+	JRadioButton myREllipse = makeRButton("Ellipse", new AboutPane());
+	
+	JMenu myHelp = new JMenu("Help");
+	JMenuItem myAbout = new JMenuItem("About");
+	
+	
+	public void start(){
+		myFrame.setTitle("TCSS 305 - Paint Program");
+		
+		myFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		myFrame.setIconImage(myImage.getImage());
+		myPanel.setBackground(Color.WHITE);
+		
+		myTools.add(myRPencil);
+		myTools.add(myRLine);
+		myTools.add(myRRectangle);
+		myTools.add(myREllipse);
+		
+		
+		myHelp.add(myAbout);
+		myAbout.addActionListener(new AboutPane());
+		myMenuBar.add(myOptions);
+		myMenuBar.add(myTools);
+		myMenuBar.add(myHelp);
+		
+		myFrame.add(myPanel, BorderLayout.CENTER);
+		myFrame.add(myToolbar, BorderLayout.SOUTH);
+		myFrame.add(myMenuBar, BorderLayout.NORTH);
+		
+		myFrame.setSize(myScreenSize.width/3, myScreenSize.height/3);
+		myFrame.setLocationRelativeTo(null);
+		myFrame.setVisible(true);
+	}
+	
+	private ButtonGroup makeGroup() {
+		ButtonGroup btnG = new ButtonGroup();
+		btnG.add(myPencil);
+		btnG.add(myLine);
+		btnG.add(myRectangle);
+		btnG.add(myEllipse);
+		return btnG;
+	}
+	
+	private JButton makeButton(String theName, ActionListener theListener) {
+		JButton btn = new JButton(theName);
+		btn.addActionListener(theListener);
+		return btn;
+	}
+	
+	private JRadioButton makeRButton(String theName, ActionListener theListener) {
+		JRadioButton btn = new JRadioButton(theName);
+		btn.addActionListener(theListener);
+		return btn;
+	}
+	
+	class AboutPane implements ActionListener{
+		String aboutText = "Autumn 2018\nGordon Tran";
+		@Override
+		public void actionPerformed(ActionEvent arg0) {
+			JOptionPane.showMessageDialog(myFrame, aboutText, myFrame.getTitle(), JOptionPane.PLAIN_MESSAGE, myImage);
+		}
+		
+	}
+}

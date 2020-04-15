@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.10" sequence="1" timestamp="1552351757120" analysisTimestamp="1552351751271" release="">
+  <Project projectName="trangord-assignment6">
+    <Jar>C:\Users\trang\eclipse-workspace-305\trangord-assignment6\bin</Jar>
+    <AuxClasspathEntry>C:\Users\trang\eclipse-workspace-305\trangord-assignment6\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\trang\.p2\pool\plugins\org.junit_4.12.0.v201504281640\junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\trang\.p2\pool\plugins\org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\trang\eclipse-workspace-305\trangord-assignment6\wk.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jre1.8.0_201\lib\rt.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jre1.8.0_201\lib\jce.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\trang\eclipse-workspace-305\trangord-assignment6\src</SrcDir>
+  </Project>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE" first="1">
+    <Class classname="model.MovableTetrisPiece">
+      <SourceLine classname="model.MovableTetrisPiece" sourcefile="MovableTetrisPiece.java" sourcepath="model/MovableTetrisPiece.java"/>
+    </Class>
+    <Method classname="model.MovableTetrisPiece" name="getPoints" signature="(Lmodel/Point;)[Lmodel/Point;" isStatic="false">
+      <SourceLine classname="model.MovableTetrisPiece" start="257" end="287" startBytecode="0" endBytecode="380" sourcefile="MovableTetrisPiece.java" sourcepath="model/MovableTetrisPiece.java"/>
+    </Method>
+    <SourceLine classname="model.MovableTetrisPiece" start="262" end="274" startBytecode="39" endBytecode="169" sourcefile="MovableTetrisPiece.java" sourcepath="model/MovableTetrisPiece.java"/>
+    <SourceLine classname="model.MovableTetrisPiece" start="262" end="274" startBytecode="39" endBytecode="169" sourcefile="MovableTetrisPiece.java" sourcepath="model/MovableTetrisPiece.java"/>
+  </BugInstance>
+  <BugInstance type="ICAST_IDIV_CAST_TO_DOUBLE" priority="2" rank="17" abbrev="ICAST" category="STYLE" first="1">
+    <Class classname="view.BoardPanel">
+      <SourceLine classname="view.BoardPanel" sourcefile="BoardPanel.java" sourcepath="view/BoardPanel.java"/>
+    </Class>
+    <Method classname="view.BoardPanel" name="paintComponent" signature="(Ljava/awt/Graphics;)V" isStatic="false">
+      <SourceLine classname="view.BoardPanel" start="63" end="119" startBytecode="0" endBytecode="766" sourcefile="BoardPanel.java" sourcepath="view/BoardPanel.java"/>
+    </Method>
+    <SourceLine classname="view.BoardPanel" start="68" end="68" startBytecode="53" endBytecode="53" sourcefile="BoardPanel.java" sourcepath="view/BoardPanel.java"/>
+    <SourceLine classname="view.BoardPanel" start="68" end="68" startBytecode="53" endBytecode="53" sourcefile="BoardPanel.java" sourcepath="view/BoardPanel.java"/>
+  </BugInstance>
+  <BugInstance type="ICAST_IDIV_CAST_TO_DOUBLE" priority="2" rank="17" abbrev="ICAST" category="STYLE" first="1">
+    <Class classname="view.NextPanel">
+      <SourceLine classname="view.NextPanel" sourcefile="NextPanel.java" sourcepath="view/NextPanel.java"/>
+    </Class>
+    <Method classname="view.NextPanel" name="paintComponent" signature="(Ljava/awt/Graphics;)V" isStatic="false">
+      <SourceLine classname="view.NextPanel" start="50" end="75" startBytecode="0" endBytecode="418" sourcefile="NextPanel.java" sourcepath="view/NextPanel.java"/>
+    </Method>
+    <SourceLine classname="view.NextPanel" start="61" end="61" startBytecode="101" endBytecode="101" sourcefile="NextPanel.java" sourcepath="view/NextPanel.java"/>
+    <SourceLine classname="view.NextPanel" start="61" end="61" startBytecode="101" endBytecode="101" sourcefile="NextPanel.java" sourcepath="view/NextPanel.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Mon, 11 Mar 2019 17:49:09 -0700" total_classes="21" referenced_classes="327" total_bugs="3" total_size="1045" num_packages="2" java_version="1.8.0_201" vm_version="25.201-b09" cpu_seconds="31.73" clock_seconds="5.85" peak_mbytes="548.97" alloc_mbytes="1024.00" gc_seconds="0.25" priority_2="3">
+    <PackageStats package="model" total_bugs="1" total_types="6" total_size="450" priority_2="1">
+      <ClassStats class="model.Block" sourceFile="Block.java" interface="false" size="32" bugs="0"/>
+      <ClassStats class="model.Board" sourceFile="Board.java" interface="false" size="207" bugs="0"/>
+      <ClassStats class="model.MovableTetrisPiece" sourceFile="MovableTetrisPiece.java" interface="false" size="93" bugs="1" priority_2="1"/>
+      <ClassStats class="model.Point" sourceFile="Point.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="model.Rotation" sourceFile="Rotation.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="model.TetrisPiece" sourceFile="TetrisPiece.java" interface="false" size="64" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="view" total_bugs="2" total_types="15" total_size="595" priority_2="2">
+      <ClassStats class="view.BoardPanel" sourceFile="BoardPanel.java" interface="false" size="74" bugs="1" priority_2="1"/>
+      <ClassStats class="view.Driver" sourceFile="Driver.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="view.Driver$1" sourceFile="Driver.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="view.GUI" sourceFile="GUI.java" interface="false" size="275" bugs="0"/>
+      <ClassStats class="view.GUI$AboutListener" sourceFile="GUI.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="view.GUI$EndGame" sourceFile="GUI.java" interface="false" size="24" bugs="0"/>
+      <ClassStats class="view.GUI$GridListener" sourceFile="GUI.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="view.GUI$MoveKeys" sourceFile="GUI.java" interface="false" size="37" bugs="0"/>
+      <ClassStats class="view.GUI$MuteListener" sourceFile="GUI.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="view.GUI$NewGame" sourceFile="GUI.java" interface="false" size="27" bugs="0"/>
+      <ClassStats class="view.GUI$SizeLg" sourceFile="GUI.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="view.GUI$SizeMed" sourceFile="GUI.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="view.GUI$SizeSm" sourceFile="GUI.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="view.GUI$TimerAction" sourceFile="GUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="view.NextPanel" sourceFile="NextPanel.java" interface="false" size="54" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="677" invocations="2" avgMicrosecondsPerInvocation="338653" maxMicrosecondsPerInvocation="373660" standardDeviationMicrosecondsPerInvocation="35002"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="617" invocations="1565" avgMicrosecondsPerInvocation="394" maxMicrosecondsPerInvocation="41105" standardDeviationMicrosecondsPerInvocation="1470"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="528" invocations="327" avgMicrosecondsPerInvocation="1617" maxMicrosecondsPerInvocation="33384" standardDeviationMicrosecondsPerInvocation="3543"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="511" invocations="327" avgMicrosecondsPerInvocation="1562" maxMicrosecondsPerInvocation="26145" standardDeviationMicrosecondsPerInvocation="3225"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="340" invocations="806" avgMicrosecondsPerInvocation="422" maxMicrosecondsPerInvocation="34622" standardDeviationMicrosecondsPerInvocation="1319"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="244" invocations="1568" avgMicrosecondsPerInvocation="155" maxMicrosecondsPerInvocation="1412" standardDeviationMicrosecondsPerInvocation="112"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="210" invocations="149" avgMicrosecondsPerInvocation="1409" maxMicrosecondsPerInvocation="109337" standardDeviationMicrosecondsPerInvocation="9072"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="147" invocations="327" avgMicrosecondsPerInvocation="449" maxMicrosecondsPerInvocation="16968" standardDeviationMicrosecondsPerInvocation="1234"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="141" invocations="151" avgMicrosecondsPerInvocation="936" maxMicrosecondsPerInvocation="24580" standardDeviationMicrosecondsPerInvocation="2589"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="136" invocations="149" avgMicrosecondsPerInvocation="914" maxMicrosecondsPerInvocation="16864" standardDeviationMicrosecondsPerInvocation="1997"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="127" invocations="149" avgMicrosecondsPerInvocation="857" maxMicrosecondsPerInvocation="9781" standardDeviationMicrosecondsPerInvocation="1701"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="123" invocations="149" avgMicrosecondsPerInvocation="825" maxMicrosecondsPerInvocation="19875" standardDeviationMicrosecondsPerInvocation="2132"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="122" invocations="149" avgMicrosecondsPerInvocation="824" maxMicrosecondsPerInvocation="13001" standardDeviationMicrosecondsPerInvocation="1854"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="115" invocations="327" avgMicrosecondsPerInvocation="351" maxMicrosecondsPerInvocation="23788" standardDeviationMicrosecondsPerInvocation="1518"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="91" invocations="327" avgMicrosecondsPerInvocation="279" maxMicrosecondsPerInvocation="14099" standardDeviationMicrosecondsPerInvocation="1490"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="84" invocations="327" avgMicrosecondsPerInvocation="257" maxMicrosecondsPerInvocation="3509" standardDeviationMicrosecondsPerInvocation="403"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="77" invocations="327" avgMicrosecondsPerInvocation="237" maxMicrosecondsPerInvocation="12845" standardDeviationMicrosecondsPerInvocation="797"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="76" invocations="149" avgMicrosecondsPerInvocation="513" maxMicrosecondsPerInvocation="49799" standardDeviationMicrosecondsPerInvocation="4056"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1552351757114" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

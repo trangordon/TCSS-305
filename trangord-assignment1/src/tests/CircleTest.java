@@ -1,0 +1,154 @@
+/* TCSS
+ * Autumn 2018
+ * Assignment 1
+ */
+package tests;
+
+import static org.junit.Assert.*;
+
+import java.awt.Color;
+import java.awt.geom.Point2D;
+import org.junit.Before;
+import org.junit.Test;
+import shapes.Circle;
+
+/**
+ * @author Gordon Tran
+ * @version 10/11/2018
+ */
+public class CircleTest {
+    
+    /**
+     * Margin of error for double values.
+     */
+    private static final double ERROR = .000000001;
+    
+    /**
+     * A Circle object to use during testing.
+     */
+    private Circle myCircle;
+    
+    /**
+     * A method to initialize the test Circle.
+     */
+    @Before
+    public void setUp() {
+        myCircle = new Circle();
+    }
+
+    /**
+     * Test of the default constructor.
+     */
+    @Test
+    public void testDefaultConstructor() {
+        assertEquals("Radius is not expected value!",
+                     1.0, myCircle.getRadius(), ERROR);
+        assertEquals("Center is not expected value!",
+                     new Point2D.Double(0.0, 0.0), myCircle.getCenter());
+        assertEquals("Color is not expected value!",
+                     Color.BLACK, myCircle.getColor());
+        
+    }
+    
+    /**
+     * Test of the constructor invalid input.
+     */
+    @Test(expected = IllegalArgumentException.class)
+    public void testDefaultConstructorInvalidZeroInput() {
+        new Circle().setRadius(0);
+    }
+    
+    /**
+     * Test of the constructor invalid input.
+     */
+    @Test(expected = IllegalArgumentException.class)
+    public void testDefaultConstructorInvalidNegativeInput() {
+        new Circle().setRadius(-1);
+    }
+    
+    /**
+     * Test method for {@link shapes.Circle#CircleDoublePoint2DColor()}.
+     */
+    @Test
+    public void testCircleDoublePoint2DColor() {
+        final Circle c1 = new Circle(5, new Point2D.Double(10.0, 5.0), Color.BLUE);
+        assertEquals("Radius is not expected value!",
+                     5, c1.getRadius(), ERROR);
+        assertEquals("Center is not expected value!",
+                     new Point2D.Double(10.0, 5.0), c1.getCenter());
+        assertEquals("Color is not expected value!", 
+                     Color.BLUE, c1.getColor());
+    }
+
+    /**
+     * Test method for {@link shapes.Circle#getRadius()}.
+     */
+    @Test
+    public void testGetRadius() {
+        myCircle.setRadius(10);
+        assertEquals("Radius is not expected value!", 
+                     10, myCircle.getRadius(), ERROR);
+    }
+
+    /**
+     * Test method for {@link shapes.Circle#getCenter()}.
+     */
+    @Test
+    public void testGetCenter() {
+        myCircle.setCenter(new Point2D.Double(5.0, 6.0));
+        assertEquals("Center is not expected value!",
+                     new Point2D.Double(5.0, 6.0), myCircle.getCenter());
+    }
+
+    /**
+     * Test method for {@link shapes.Circle#getColor()}.
+     */
+    @Test
+    public void testGetColor() {
+        myCircle.setColor(Color.BLUE);
+        assertEquals("Color is not expected value!",
+                     Color.BLUE, myCircle.getColor());
+    }
+
+    /**
+     * Test method for {@link shapes.Circle#calculateDiameter()}.
+     */
+    @Test
+    public void testCalculateDiameter() {
+        final double diameter = myCircle.getRadius() * 2;
+        assertEquals("Diameter is not expected value!",
+                     diameter, myCircle.calculateDiameter(), ERROR);
+    }
+
+    /**
+     * Test method for {@link shapes.Circle#calculateCircumference()}.
+     */
+    @Test
+    public void testCalculateCircumference() {
+        final double circumference = 2 * myCircle.getRadius() * Math.PI;
+        assertEquals("Circumference is not expected value!",
+                     circumference, myCircle.calculateCircumference(), ERROR);
+    }
+
+    /**
+     * Test method for {@link shapes.Circle#calculateArea()}.
+     */
+    @Test
+    public void testCalculateArea() {
+        final double area = myCircle.getRadius() * myCircle.getRadius() * Math.PI;
+        assertEquals("Area is not expected value!",
+                     area, myCircle.calculateArea(), ERROR);
+    }
+
+    /**
+     * Test method for {@link shapes.Circle#toString()}.
+     */
+    @Test
+    public void testToString() {
+        final String testString = "Circle [radius=1.00, center=Point2D.Double[0.0, 0.0], "
+                        + "color=java.awt.Color[r=0,g=0,b=0]]";
+        assertEquals("String is not expected output!",
+                     testString, myCircle.toString());
+    }
+
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.10" sequence="2" timestamp="1549495056045" analysisTimestamp="1549495055438" release="">
+  <Project projectName="trangord-assignment4">
+    <Jar>C:\Users\trang\eclipse-workspace-305\trangord-assignment4\bin\gui\GUI$1ActionFilter.class</Jar>
+    <Jar>C:\Users\trang\eclipse-workspace-305\trangord-assignment4\bin\gui\GUI$Close.class</Jar>
+    <Jar>C:\Users\trang\eclipse-workspace-305\trangord-assignment4\bin\gui\GUI$Open.class</Jar>
+    <Jar>C:\Users\trang\eclipse-workspace-305\trangord-assignment4\bin\gui\GUI$Save.class</Jar>
+    <Jar>C:\Users\trang\eclipse-workspace-305\trangord-assignment4\bin\gui\GUI.class</Jar>
+    <AuxClasspathEntry>C:\Users\trang\eclipse-workspace-305\trangord-assignment4\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\trang\.p2\pool\plugins\org.junit_4.12.0.v201504281640\junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\trang\.p2\pool\plugins\org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jre1.8.0_151\lib\rt.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jre1.8.0_151\lib\jce.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\trang\eclipse-workspace-305\trangord-assignment4\src</SrcDir>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 6 Feb 2019 15:17:35 -0800" total_classes="5" referenced_classes="42" total_bugs="0" total_size="179" num_packages="1" java_version="1.8.0_151" vm_version="25.151-b12" cpu_seconds="3.14" clock_seconds="0.61" peak_mbytes="696.66" alloc_mbytes="1024.00" gc_seconds="0.04">
+    <PackageStats package="gui" total_bugs="0" total_types="5" total_size="179">
+      <ClassStats class="gui.GUI" sourceFile="GUI.java" interface="false" size="110" bugs="0"/>
+      <ClassStats class="gui.GUI$1ActionFilter" sourceFile="GUI.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="gui.GUI$Close" sourceFile="GUI.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="gui.GUI$Open" sourceFile="GUI.java" interface="false" size="24" bugs="0"/>
+      <ClassStats class="gui.GUI$Save" sourceFile="GUI.java" interface="false" size="22" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="117" invocations="606" avgMicrosecondsPerInvocation="193" maxMicrosecondsPerInvocation="3298" standardDeviationMicrosecondsPerInvocation="374"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="84" invocations="2" avgMicrosecondsPerInvocation="42267" maxMicrosecondsPerInvocation="73804" standardDeviationMicrosecondsPerInvocation="31536"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="72" invocations="607" avgMicrosecondsPerInvocation="120" maxMicrosecondsPerInvocation="21207" standardDeviationMicrosecondsPerInvocation="857"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="44" invocations="42" avgMicrosecondsPerInvocation="1065" maxMicrosecondsPerInvocation="15194" standardDeviationMicrosecondsPerInvocation="2492"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="37" invocations="42" avgMicrosecondsPerInvocation="888" maxMicrosecondsPerInvocation="10599" standardDeviationMicrosecondsPerInvocation="1804"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="27" invocations="130" avgMicrosecondsPerInvocation="215" maxMicrosecondsPerInvocation="5084" standardDeviationMicrosecondsPerInvocation="510"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="16" invocations="572" avgMicrosecondsPerInvocation="27" maxMicrosecondsPerInvocation="409" standardDeviationMicrosecondsPerInvocation="43"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="15" invocations="42" avgMicrosecondsPerInvocation="374" maxMicrosecondsPerInvocation="5972" standardDeviationMicrosecondsPerInvocation="929"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="13" invocations="42" avgMicrosecondsPerInvocation="327" maxMicrosecondsPerInvocation="8707" standardDeviationMicrosecondsPerInvocation="1369"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="12" invocations="22" avgMicrosecondsPerInvocation="565" maxMicrosecondsPerInvocation="3522" standardDeviationMicrosecondsPerInvocation="866"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1549495043877" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1549495043877" release="" codeSize="179" numClasses="5"/>
+  </History>
+</BugCollection>

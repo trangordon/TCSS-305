@@ -1,0 +1,56 @@
+// Finish and comment me!
+// Add whatever fields you think are necessary.
+
+package model;
+
+// TODO: Auto-generated Javadoc
+/**
+ * The Class ItemOrder.
+ * @author Gordon Tran
+ * @version October 2018
+ */
+public final class ItemOrder {
+
+
+    /**
+     * Instantiates a new item order.
+     *
+     * @param theItem the the item
+     * @param theQuantity the the quantity
+     */
+    public ItemOrder(final Item theItem, final int theQuantity) {
+
+    }
+
+
+    /**
+     * Gets the item.
+     *
+     * @return the item
+     */
+    public Item getItem() {
+        
+        return null;
+    }
+    
+    /**
+     * Gets the quantity.
+     *
+     * @return the quantity
+     */
+    public int getQuantity() {
+        
+        return 0;
+    }
+
+
+    /* (non-Javadoc)
+     * @see java.lang.Object#toString()
+     */
+    @Override
+    public String toString() {
+
+        return null;
+    }
+
+}

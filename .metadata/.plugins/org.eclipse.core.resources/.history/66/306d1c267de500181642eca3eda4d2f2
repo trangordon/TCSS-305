@@ -1,0 +1,72 @@
+package view;
+
+import java.awt.BasicStroke;
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.Point;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseMotionAdapter;
+
+import javax.swing.JPanel;
+
+public class DrawPanel extends JPanel {
+    
+    Color myHue = new Color(51, 0, 111);
+    BasicStroke mySize = new BasicStroke(2);
+    
+//    public void paintComponent (Graphics theGraphics) {
+//        super.paintComponent(theGraphics);
+//    }
+    
+    /**
+     * 
+     */
+    private static final long serialVersionUID = 7851582862093250595L;
+    Point pointStart = null;
+    Point pointEnd   = null;
+    {
+        addMouseListener(new MouseAdapter() {
+            public void mousePressed(MouseEvent e) {
+                pointStart = e.getPoint();
+            }
+
+            public void mouseReleased(MouseEvent e) {
+                pointStart = null;
+            }
+        });
+        addMouseMotionListener(new MouseMotionAdapter() {
+            public void mouseMoved(final MouseEvent e) {
+                pointEnd = e.getPoint();
+            }
+
+            public void mouseDragged(final MouseEvent e) {
+                pointEnd = e.getPoint();
+                repaint();
+            }
+        });
+    }
+    public void paintComponent (final Graphics g) {
+        Graphics2D g2 = (Graphics2D) g;
+        super.paintComponent(g2);
+        
+        if (pointStart != null) {
+            g2.setColor(myHue);
+            g2.setStroke(mySize);
+            g2.drawLine(pointStart.x, pointStart.y, pointEnd.x, pointEnd.y);
+        }
+    }
+    public Color getMyHue() {
+        return myHue;
+    }
+    public void setMyHue(Color myHue) {
+        this.myHue = myHue;
+    }
+    public BasicStroke getMySize() {
+        return mySize;
+    }
+    public void setMySize(BasicStroke mySize) {
+        this.mySize = mySize;
+    }
+}

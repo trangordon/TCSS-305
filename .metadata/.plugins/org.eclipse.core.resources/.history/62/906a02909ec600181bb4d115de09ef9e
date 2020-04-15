@@ -1,0 +1,32 @@
+/*
+ * TCSS 305
+ * Autumn 2018
+ * Assignment 0
+ */
+
+/**
+ * This program outputs a print statement. 
+ * @author Gordon Tran
+ * @version 28 September 2018  
+ */
+final class HelloMain {
+    /**
+     * Private constructor to prevent instancing. 
+     */
+    private HelloMain() {
+        //no instancing 
+    }
+    
+    /**
+     * Starting point of program.
+     * @param theArgs Unused in this program.
+     */
+    public static void main(final String[] theArgs) { 
+        System.out.println("In the beginning the universe was created.\n"  
+                        + "This has made a lot of people very angry and "
+                        + "been widely regarded as a bad move.");
+        final HelloHelper instance = new HelloHelper();
+        instance.test("I like to play video games");
+    }
+
+}

@@ -1,0 +1,65 @@
+package model;
+
+import java.util.Map;
+
+/**
+ * The Class Atv.
+ * 
+ * @author Gordon Tran
+ * @version October 2018
+ */
+public class Atv extends AbstractVehicle implements Vehicle {
+
+    /** Dead for this many turns.*/
+    private static final int DEATH_TIME = 15;
+    
+    /**
+     * Instantiates a new atv.
+     *
+     * @param theX the X
+     * @param theY the Y
+     * @param theDir the direction
+     */
+    public Atv(final int theX, final int theY, final Direction theDir) {
+        super(theX, theY, theDir, DEATH_TIME);
+    }
+    
+    /**
+     * Can pass through anything but walls.
+     *
+     * @param theTerrain Terrain type
+     * @param theLight Light status
+     * @return true, if successful
+     */
+    @Override
+    public boolean canPass(final Terrain theTerrain, final Light theLight) {
+        if (theTerrain.equals(Terrain.WALL)) {
+            return false; //Can't pass through walls
+        }
+        return true;
+    }
+
+    /**
+     * Randomly chooses direction except reverse.
+     * 
+     * @param theNeighbors Neighboring Map of direction and terrain
+     * @return The direction chosen
+     */
+    @Override
+    public Direction chooseDirection(final Map<Direction, Terrain> theNeighbors) {
+        //Random
+//        final int randInt = myRand.nextInt(3);
+//        if (randInt == 0) {
+//            return myDir.right();
+//        } else if (randInt == 1) {
+//            return myDir.left();
+//        }
+//        return myDir;        
+        Direction buffer = Direction.random();
+      //Never goes reverse unless surrounded by walls 
+        while (buffer.equals(myDir.reverse())) {
+            buffer = Direction.random();
+        }
+        return buffer;
+    }
+}

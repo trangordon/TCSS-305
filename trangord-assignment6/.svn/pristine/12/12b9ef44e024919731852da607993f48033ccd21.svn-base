@@ -1,0 +1,28 @@
+package view;
+
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.geom.Rectangle2D;
+import javax.swing.JPanel;
+/**
+ * Tetris Panel.
+ * @author Gordon Tran
+ * @version November
+ */
+public class BoardPanel extends JPanel {
+
+    /**
+     * Generated ID. 
+     */
+    private static final long serialVersionUID = -3256290564832372809L;
+    
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void paintComponent(final Graphics theG) {
+        final Graphics2D g2 = (Graphics2D) theG;
+        super.paintComponent(g2);
+        g2.draw(new Rectangle2D.Double(0, 10, 100, 100));
+    }
+}

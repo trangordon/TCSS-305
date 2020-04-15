@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1-dev-20150306-5afe4d1" sequence="1" timestamp="1540406423936" analysisTimestamp="1540406418189" release="">
+  <Project projectName="username-assignment3">
+    <Jar>C:\Users\trang\eclipse-workspace-305\username-assignment3\bin</Jar>
+    <AuxClasspathEntry>C:\Users\trang\eclipse-workspace-305\username-assignment3\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\eclipse\plugins\org.junit_4.12.0.v201504281640\junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\eclipse\plugins\org.hamcrest.core_1.3.0.v201303031735.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jre1.8.0_151\lib\rt.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\trang\eclipse-workspace-305\username-assignment3\src</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE" first="1">
+    <Class classname="model.Direction">
+      <SourceLine classname="model.Direction" sourcefile="Direction.java" sourcepath="model/Direction.java"/>
+    </Class>
+    <Method classname="model.Direction" name="dx" signature="()I" isStatic="false">
+      <SourceLine classname="model.Direction" start="186" end="200" startBytecode="0" endBytecode="130" sourcefile="Direction.java" sourcepath="model/Direction.java"/>
+    </Method>
+    <SourceLine classname="model.Direction" start="188" end="194" startBytecode="10" endBytecode="42" sourcefile="Direction.java" sourcepath="model/Direction.java"/>
+    <SourceLine classname="model.Direction" start="188" end="194" startBytecode="10" endBytecode="42" sourcefile="Direction.java" sourcepath="model/Direction.java"/>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE" first="1">
+    <Class classname="model.Direction">
+      <SourceLine classname="model.Direction" sourcefile="Direction.java" sourcepath="model/Direction.java"/>
+    </Class>
+    <Method classname="model.Direction" name="dy" signature="()I" isStatic="false">
+      <SourceLine classname="model.Direction" start="210" end="224" startBytecode="0" endBytecode="130" sourcefile="Direction.java" sourcepath="model/Direction.java"/>
+    </Method>
+    <SourceLine classname="model.Direction" start="212" end="218" startBytecode="10" endBytecode="42" sourcefile="Direction.java" sourcepath="model/Direction.java"/>
+    <SourceLine classname="model.Direction" start="212" end="218" startBytecode="10" endBytecode="42" sourcefile="Direction.java" sourcepath="model/Direction.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Method classname="view.GUI" name="readCity" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="view.GUI" start="301" end="311" startBytecode="0" endBytecode="174" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/File;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="view.GUI" start="301" end="301" startBytecode="12" endBytecode="12" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    <SourceLine classname="view.GUI" start="301" end="301" startBytecode="12" endBytecode="12" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Method classname="view.GUI" name="readCity" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="view.GUI" start="301" end="311" startBytecode="0" endBytecode="174" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="view.GUI" start="303" end="303" startBytecode="32" endBytecode="32" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    <SourceLine classname="view.GUI" start="303" end="303" startBytecode="32" endBytecode="32" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE" first="1">
+    <Class classname="view.GUI">
+      <SourceLine classname="view.GUI" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Class>
+    <Method classname="view.GUI" name="drawMap" signature="(Ljava/awt/Graphics2D;)V" isStatic="false">
+      <SourceLine classname="view.GUI" start="531" end="581" startBytecode="0" endBytecode="517" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    </Method>
+    <SourceLine classname="view.GUI" start="537" end="570" startBytecode="39" endBytecode="233" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+    <SourceLine classname="view.GUI" start="537" end="570" startBytecode="39" endBytecode="233" sourcefile="GUI.java" sourcepath="view/GUI.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 24 Oct 2018 11:40:15 -0700" total_classes="10" referenced_classes="352" total_bugs="5" total_size="535" num_packages="3" java_version="1.8.0_151" vm_version="25.151-b12" cpu_seconds="21.12" clock_seconds="5.75" peak_mbytes="713.51" alloc_mbytes="1024.00" gc_seconds="0.28" priority_2="3" priority_1="2">
+    <PackageStats package="model" total_bugs="2" total_types="4" total_size="161" priority_2="2">
+      <ClassStats class="model.Direction" sourceFile="Direction.java" interface="false" size="79" bugs="2" priority_2="2"/>
+      <ClassStats class="model.Light" sourceFile="Light.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="model.Terrain" sourceFile="Terrain.java" interface="false" size="39" bugs="0"/>
+      <ClassStats class="model.Vehicle" sourceFile="Vehicle.java" interface="true" size="15" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="tests" total_bugs="0" total_types="1" total_size="16">
+      <ClassStats class="tests.HumanTest" sourceFile="HumanTest.java" interface="false" size="16" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="view" total_bugs="3" total_types="5" total_size="358" priority_2="1" priority_1="2">
+      <ClassStats class="view.Driver" sourceFile="Driver.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="view.Driver$1" sourceFile="Driver.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="view.GUI" sourceFile="GUI.java" interface="false" size="298" bugs="3" priority_2="1" priority_1="2"/>
+      <ClassStats class="view.GUI$1" sourceFile="GUI.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="view.GUI$EasyStreetPanel" sourceFile="GUI.java" interface="false" size="35" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="1168" invocations="1632" avgMicrosecondsPerInvocation="715" maxMicrosecondsPerInvocation="133205" standardDeviationMircosecondsPerInvocation="3997"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.impl.ZipCodeBaseFactory" totalMilliseconds="1152" invocations="5" avgMicrosecondsPerInvocation="230416" maxMicrosecondsPerInvocation="971805" standardDeviationMircosecondsPerInvocation="377090"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="551" invocations="2" avgMicrosecondsPerInvocation="275516" maxMicrosecondsPerInvocation="377097" standardDeviationMircosecondsPerInvocation="101580"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="483" invocations="1628" avgMicrosecondsPerInvocation="297" maxMicrosecondsPerInvocation="20443" standardDeviationMircosecondsPerInvocation="830"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="422" invocations="352" avgMicrosecondsPerInvocation="1199" maxMicrosecondsPerInvocation="40234" standardDeviationMircosecondsPerInvocation="3478"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="354" invocations="352" avgMicrosecondsPerInvocation="1006" maxMicrosecondsPerInvocation="16997" standardDeviationMircosecondsPerInvocation="1910"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="308" invocations="834" avgMicrosecondsPerInvocation="369" maxMicrosecondsPerInvocation="60825" standardDeviationMircosecondsPerInvocation="2313"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1540406423936" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

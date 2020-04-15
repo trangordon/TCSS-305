@@ -1,0 +1,109 @@
+package view;
+
+import java.awt.BasicStroke;
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.Point;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseMotionAdapter;
+import javax.swing.JPanel;
+
+/**
+ * The Class DrawPanel.
+ * @author Gordon Tran0
+ * @version November 2018
+ */
+public class DrawPanel extends JPanel {
+    
+    /**
+     * Generated ID.
+     */
+    private static final long serialVersionUID = 7851582862093250595L;
+    
+    /** The my hue. */
+    private Color myHue = new Color(51, 0, 111);//UW purple
+    
+    /** The my size. */
+    private BasicStroke mySize = new BasicStroke(2);
+    
+    /** The point start. */
+    private Point myPStart;
+    
+    /** The point end. */
+    private Point myPEnd;
+    
+    {
+        addMouseListener(new MouseAdapter() {
+            public void mousePressed(final MouseEvent theE) {
+                myPStart = theE.getPoint();
+            }
+
+            public void mouseReleased(final MouseEvent theE) {
+                myPStart = null;
+            }
+        });
+        addMouseMotionListener(new MouseMotionAdapter() {
+            public void mouseMoved(final MouseEvent theE) {
+                myPEnd = theE.getPoint();
+            }
+
+            public void mouseDragged(final MouseEvent theE) {
+                myPEnd = theE.getPoint();
+                repaint();
+            }
+        });
+    }
+    
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void paintComponent(final Graphics theG) {
+        final Graphics2D g2 = (Graphics2D) theG;
+        super.paintComponent(g2);
+        
+        if (myPStart != null) {
+            g2.setColor(myHue);
+            g2.setStroke(mySize);
+            g2.drawLine(myPStart.x, myPStart.y, myPEnd.x, myPEnd.y);
+        }
+    }
+    
+    /**
+     * Gets the my hue.
+     *
+     * @return the my hue
+     */
+    public Color getMyHue() {
+        return myHue;
+    }
+    
+    /**
+     * Sets the my hue.
+     *
+     * @param theHue the new hue
+     */
+    public void setMyHue(final Color theHue) {
+        this.myHue = theHue;
+    }
+    
+    /**
+     * Gets the my size.
+     *
+     * @return the my size
+     */
+    public BasicStroke getMySize() {
+        return mySize;
+    }
+    
+    /**
+     * Sets the my size.
+     *
+     * @param theSize the new my size
+     */
+    public void setMySize(final BasicStroke theSize) {
+        this.mySize = theSize;
+    }
+}

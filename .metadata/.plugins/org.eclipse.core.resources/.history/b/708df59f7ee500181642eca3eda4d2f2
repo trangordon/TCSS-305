@@ -1,0 +1,220 @@
+/* Gordon Tran
+ * Assignment 5
+ */
+package view;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Toolkit;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.ButtonGroup;
+import javax.swing.ButtonModel;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+import javax.swing.JOptionPane;
+import javax.swing.JRadioButton;
+import javax.swing.JSlider;
+import javax.swing.JToolBar;
+import javax.swing.SwingConstants;
+
+/**
+ * The Class GUI.
+ * @author Gordon Tran
+ * @version November 2018
+ */
+public class GUI {
+    
+    /** The scale of the window to the screen.*/
+    private static final int SCREEN_MOD = 3;
+    
+    /** Name of tool pencil.*/
+    private static final String P_NAME = "Pencil";
+    /** Name of tool line.*/
+    private static final String L_NAME = "Line";
+    /** Name of tool rectangle.*/
+    private static final String R_NAME = "Rectangle";
+    /** Name of tool ellipse.*/
+    private static final String E_NAME = "Ellipse";
+    /** Name of extension.*/
+    private static final String EXT = ".gif";
+    
+//    private Point pStart;
+//    private Point pEnd;
+//    /**Color chosen.*/
+//    private Color myHue= Color.BLACK;
+    
+    /** The frame. */
+    private JFrame myFrame = new JFrame();
+    
+    /** The screen size. */
+    private Dimension myScreenSize = Toolkit.getDefaultToolkit().getScreenSize();
+
+    /** The image. */
+    private ImageIcon myImage = new ImageIcon("paint_icon.png");
+
+    /** The panel. */
+    private DrawPanel myPanel = new DrawPanel();
+
+    /** The toolbar. */
+    private JToolBar myToolbar = new JToolBar();
+    
+    /** The pencil. */
+    private JButton myPencil = makeButton(P_NAME);
+    
+    /** The line. */
+    private JButton myLine = makeButton(L_NAME);
+    
+    /** The rectangle. */
+    private JButton myRectangle = makeButton(R_NAME);
+    
+    /** The ellipse. */
+    private JButton myEllipse = makeButton(E_NAME);
+
+    /** The tool group. */
+    private ButtonGroup myToolGroup = new ButtonGroup();
+    
+    /** The menu group. */
+    private ButtonGroup myMenuGroup = new ButtonGroup();
+
+    /** The menu bar. */
+    private JMenuBar myMenuBar = new JMenuBar();
+    
+    /** The options. */
+    private JMenu myOptions = new JMenu("Options");
+    
+    /**Thickness option.*/
+    private JMenu myThick = new JMenu("Thickness");
+    
+    /**Slider.*/
+    private JSlider mySlide = new JSlider(SwingConstants.HORIZONTAL, 0, 15, 2);
+    
+    /**Color option.*/
+    private JMenuItem myColor = new JMenuItem("Color...");
+    
+    /**Clear option.*/
+    private JMenuItem myClear = new JMenuItem("Clear");
+
+    /** The tools. */
+    private JMenu myTools = new JMenu("Tools");
+    
+    /** The R pencil. */
+    private JRadioButton myRPencil = makeRButton(P_NAME);
+    
+    /** The R line. */
+    private JRadioButton myRLine = makeRButton(L_NAME);
+    
+    /** The R rectangle. */
+    private JRadioButton myRRectangle = makeRButton(R_NAME);
+    
+    /** The R ellipse. */
+    private JRadioButton myREllipse = makeRButton(E_NAME);
+
+    /** The help. */
+    private JMenu myHelp = new JMenu("Help");
+    
+    /** The about. */
+    private JMenuItem myAbout = new JMenuItem("About");
+
+    /**
+     * Start.
+     */
+    public final void start() {
+        myFrame.setTitle("TCSS 305 - Paint Program");
+        //Button groups
+        myToolGroup.add(myPencil);
+        myToolGroup.add(myLine);
+        myToolGroup.add(myRectangle);
+        myToolGroup.add(myEllipse);
+        myToolGroup.setSelected((ButtonModel) myLine, true);
+
+        myMenuGroup.add(myRPencil);
+        myMenuGroup.add(myRLine);
+        myMenuGroup.add(myRRectangle);
+        myMenuGroup.add(myREllipse);
+        //Frame setup
+        myFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        myFrame.setIconImage(myImage.getImage());
+        myPanel.setBackground(Color.WHITE);
+        //Toolbar buttons
+        myToolbar.add(myPencil);
+        myToolbar.add(myLine);
+        myToolbar.add(myRectangle);
+        myToolbar.add(myEllipse);
+        //Options
+        myOptions.add(myThick);
+        myThick.add(mySlide);
+        myOptions.add(myColor);
+        myOptions.add(myClear);
+        //Menu buttons
+        myTools.add(myRPencil);
+        myTools.add(myRLine);
+        myTools.add(myRRectangle);
+        myTools.add(myREllipse);
+        //Help
+        myHelp.add(myAbout);
+        myAbout.addActionListener(new AboutPane());
+        //Menu tabs
+        myMenuBar.add(myOptions);
+        myMenuBar.add(myTools);
+        myMenuBar.add(myHelp);
+        //Add elements
+        myFrame.add(myPanel, BorderLayout.CENTER);
+        myFrame.add(myToolbar, BorderLayout.SOUTH);
+        myFrame.add(myMenuBar, BorderLayout.NORTH);
+        //Frame end setup
+        myFrame.setSize(myScreenSize.width / SCREEN_MOD, myScreenSize.height / SCREEN_MOD);
+        myFrame.setLocationRelativeTo(null);
+        myFrame.setVisible(true);
+    }
+
+    /**
+     * Make button method.
+     *
+     * @param theName the name
+//     * @param theListener the listener
+     * @return the J button
+     */
+    private JButton makeButton(final String theName) {
+        final JButton btn = new JButton(theName, new ImageIcon(theName.toLowerCase() + EXT));
+//        btn.addMouseMotionListener(theListener);
+        return btn;
+    }
+
+    /**
+     * Make radio button method.
+     *
+     * @param theName the name
+//     * @param theListener the listener
+     * @return the J radio button
+     */
+    private JRadioButton makeRButton(final String theName) {
+        final JRadioButton btn = new JRadioButton(theName);
+//        btn.addMouseMotionListener(theListener);
+//        btn.setIcon(new ImageIcon(theName.toLowerCase() + EXT));
+        return btn;
+    }
+
+    /**
+     * About window listener.
+     */
+    class AboutPane implements ActionListener {
+        
+        /** The about text. */
+        private String myAboutText = "Autumn 2018\nGordon Tran";
+
+        /**
+         * {@inheritDoc}
+         */
+        @Override
+        public void actionPerformed(final ActionEvent arg0) {
+            JOptionPane.showMessageDialog(myFrame, myAboutText, 
+                    myFrame.getTitle(), JOptionPane.PLAIN_MESSAGE, myImage);
+        }
+    }
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1-dev-20150306-5afe4d1" sequence="1" timestamp="1543427685706" analysisTimestamp="1543427677232" release="">
+  <Project projectName="Hello Goodbye with PropertyChangeListener">
+    <Jar>C:\Users\trang\eclipse-workspace-305\Hello Goodbye with PropertyChangeListener\bin</Jar>
+    <AuxClasspathEntry>C:\Users\trang\eclipse-workspace-305\Hello Goodbye with PropertyChangeListener\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\eclipse\plugins\org.junit_4.12.0.v201504281640\junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\eclipse\plugins\org.hamcrest.core_1.3.0.v201303031735.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jre1.8.0_151\lib\rt.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\trang\eclipse-workspace-305\Hello Goodbye with PropertyChangeListener\src</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 28 Nov 2018 09:54:36 -0800" total_classes="10" referenced_classes="311" total_bugs="0" total_size="177" num_packages="1" java_version="1.8.0_151" vm_version="25.151-b12" cpu_seconds="54.34" clock_seconds="8.47" peak_mbytes="881.69" alloc_mbytes="1024.00" gc_seconds="0.53">
+    <PackageStats package="gui" total_bugs="0" total_types="10" total_size="177">
+      <ClassStats class="gui.ChangeableText" sourceFile="ChangeableText.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="gui.GUI" sourceFile="GUI.java" interface="false" size="34" bugs="0"/>
+      <ClassStats class="gui.GUIMain" sourceFile="GUIMain.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="gui.GUIMain$1" sourceFile="GUIMain.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="gui.GUIMenuBar" sourceFile="GUIMenuBar.java" interface="false" size="32" bugs="0"/>
+      <ClassStats class="gui.GUIMenuBar$1" sourceFile="GUIMenuBar.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="gui.GUIToolBar" sourceFile="GUIToolBar.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="gui.GoodbyeAction" sourceFile="GoodbyeAction.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="gui.HelloAction" sourceFile="HelloAction.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="gui.PaintPanel" sourceFile="PaintPanel.java" interface="false" size="33" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="3032" invocations="1509" avgMicrosecondsPerInvocation="2009" maxMicrosecondsPerInvocation="136113" standardDeviationMircosecondsPerInvocation="9717"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="1150" invocations="1506" avgMicrosecondsPerInvocation="763" maxMicrosecondsPerInvocation="163165" standardDeviationMircosecondsPerInvocation="6121"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="763" invocations="2" avgMicrosecondsPerInvocation="381941" maxMicrosecondsPerInvocation="500737" standardDeviationMircosecondsPerInvocation="118796"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="534" invocations="311" avgMicrosecondsPerInvocation="1717" maxMicrosecondsPerInvocation="144733" standardDeviationMircosecondsPerInvocation="8481"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="531" invocations="311" avgMicrosecondsPerInvocation="1707" maxMicrosecondsPerInvocation="45587" standardDeviationMircosecondsPerInvocation="4913"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="320" invocations="654" avgMicrosecondsPerInvocation="490" maxMicrosecondsPerInvocation="46793" standardDeviationMircosecondsPerInvocation="2030"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="281" invocations="311" avgMicrosecondsPerInvocation="904" maxMicrosecondsPerInvocation="83841" standardDeviationMircosecondsPerInvocation="5228"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1543427685706" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

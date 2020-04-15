@@ -1,0 +1,979 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1-dev-20150306-5afe4d1" sequence="248" timestamp="1540021599561" analysisTimestamp="1540021599399" release="">
+  <Project projectName="username-assignment2">
+    <Jar>C:\Users\trang\eclipse-workspace-305\username-assignment2\bin\model\ItemOrder.class</Jar>
+    <AuxClasspathEntry>C:\Users\trang\eclipse-workspace-305\username-assignment2\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\eclipse\plugins\org.junit_4.12.0.v201504281640\junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\eclipse\plugins\org.hamcrest.core_1.3.0.v201303031735.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jre1.8.0_151\lib\rt.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\trang\eclipse-workspace-305\username-assignment2\src</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="48" last="53" removedByChange="true">
+    <Class classname="model.Item">
+      <SourceLine classname="model.Item" sourcefile="Item.java" sourcepath="model/Item.java"/>
+    </Class>
+    <Method classname="model.Item" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="model.Item" start="133" end="141" startBytecode="0" endBytecode="14" sourcefile="Item.java" sourcepath="model/Item.java"/>
+    </Method>
+    <LocalVariable name="testItem" register="2" pc="21" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="model.Item" start="139" end="139" startBytecode="20" endBytecode="20" sourcefile="Item.java" sourcepath="model/Item.java"/>
+    <SourceLine classname="model.Item" start="139" end="139" startBytecode="20" endBytecode="20" sourcefile="Item.java" sourcepath="model/Item.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="testItem"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="EC_NULL_ARG" priority="2" rank="9" abbrev="EC" category="CORRECTNESS" first="23" last="26" removedByChange="true">
+    <Class classname="model.Item">
+      <SourceLine classname="model.Item" sourcefile="Item.java" sourcepath="model/Item.java"/>
+    </Class>
+    <Method classname="model.Item" name="toString" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="model.Item" start="114" end="118" startBytecode="0" endBytecode="38" sourcefile="Item.java" sourcepath="model/Item.java"/>
+    </Method>
+    <SourceLine classname="model.Item" start="115" end="115" startBytecode="35" endBytecode="35" sourcefile="Item.java" sourcepath="model/Item.java"/>
+    <SourceLine classname="model.Item" start="115" end="115" startBytecode="35" endBytecode="35" sourcefile="Item.java" sourcepath="model/Item.java"/>
+  </BugInstance>
+  <BugInstance type="EC_UNRELATED_TYPES" priority="1" rank="1" abbrev="EC" category="CORRECTNESS" first="44" last="45" removedByChange="true">
+    <Class classname="model.Item">
+      <SourceLine classname="model.Item" sourcefile="Item.java" sourcepath="model/Item.java"/>
+    </Class>
+    <Method classname="model.Item" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="model.Item" start="140" end="147" startBytecode="0" endBytecode="42" sourcefile="Item.java" sourcepath="model/Item.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/String;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.String"/>
+    </Type>
+    <Type descriptor="Ljava/math/BigDecimal;" role="TYPE_EXPECTED">
+      <SourceLine classname="java.math.BigDecimal"/>
+    </Type>
+    <Method classname="java.lang.Class" name="getName" signature="()Ljava/lang/String;" isStatic="false" role="METHOD_RETURN_VALUE_OF">
+      <SourceLine classname="java.lang.Class"/>
+    </Method>
+    <Field classname="model.Item" name="myBulkP" signature="Ljava/math/BigDecimal;" isStatic="false" role="FIELD_VALUE_OF">
+      <SourceLine classname="model.Item" sourcefile="Item.java" sourcepath="model/Item.java"/>
+    </Field>
+    <Method classname="java.math.BigDecimal" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false" role="METHOD_EQUALS_USED">
+      <SourceLine classname="java.math.BigDecimal"/>
+    </Method>
+    <SourceLine classname="model.Item" start="143" end="143" startBytecode="63" endBytecode="63" sourcefile="Item.java" sourcepath="model/Item.java"/>
+    <SourceLine classname="model.Item" start="143" end="143" startBytecode="63" endBytecode="63" sourcefile="Item.java" sourcepath="model/Item.java"/>
+  </BugInstance>
+  <BugInstance type="EC_UNRELATED_TYPES" priority="1" rank="1" abbrev="EC" category="CORRECTNESS" first="44" last="45" removedByChange="true">
+    <Class classname="model.Item">
+      <SourceLine classname="model.Item" sourcefile="Item.java" sourcepath="model/Item.java"/>
+    </Class>
+    <Method classname="model.Item" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="model.Item" start="140" end="147" startBytecode="0" endBytecode="42" sourcefile="Item.java" sourcepath="model/Item.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/String;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.String"/>
+    </Type>
+    <Type descriptor="Ljava/math/BigDecimal;" role="TYPE_EXPECTED">
+      <SourceLine classname="java.math.BigDecimal"/>
+    </Type>
+    <Method classname="java.lang.Class" name="getName" signature="()Ljava/lang/String;" isStatic="false" role="METHOD_RETURN_VALUE_OF">
+      <SourceLine classname="java.lang.Class"/>
+    </Method>
+    <Field classname="model.Item" name="myPrice" signature="Ljava/math/BigDecimal;" isStatic="false" role="FIELD_VALUE_OF">
+      <SourceLine classname="model.Item" sourcefile="Item.java" sourcepath="model/Item.java"/>
+    </Field>
+    <Method classname="java.math.BigDecimal" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false" role="METHOD_EQUALS_USED">
+      <SourceLine classname="java.math.BigDecimal"/>
+    </Method>
+    <SourceLine classname="model.Item" start="141" end="141" startBytecode="26" endBytecode="26" sourcefile="Item.java" sourcepath="model/Item.java"/>
+    <SourceLine classname="model.Item" start="141" end="141" startBytecode="26" endBytecode="26" sourcefile="Item.java" sourcepath="model/Item.java"/>
+  </BugInstance>
+  <BugInstance type="EQ_ALWAYS_FALSE" priority="1" rank="7" abbrev="Eq" category="CORRECTNESS" first="1" last="46" removedByChange="true">
+    <Class classname="model.Item">
+      <SourceLine classname="model.Item" sourcefile="Item.java" sourcepath="model/Item.java"/>
+    </Class>
+    <Method classname="model.Item" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="model.Item" start="140" end="140" startBytecode="0" endBytecode="53" sourcefile="Item.java" sourcepath="model/Item.java"/>
+    </Method>
+    <SourceLine classname="model.Item" start="140" end="140" startBytecode="1" endBytecode="1" sourcefile="Item.java" sourcepath="model/Item.java"/>
+  </BugInstance>
+  <BugInstance type="EQ_UNUSUAL" priority="2" rank="17" abbrev="Eq" category="STYLE" first="36" last="56" removedByChange="true">
+    <Class classname="model.Item">
+      <SourceLine classname="model.Item" sourcefile="Item.java" sourcepath="model/Item.java"/>
+    </Class>
+    <Method classname="model.Item" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="model.Item" start="146" end="146" startBytecode="0" endBytecode="51" sourcefile="Item.java" sourcepath="model/Item.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="IL_INFINITE_RECURSIVE_LOOP" priority="1" rank="9" abbrev="IL" category="CORRECTNESS" first="20" last="35" removedByChange="true">
+    <Class classname="model.Item">
+      <SourceLine classname="model.Item" sourcefile="Item.java" sourcepath="model/Item.java"/>
+    </Class>
+    <Method classname="model.Item" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="model.Item" start="125" end="125" startBytecode="0" endBytecode="57" sourcefile="Item.java" sourcepath="model/Item.java"/>
+    </Method>
+    <SourceLine classname="model.Item" start="125" end="125" startBytecode="2" endBytecode="2" sourcefile="Item.java" sourcepath="model/Item.java"/>
+  </BugInstance>
+  <BugInstance type="NP_EQUALS_SHOULD_HANDLE_NULL_ARGUMENT" priority="1" rank="9" abbrev="NP" category="BAD_PRACTICE" first="44" last="45" removedByChange="true">
+    <Class classname="model.Item">
+      <SourceLine classname="model.Item" sourcefile="Item.java" sourcepath="model/Item.java"/>
+    </Class>
+    <Method classname="model.Item" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="model.Item" start="140" end="147" startBytecode="0" endBytecode="237" sourcefile="Item.java" sourcepath="model/Item.java"/>
+    </Method>
+    <LocalVariable name="theOther" register="1" pc="0" role="LOCAL_VARIABLE_PARAMETER_NAMED"/>
+  </BugInstance>
+  <BugInstance type="NP_TOSTRING_COULD_RETURN_NULL" priority="2" rank="14" abbrev="NP" category="BAD_PRACTICE" first="1" last="20" removedByChange="true">
+    <Class classname="model.Item">
+      <SourceLine classname="model.Item" sourcefile="Item.java" sourcepath="model/Item.java"/>
+    </Class>
+    <Method classname="model.Item" name="toString" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="model.Item" start="117" end="117" startBytecode="0" endBytecode="43" sourcefile="Item.java" sourcepath="model/Item.java"/>
+    </Method>
+    <SourceLine classname="model.Item" start="117" end="117" startBytecode="1" endBytecode="1" sourcefile="Item.java" sourcepath="model/Item.java"/>
+    <SourceLine classname="model.Item" start="117" end="117" startBytecode="1" endBytecode="1" sourcefile="Item.java" sourcepath="model/Item.java"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" first="9" last="9" removedByChange="true">
+    <Class classname="model.Item">
+      <SourceLine classname="model.Item" sourcefile="Item.java" sourcepath="model/Item.java"/>
+    </Class>
+    <Field classname="model.Item" name="BulkQ" signature="I" isStatic="false">
+      <SourceLine classname="model.Item" start="21" end="21" startBytecode="0" endBytecode="0" sourcefile="Item.java" sourcepath="model/Item.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" first="33" last="34" removedByChange="true">
+    <Class classname="model.Item">
+      <SourceLine classname="model.Item" sourcefile="Item.java" sourcepath="model/Item.java"/>
+    </Class>
+    <Field classname="model.Item" name="myBulkQ" signature="I" isStatic="false">
+      <SourceLine classname="model.Item" start="25" end="25" startBytecode="0" endBytecode="0" sourcefile="Item.java" sourcepath="model/Item.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" first="42" last="50" removedByChange="true">
+    <Class classname="model.Item">
+      <SourceLine classname="model.Item" sourcefile="Item.java" sourcepath="model/Item.java"/>
+    </Class>
+    <Field classname="model.Item" name="nf" signature="Ljava/text/NumberFormat;" isStatic="false">
+      <SourceLine classname="model.Item" sourcefile="Item.java" sourcepath="model/Item.java"/>
+    </Field>
+    <SourceLine classname="model.Item" start="33" end="33" startBytecode="11" endBytecode="11" sourcefile="Item.java" sourcepath="model/Item.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="2" last="3" removedByChange="true">
+    <Class classname="model.Item">
+      <SourceLine classname="model.Item" sourcefile="Item.java" sourcepath="model/Item.java"/>
+    </Class>
+    <Field classname="model.Item" name="BULKP" signature="I" isStatic="false">
+      <SourceLine classname="model.Item" start="24" end="24" startBytecode="0" endBytecode="0" sourcefile="Item.java" sourcepath="model/Item.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="2" last="3" removedByChange="true">
+    <Class classname="model.Item">
+      <SourceLine classname="model.Item" sourcefile="Item.java" sourcepath="model/Item.java"/>
+    </Class>
+    <Field classname="model.Item" name="BULKQ" signature="I" isStatic="false">
+      <SourceLine classname="model.Item" start="21" end="21" startBytecode="0" endBytecode="0" sourcefile="Item.java" sourcepath="model/Item.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="4" last="5" removedByChange="true">
+    <Class classname="model.Item">
+      <SourceLine classname="model.Item" sourcefile="Item.java" sourcepath="model/Item.java"/>
+    </Class>
+    <Field classname="model.Item" name="BulkP" signature="I" isStatic="false">
+      <SourceLine classname="model.Item" start="24" end="24" startBytecode="0" endBytecode="0" sourcefile="Item.java" sourcepath="model/Item.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="4" last="5" removedByChange="true">
+    <Class classname="model.Item">
+      <SourceLine classname="model.Item" sourcefile="Item.java" sourcepath="model/Item.java"/>
+    </Class>
+    <Field classname="model.Item" name="BulkQ" signature="I" isStatic="false">
+      <SourceLine classname="model.Item" start="21" end="21" startBytecode="0" endBytecode="0" sourcefile="Item.java" sourcepath="model/Item.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="4" last="5" removedByChange="true">
+    <Class classname="model.Item">
+      <SourceLine classname="model.Item" sourcefile="Item.java" sourcepath="model/Item.java"/>
+    </Class>
+    <Field classname="model.Item" name="Name" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="model.Item" start="15" end="15" startBytecode="0" endBytecode="0" sourcefile="Item.java" sourcepath="model/Item.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="4" last="5" removedByChange="true">
+    <Class classname="model.Item">
+      <SourceLine classname="model.Item" sourcefile="Item.java" sourcepath="model/Item.java"/>
+    </Class>
+    <Field classname="model.Item" name="Price" signature="Ljava/math/BigDecimal;" isStatic="false">
+      <SourceLine classname="model.Item" start="18" end="18" startBytecode="0" endBytecode="0" sourcefile="Item.java" sourcepath="model/Item.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UWF_UNWRITTEN_FIELD" priority="2" rank="12" abbrev="UwF" category="CORRECTNESS" first="9" last="9" removedByChange="true">
+    <Class classname="model.Item">
+      <SourceLine classname="model.Item" sourcefile="Item.java" sourcepath="model/Item.java"/>
+    </Class>
+    <Field classname="model.Item" name="BulkP" signature="Ljava/math/BigDecimal;" isStatic="false">
+      <SourceLine classname="model.Item" sourcefile="Item.java" sourcepath="model/Item.java"/>
+    </Field>
+    <SourceLine classname="model.Item" start="94" end="94" startBytecode="1" endBytecode="1" sourcefile="Item.java" sourcepath="model/Item.java"/>
+  </BugInstance>
+  <BugInstance type="UWF_UNWRITTEN_FIELD" priority="2" rank="12" abbrev="UwF" category="CORRECTNESS" first="2" last="3" removedByChange="true">
+    <Class classname="model.Item">
+      <SourceLine classname="model.Item" sourcefile="Item.java" sourcepath="model/Item.java"/>
+    </Class>
+    <Field classname="model.Item" name="NAME" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="model.Item" sourcefile="Item.java" sourcepath="model/Item.java"/>
+    </Field>
+    <SourceLine classname="model.Item" start="60" end="60" startBytecode="1" endBytecode="1" sourcefile="Item.java" sourcepath="model/Item.java"/>
+  </BugInstance>
+  <BugInstance type="UWF_UNWRITTEN_FIELD" priority="2" rank="12" abbrev="UwF" category="CORRECTNESS" first="9" last="9" removedByChange="true">
+    <Class classname="model.Item">
+      <SourceLine classname="model.Item" sourcefile="Item.java" sourcepath="model/Item.java"/>
+    </Class>
+    <Field classname="model.Item" name="Name" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="model.Item" sourcefile="Item.java" sourcepath="model/Item.java"/>
+    </Field>
+    <SourceLine classname="model.Item" start="62" end="62" startBytecode="1" endBytecode="1" sourcefile="Item.java" sourcepath="model/Item.java"/>
+  </BugInstance>
+  <BugInstance type="UWF_UNWRITTEN_FIELD" priority="2" rank="12" abbrev="UwF" category="CORRECTNESS" first="2" last="3" removedByChange="true">
+    <Class classname="model.Item">
+      <SourceLine classname="model.Item" sourcefile="Item.java" sourcepath="model/Item.java"/>
+    </Class>
+    <Field classname="model.Item" name="PRICE" signature="Ljava/math/BigDecimal;" isStatic="false">
+      <SourceLine classname="model.Item" sourcefile="Item.java" sourcepath="model/Item.java"/>
+    </Field>
+    <SourceLine classname="model.Item" start="70" end="70" startBytecode="1" endBytecode="1" sourcefile="Item.java" sourcepath="model/Item.java"/>
+  </BugInstance>
+  <BugInstance type="UWF_UNWRITTEN_FIELD" priority="2" rank="12" abbrev="UwF" category="CORRECTNESS" first="9" last="9" removedByChange="true">
+    <Class classname="model.Item">
+      <SourceLine classname="model.Item" sourcefile="Item.java" sourcepath="model/Item.java"/>
+    </Class>
+    <Field classname="model.Item" name="Price" signature="Ljava/math/BigDecimal;" isStatic="false">
+      <SourceLine classname="model.Item" sourcefile="Item.java" sourcepath="model/Item.java"/>
+    </Field>
+    <SourceLine classname="model.Item" start="72" end="72" startBytecode="1" endBytecode="1" sourcefile="Item.java" sourcepath="model/Item.java"/>
+  </BugInstance>
+  <BugInstance type="UWF_UNWRITTEN_FIELD" priority="2" rank="12" abbrev="UwF" category="CORRECTNESS" first="33" last="34" removedByChange="true">
+    <Class classname="model.Item">
+      <SourceLine classname="model.Item" sourcefile="Item.java" sourcepath="model/Item.java"/>
+    </Class>
+    <Field classname="model.Item" name="myBulkP" signature="Ljava/math/BigDecimal;" isStatic="false">
+      <SourceLine classname="model.Item" sourcefile="Item.java" sourcepath="model/Item.java"/>
+    </Field>
+    <SourceLine classname="model.Item" start="98" end="98" startBytecode="1" endBytecode="1" sourcefile="Item.java" sourcepath="model/Item.java"/>
+  </BugInstance>
+  <BugInstance type="UWF_UNWRITTEN_FIELD" priority="2" rank="12" abbrev="UwF" category="CORRECTNESS" first="33" last="34" removedByChange="true">
+    <Class classname="model.Item">
+      <SourceLine classname="model.Item" sourcefile="Item.java" sourcepath="model/Item.java"/>
+    </Class>
+    <Field classname="model.Item" name="myName" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="model.Item" sourcefile="Item.java" sourcepath="model/Item.java"/>
+    </Field>
+    <SourceLine classname="model.Item" start="66" end="66" startBytecode="1" endBytecode="1" sourcefile="Item.java" sourcepath="model/Item.java"/>
+  </BugInstance>
+  <BugInstance type="UWF_UNWRITTEN_FIELD" priority="2" rank="12" abbrev="UwF" category="CORRECTNESS" first="33" last="34" removedByChange="true">
+    <Class classname="model.Item">
+      <SourceLine classname="model.Item" sourcefile="Item.java" sourcepath="model/Item.java"/>
+    </Class>
+    <Field classname="model.Item" name="myPrice" signature="Ljava/math/BigDecimal;" isStatic="false">
+      <SourceLine classname="model.Item" sourcefile="Item.java" sourcepath="model/Item.java"/>
+    </Field>
+    <SourceLine classname="model.Item" start="76" end="76" startBytecode="1" endBytecode="1" sourcefile="Item.java" sourcepath="model/Item.java"/>
+  </BugInstance>
+  <BugInstance type="NP_TOSTRING_COULD_RETURN_NULL" priority="2" rank="14" abbrev="NP" category="BAD_PRACTICE" first="1" last="75" removedByChange="true">
+    <Class classname="model.ItemOrder">
+      <SourceLine classname="model.ItemOrder" sourcefile="ItemOrder.java" sourcepath="model/ItemOrder.java"/>
+    </Class>
+    <Method classname="model.ItemOrder" name="toString" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="model.ItemOrder" start="61" end="61" startBytecode="0" endBytecode="43" sourcefile="ItemOrder.java" sourcepath="model/ItemOrder.java"/>
+    </Method>
+    <SourceLine classname="model.ItemOrder" start="61" end="61" startBytecode="1" endBytecode="1" sourcefile="ItemOrder.java" sourcepath="model/ItemOrder.java"/>
+    <SourceLine classname="model.ItemOrder" start="61" end="61" startBytecode="1" endBytecode="1" sourcefile="ItemOrder.java" sourcepath="model/ItemOrder.java"/>
+  </BugInstance>
+  <BugInstance type="UWF_UNWRITTEN_FIELD" priority="2" rank="12" abbrev="UwF" category="CORRECTNESS" first="74" last="76" removedByChange="true">
+    <Class classname="model.ItemOrder">
+      <SourceLine classname="model.ItemOrder" sourcefile="ItemOrder.java" sourcepath="model/ItemOrder.java"/>
+    </Class>
+    <Field classname="model.ItemOrder" name="myItem" signature="Lmodel/Item;" isStatic="false">
+      <SourceLine classname="model.ItemOrder" sourcefile="ItemOrder.java" sourcepath="model/ItemOrder.java"/>
+    </Field>
+    <SourceLine classname="model.ItemOrder" start="41" end="41" startBytecode="1" endBytecode="1" sourcefile="ItemOrder.java" sourcepath="model/ItemOrder.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="179" last="179" removedByChange="true">
+    <Class classname="model.ShoppingCart">
+      <SourceLine classname="model.ShoppingCart" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+    </Class>
+    <Method classname="model.ShoppingCart" name="add" signature="(Lmodel/ItemOrder;)V" isStatic="false">
+      <SourceLine classname="model.ShoppingCart" start="34" end="36" startBytecode="0" endBytecode="2" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+    </Method>
+    <LocalVariable name="halfEven" register="2" pc="4" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="model.ShoppingCart" start="34" end="34" startBytecode="3" endBytecode="3" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+    <SourceLine classname="model.ShoppingCart" start="34" end="34" startBytecode="3" endBytecode="3" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="halfEven"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="NP_ALWAYS_NULL" priority="1" rank="5" abbrev="NP" category="CORRECTNESS" first="179" last="191" removedByChange="true">
+    <Class classname="model.ShoppingCart">
+      <SourceLine classname="model.ShoppingCart" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+    </Class>
+    <Method classname="model.ShoppingCart" name="calculateTotal" signature="()Ljava/math/BigDecimal;" isStatic="false">
+      <SourceLine classname="model.ShoppingCart" start="64" end="67" startBytecode="0" endBytecode="69" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+    </Method>
+    <LocalVariable name="total" register="1" pc="3" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="model.ShoppingCart" start="66" end="66" startBytecode="4" endBytecode="4" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java" role="SOURCE_LINE_DEREF"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_PARAM_DEREF_NONVIRTUAL" priority="1" rank="6" abbrev="NP" category="CORRECTNESS" first="188" last="188" removedByChange="true">
+    <Class classname="model.ShoppingCart">
+      <SourceLine classname="model.ShoppingCart" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+    </Class>
+    <Method classname="model.ShoppingCart" name="&lt;init&gt;" signature="()V" isStatic="false">
+      <SourceLine classname="model.ShoppingCart" start="30" end="32" startBytecode="0" endBytecode="81" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+    </Method>
+    <Method classname="java.util.ArrayList" name="&lt;init&gt;" signature="(Ljava/util/Collection;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.ArrayList"/>
+    </Method>
+    <SourceLine classname="model.ShoppingCart" start="31" end="31" startBytecode="21" endBytecode="21" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+    <Int value="1" role="INT_NULL_ARG"/>
+    <Property name="edu.umd.cs.findbugs.detect.NullArgumentWarningProperty.ACTUAL_PARAMETER_GUARANTEED_NULL" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.NullArgumentWarningProperty.ALL_DANGEROUS_TARGETS" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.NullArgumentWarningProperty.ARG_DEFINITELY_NULL" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.NullArgumentWarningProperty.MONOMORPHIC_CALL_SITE" value="true"/>
+  </BugInstance>
+  <BugInstance type="NP_TOSTRING_COULD_RETURN_NULL" priority="2" rank="14" abbrev="NP" category="BAD_PRACTICE" first="1" last="170" removedByChange="true">
+    <Class classname="model.ShoppingCart">
+      <SourceLine classname="model.ShoppingCart" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+    </Class>
+    <Method classname="model.ShoppingCart" name="toString" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="model.ShoppingCart" start="68" end="68" startBytecode="0" endBytecode="43" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+    </Method>
+    <SourceLine classname="model.ShoppingCart" start="68" end="68" startBytecode="1" endBytecode="1" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+    <SourceLine classname="model.ShoppingCart" start="68" end="68" startBytecode="1" endBytecode="1" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+  </BugInstance>
+  <BugInstance type="NP_UNWRITTEN_FIELD" priority="2" rank="8" abbrev="NP" category="CORRECTNESS" first="196" last="203" removedByChange="true">
+    <Class classname="model.ShoppingCart">
+      <SourceLine classname="model.ShoppingCart" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+    </Class>
+    <Method classname="model.ShoppingCart" name="calculateTotal" signature="()Ljava/math/BigDecimal;" isStatic="false">
+      <SourceLine classname="model.ShoppingCart" start="68" end="80" startBytecode="0" endBytecode="220" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+    </Method>
+    <Field classname="model.ShoppingCart" name="myTotal" signature="Ljava/math/BigDecimal;" isStatic="false">
+      <SourceLine classname="model.ShoppingCart" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+    </Field>
+    <SourceLine classname="model.ShoppingCart" start="74" end="74" startBytecode="54" endBytecode="54" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+    <SourceLine classname="model.ShoppingCart" start="74" end="74" startBytecode="54" endBytecode="54" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+  </BugInstance>
+  <BugInstance type="NP_UNWRITTEN_FIELD" priority="2" rank="8" abbrev="NP" category="CORRECTNESS" first="199" last="203" removedByChange="true">
+    <Class classname="model.ShoppingCart">
+      <SourceLine classname="model.ShoppingCart" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+    </Class>
+    <Method classname="model.ShoppingCart" name="setMembership" signature="(Z)V" isStatic="false">
+      <SourceLine classname="model.ShoppingCart" start="56" end="59" startBytecode="0" endBytecode="85" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+    </Method>
+    <Field classname="model.ShoppingCart" name="myTotal" signature="Ljava/math/BigDecimal;" isStatic="false">
+      <SourceLine classname="model.ShoppingCart" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+    </Field>
+    <SourceLine classname="model.ShoppingCart" start="57" end="57" startBytecode="12" endBytecode="12" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+    <SourceLine classname="model.ShoppingCart" start="57" end="57" startBytecode="12" endBytecode="12" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED" priority="1" rank="3" abbrev="RV" category="CORRECTNESS" first="203" last="215" removedByChange="true">
+    <Class classname="model.ShoppingCart">
+      <SourceLine classname="model.ShoppingCart" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+    </Class>
+    <Method classname="model.ShoppingCart" name="calculateTotal" signature="()Ljava/math/BigDecimal;" isStatic="false">
+      <SourceLine classname="model.ShoppingCart" start="69" end="78" startBytecode="0" endBytecode="210" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+    </Method>
+    <Method classname="java.math.BigDecimal" name="add" signature="(Ljava/math/BigDecimal;)Ljava/math/BigDecimal;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.math.BigDecimal"/>
+    </Method>
+    <SourceLine classname="model.ShoppingCart" start="75" end="75" startBytecode="57" endBytecode="57" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+    <SourceLine classname="model.ShoppingCart" start="75" end="75" startBytecode="57" endBytecode="57" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED" priority="1" rank="3" abbrev="RV" category="CORRECTNESS" first="179" last="206" removedByChange="true">
+    <Class classname="model.ShoppingCart">
+      <SourceLine classname="model.ShoppingCart" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+    </Class>
+    <Method classname="model.ShoppingCart" name="calculateTotal" signature="()Ljava/math/BigDecimal;" isStatic="false">
+      <SourceLine classname="model.ShoppingCart" start="72" end="84" startBytecode="0" endBytecode="220" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+    </Method>
+    <Method classname="java.math.BigDecimal" name="setScale" signature="(I)Ljava/math/BigDecimal;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.math.BigDecimal"/>
+    </Method>
+    <SourceLine classname="model.ShoppingCart" start="83" end="83" startBytecode="79" endBytecode="79" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+    <SourceLine classname="model.ShoppingCart" start="83" end="83" startBytecode="79" endBytecode="79" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED" priority="1" rank="3" abbrev="RV" category="CORRECTNESS" first="199" last="215" removedByChange="true">
+    <Class classname="model.ShoppingCart">
+      <SourceLine classname="model.ShoppingCart" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+    </Class>
+    <Method classname="model.ShoppingCart" name="setMembership" signature="(Z)V" isStatic="false">
+      <SourceLine classname="model.ShoppingCart" start="57" end="60" startBytecode="0" endBytecode="85" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+    </Method>
+    <Method classname="java.math.BigDecimal" name="multiply" signature="(Ljava/math/BigDecimal;)Ljava/math/BigDecimal;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.math.BigDecimal"/>
+    </Method>
+    <SourceLine classname="model.ShoppingCart" start="58" end="58" startBytecode="12" endBytecode="12" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+    <SourceLine classname="model.ShoppingCart" start="58" end="58" startBytecode="12" endBytecode="12" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE" first="230">
+    <Class classname="model.ShoppingCart">
+      <SourceLine classname="model.ShoppingCart" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+    </Class>
+    <Method classname="model.ShoppingCart" name="toString" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="model.ShoppingCart" start="103" end="109" startBytecode="0" endBytecode="164" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+    </Method>
+    <SourceLine classname="model.ShoppingCart" start="106" end="106" startBytecode="22" endBytecode="22" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" first="192" last="198" removedByChange="true">
+    <Class classname="model.ShoppingCart">
+      <SourceLine classname="model.ShoppingCart" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+    </Class>
+    <Field classname="model.ShoppingCart" name="DISCOUNT" signature="D" isStatic="false">
+      <SourceLine classname="model.ShoppingCart" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+    </Field>
+    <SourceLine classname="model.ShoppingCart" start="25" end="25" startBytecode="19" endBytecode="19" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" first="186" last="186" removedByChange="true">
+    <Class classname="model.ShoppingCart">
+      <SourceLine classname="model.ShoppingCart" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+    </Class>
+    <Field classname="model.ShoppingCart" name="myList" signature="Ljava/util/ArrayList;" isStatic="false">
+      <SourceLine classname="model.ShoppingCart" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+    </Field>
+    <SourceLine classname="model.ShoppingCart" start="21" end="21" startBytecode="12" endBytecode="12" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" first="185" last="189" removedByChange="true">
+    <Class classname="model.ShoppingCart">
+      <SourceLine classname="model.ShoppingCart" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+    </Class>
+    <Field classname="model.ShoppingCart" name="myList" signature="Ljava/util/List;" isStatic="false">
+      <SourceLine classname="model.ShoppingCart" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+    </Field>
+    <SourceLine classname="model.ShoppingCart" start="21" end="21" startBytecode="12" endBytecode="12" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" first="234" last="234" removedByChange="true">
+    <Class classname="model.ShoppingCart">
+      <SourceLine classname="model.ShoppingCart" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+    </Class>
+    <Field classname="model.ShoppingCart" name="myQuant" signature="Ljava/util/List;" isStatic="false">
+      <SourceLine classname="model.ShoppingCart" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+    </Field>
+    <SourceLine classname="model.ShoppingCart" start="25" end="25" startBytecode="23" endBytecode="23" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" first="218" last="218" removedByChange="true">
+    <Class classname="model.ShoppingCart">
+      <SourceLine classname="model.ShoppingCart" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+    </Class>
+    <Field classname="model.ShoppingCart" name="mySize" signature="I" isStatic="false">
+      <SourceLine classname="model.ShoppingCart" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+    </Field>
+    <SourceLine classname="model.ShoppingCart" start="39" end="39" startBytecode="54" endBytecode="54" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="183" last="194" removedByChange="true">
+    <Class classname="model.ShoppingCart">
+      <SourceLine classname="model.ShoppingCart" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+    </Class>
+    <Field classname="model.ShoppingCart" name="myHalfEven" signature="Ljava/math/RoundingMode;" isStatic="true">
+      <SourceLine classname="model.ShoppingCart" start="28" end="28" startBytecode="0" endBytecode="0" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="193" last="193" removedByChange="true">
+    <Class classname="model.ShoppingCart">
+      <SourceLine classname="model.ShoppingCart" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+    </Class>
+    <Field classname="model.ShoppingCart" name="myList" signature="LList;" isStatic="false">
+      <SourceLine classname="model.ShoppingCart" start="19" end="19" startBytecode="0" endBytecode="0" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="184" last="194" removedByChange="true">
+    <Class classname="model.ShoppingCart">
+      <SourceLine classname="model.ShoppingCart" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+    </Class>
+    <Field classname="model.ShoppingCart" name="myList" signature="Ljava/util/List;" isStatic="false">
+      <SourceLine classname="model.ShoppingCart" start="19" end="19" startBytecode="0" endBytecode="0" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="235" last="241" removedByChange="true">
+    <Class classname="model.ShoppingCart">
+      <SourceLine classname="model.ShoppingCart" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+    </Class>
+    <Field classname="model.ShoppingCart" name="myQuant" signature="[I" isStatic="false">
+      <SourceLine classname="model.ShoppingCart" start="25" end="25" startBytecode="0" endBytecode="0" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="217" last="217" removedByChange="true">
+    <Class classname="model.ShoppingCart">
+      <SourceLine classname="model.ShoppingCart" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+    </Class>
+    <Field classname="model.ShoppingCart" name="mySize" signature="I" isStatic="false">
+      <SourceLine classname="model.ShoppingCart" start="28" end="28" startBytecode="0" endBytecode="0" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="192" last="195" removedByChange="true">
+    <Class classname="model.ShoppingCart">
+      <SourceLine classname="model.ShoppingCart" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+    </Class>
+    <Field classname="model.ShoppingCart" name="myTotal" signature="Ljava/math/BigDecimal;" isStatic="false">
+      <SourceLine classname="model.ShoppingCart" start="23" end="23" startBytecode="0" endBytecode="0" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UWF_UNWRITTEN_FIELD" priority="2" rank="12" abbrev="UwF" category="CORRECTNESS" first="196" last="203" removedByChange="true">
+    <Class classname="model.ShoppingCart">
+      <SourceLine classname="model.ShoppingCart" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+    </Class>
+    <Field classname="model.ShoppingCart" name="myTotal" signature="Ljava/math/BigDecimal;" isStatic="false">
+      <SourceLine classname="model.ShoppingCart" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+    </Field>
+    <SourceLine classname="model.ShoppingCart" start="57" end="57" startBytecode="5" endBytecode="5" sourcefile="ShoppingCart.java" sourcepath="model/ShoppingCart.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" first="137" last="137" removedByChange="true">
+    <Class classname="tests.ItemTest">
+      <SourceLine classname="tests.ItemTest" sourcefile="ItemTest.java" sourcepath="tests/ItemTest.java"/>
+    </Class>
+    <Method classname="tests.ItemTest" name="testEqualsObject" signature="()V" isStatic="false">
+      <SourceLine classname="tests.ItemTest" start="132" end="134" startBytecode="0" endBytecode="12" sourcefile="ItemTest.java" sourcepath="tests/ItemTest.java"/>
+    </Method>
+    <LocalVariable name="subject" register="1" pc="23" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="tests.ItemTest" start="132" end="132" startBytecode="22" endBytecode="22" sourcefile="ItemTest.java" sourcepath="tests/ItemTest.java"/>
+    <SourceLine classname="tests.ItemTest" start="132" end="132" startBytecode="22" endBytecode="22" sourcefile="ItemTest.java" sourcepath="tests/ItemTest.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="subject"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" first="158" last="159" removedByChange="true">
+    <Class classname="tests.ItemTest">
+      <SourceLine classname="tests.ItemTest" sourcefile="ItemTest.java" sourcepath="tests/ItemTest.java"/>
+    </Class>
+    <Method classname="tests.ItemTest" name="testItemStringBigDecimalNull" signature="()V" isStatic="false">
+      <SourceLine classname="tests.ItemTest" start="75" end="76" startBytecode="0" endBytecode="6" sourcefile="ItemTest.java" sourcepath="tests/ItemTest.java"/>
+    </Method>
+    <LocalVariable name="subject" register="1" pc="10" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="tests.ItemTest" start="75" end="75" startBytecode="9" endBytecode="9" sourcefile="ItemTest.java" sourcepath="tests/ItemTest.java"/>
+    <SourceLine classname="tests.ItemTest" start="75" end="75" startBytecode="9" endBytecode="9" sourcefile="ItemTest.java" sourcepath="tests/ItemTest.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="subject"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" first="101" last="102" removedByChange="true">
+    <Class classname="tests.ItemTest">
+      <SourceLine classname="tests.ItemTest" sourcefile="ItemTest.java" sourcepath="tests/ItemTest.java"/>
+    </Class>
+    <Field classname="tests.ItemTest" name="NAME" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="tests.ItemTest" sourcefile="ItemTest.java" sourcepath="tests/ItemTest.java"/>
+    </Field>
+    <SourceLine classname="tests.ItemTest" start="26" end="26" startBytecode="7" endBytecode="7" sourcefile="ItemTest.java" sourcepath="tests/ItemTest.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" first="97" last="97" removedByChange="true">
+    <Class classname="tests.ItemTest">
+      <SourceLine classname="tests.ItemTest" sourcefile="ItemTest.java" sourcepath="tests/ItemTest.java"/>
+    </Class>
+    <Field classname="tests.ItemTest" name="BULKP" signature="Ljava/math/BigDecimal;" isStatic="false">
+      <SourceLine classname="tests.ItemTest" sourcefile="ItemTest.java" sourcepath="tests/ItemTest.java"/>
+    </Field>
+    <SourceLine classname="tests.ItemTest" start="29" end="29" startBytecode="26" endBytecode="26" sourcefile="ItemTest.java" sourcepath="tests/ItemTest.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" first="97" last="97" removedByChange="true">
+    <Class classname="tests.ItemTest">
+      <SourceLine classname="tests.ItemTest" sourcefile="ItemTest.java" sourcepath="tests/ItemTest.java"/>
+    </Class>
+    <Field classname="tests.ItemTest" name="BULKQ" signature="I" isStatic="false">
+      <SourceLine classname="tests.ItemTest" sourcefile="ItemTest.java" sourcepath="tests/ItemTest.java"/>
+    </Field>
+    <SourceLine classname="tests.ItemTest" start="27" end="27" startBytecode="16" endBytecode="16" sourcefile="ItemTest.java" sourcepath="tests/ItemTest.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" first="96" last="106" removedByChange="true">
+    <Class classname="tests.ItemTest">
+      <SourceLine classname="tests.ItemTest" sourcefile="ItemTest.java" sourcepath="tests/ItemTest.java"/>
+    </Class>
+    <Field classname="tests.ItemTest" name="ITEM" signature="Lmodel/Item;" isStatic="false">
+      <SourceLine classname="tests.ItemTest" sourcefile="ItemTest.java" sourcepath="tests/ItemTest.java"/>
+    </Field>
+    <SourceLine classname="tests.ItemTest" start="44" end="44" startBytecode="24" endBytecode="24" sourcefile="ItemTest.java" sourcepath="tests/ItemTest.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" first="90" last="97" removedByChange="true">
+    <Class classname="tests.ItemTest">
+      <SourceLine classname="tests.ItemTest" sourcefile="ItemTest.java" sourcepath="tests/ItemTest.java"/>
+    </Class>
+    <Field classname="tests.ItemTest" name="PRICE" signature="Ljava/math/BigDecimal;" isStatic="false">
+      <SourceLine classname="tests.ItemTest" sourcefile="ItemTest.java" sourcepath="tests/ItemTest.java"/>
+    </Field>
+    <SourceLine classname="tests.ItemTest" start="23" end="23" startBytecode="11" endBytecode="11" sourcefile="ItemTest.java" sourcepath="tests/ItemTest.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" first="107" last="116" removedByChange="true">
+    <Class classname="tests.ItemTest">
+      <SourceLine classname="tests.ItemTest" sourcefile="ItemTest.java" sourcepath="tests/ItemTest.java"/>
+    </Class>
+    <Field classname="tests.ItemTest" name="myItem" signature="Lmodel/Item;" isStatic="false">
+      <SourceLine classname="tests.ItemTest" sourcefile="ItemTest.java" sourcepath="tests/ItemTest.java"/>
+    </Field>
+    <SourceLine classname="tests.ItemTest" start="44" end="44" startBytecode="24" endBytecode="24" sourcefile="ItemTest.java" sourcepath="tests/ItemTest.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="95" last="95" removedByChange="true">
+    <Class classname="tests.ItemTest">
+      <SourceLine classname="tests.ItemTest" sourcefile="ItemTest.java" sourcepath="tests/ItemTest.java"/>
+    </Class>
+    <Field classname="tests.ItemTest" name="BULKP" signature="Ljava/math/BigDecimal;" isStatic="false">
+      <SourceLine classname="tests.ItemTest" start="29" end="29" startBytecode="0" endBytecode="0" sourcefile="ItemTest.java" sourcepath="tests/ItemTest.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="95" last="95" removedByChange="true">
+    <Class classname="tests.ItemTest">
+      <SourceLine classname="tests.ItemTest" sourcefile="ItemTest.java" sourcepath="tests/ItemTest.java"/>
+    </Class>
+    <Field classname="tests.ItemTest" name="BULKQ" signature="I" isStatic="false">
+      <SourceLine classname="tests.ItemTest" start="27" end="27" startBytecode="0" endBytecode="0" sourcefile="ItemTest.java" sourcepath="tests/ItemTest.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="94" last="97" removedByChange="true">
+    <Class classname="tests.ItemTest">
+      <SourceLine classname="tests.ItemTest" sourcefile="ItemTest.java" sourcepath="tests/ItemTest.java"/>
+    </Class>
+    <Field classname="tests.ItemTest" name="ITEM" signature="Lmodel/Item;" isStatic="false">
+      <SourceLine classname="tests.ItemTest" start="21" end="21" startBytecode="0" endBytecode="0" sourcefile="ItemTest.java" sourcepath="tests/ItemTest.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="95" last="95" removedByChange="true">
+    <Class classname="tests.ItemTest">
+      <SourceLine classname="tests.ItemTest" sourcefile="ItemTest.java" sourcepath="tests/ItemTest.java"/>
+    </Class>
+    <Field classname="tests.ItemTest" name="NAME" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="tests.ItemTest" start="25" end="25" startBytecode="0" endBytecode="0" sourcefile="ItemTest.java" sourcepath="tests/ItemTest.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="88" last="88" removedByChange="true">
+    <Class classname="tests.ItemTest">
+      <SourceLine classname="tests.ItemTest" sourcefile="ItemTest.java" sourcepath="tests/ItemTest.java"/>
+    </Class>
+    <Field classname="tests.ItemTest" name="PRICE" signature="LBigDecimal;" isStatic="false">
+      <SourceLine classname="tests.ItemTest" start="21" end="21" startBytecode="0" endBytecode="0" sourcefile="ItemTest.java" sourcepath="tests/ItemTest.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="89" last="95" removedByChange="true">
+    <Class classname="tests.ItemTest">
+      <SourceLine classname="tests.ItemTest" sourcefile="ItemTest.java" sourcepath="tests/ItemTest.java"/>
+    </Class>
+    <Field classname="tests.ItemTest" name="PRICE" signature="Ljava/math/BigDecimal;" isStatic="false">
+      <SourceLine classname="tests.ItemTest" start="23" end="23" startBytecode="0" endBytecode="0" sourcefile="ItemTest.java" sourcepath="tests/ItemTest.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="124" last="156" removedByChange="true">
+    <Class classname="tests.ItemTest">
+      <SourceLine classname="tests.ItemTest" sourcefile="ItemTest.java" sourcepath="tests/ItemTest.java"/>
+    </Class>
+    <Field classname="tests.ItemTest" name="myBulkP" signature="Ljava/math/BigDecimal;" isStatic="false">
+      <SourceLine classname="tests.ItemTest" start="37" end="37" startBytecode="0" endBytecode="0" sourcefile="ItemTest.java" sourcepath="tests/ItemTest.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="124" last="156" removedByChange="true">
+    <Class classname="tests.ItemTest">
+      <SourceLine classname="tests.ItemTest" sourcefile="ItemTest.java" sourcepath="tests/ItemTest.java"/>
+    </Class>
+    <Field classname="tests.ItemTest" name="myBulkQ" signature="I" isStatic="false">
+      <SourceLine classname="tests.ItemTest" start="34" end="34" startBytecode="0" endBytecode="0" sourcefile="ItemTest.java" sourcepath="tests/ItemTest.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="124" last="124" removedByChange="true">
+    <Class classname="tests.ItemTest">
+      <SourceLine classname="tests.ItemTest" sourcefile="ItemTest.java" sourcepath="tests/ItemTest.java"/>
+    </Class>
+    <Field classname="tests.ItemTest" name="myItem" signature="LItem;" isStatic="false">
+      <SourceLine classname="tests.ItemTest" start="22" end="22" startBytecode="0" endBytecode="0" sourcefile="ItemTest.java" sourcepath="tests/ItemTest.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="155" last="156" removedByChange="true">
+    <Class classname="tests.ItemTest">
+      <SourceLine classname="tests.ItemTest" sourcefile="ItemTest.java" sourcepath="tests/ItemTest.java"/>
+    </Class>
+    <Field classname="tests.ItemTest" name="myItem" signature="Lmodel/Item;" isStatic="false">
+      <SourceLine classname="tests.ItemTest" start="25" end="25" startBytecode="0" endBytecode="0" sourcefile="ItemTest.java" sourcepath="tests/ItemTest.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="124" last="156" removedByChange="true">
+    <Class classname="tests.ItemTest">
+      <SourceLine classname="tests.ItemTest" sourcefile="ItemTest.java" sourcepath="tests/ItemTest.java"/>
+    </Class>
+    <Field classname="tests.ItemTest" name="myName" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="tests.ItemTest" start="28" end="28" startBytecode="0" endBytecode="0" sourcefile="ItemTest.java" sourcepath="tests/ItemTest.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="124" last="156" removedByChange="true">
+    <Class classname="tests.ItemTest">
+      <SourceLine classname="tests.ItemTest" sourcefile="ItemTest.java" sourcepath="tests/ItemTest.java"/>
+    </Class>
+    <Field classname="tests.ItemTest" name="myPrice" signature="Ljava/math/BigDecimal;" isStatic="false">
+      <SourceLine classname="tests.ItemTest" start="31" end="31" startBytecode="0" endBytecode="0" sourcefile="ItemTest.java" sourcepath="tests/ItemTest.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UWF_UNWRITTEN_FIELD" priority="2" rank="12" abbrev="UwF" category="CORRECTNESS" first="96" last="96" removedByChange="true">
+    <Class classname="tests.ItemTest">
+      <SourceLine classname="tests.ItemTest" sourcefile="ItemTest.java" sourcepath="tests/ItemTest.java"/>
+    </Class>
+    <Field classname="tests.ItemTest" name="BULKP" signature="Ljava/math/BigDecimal;" isStatic="false">
+      <SourceLine classname="tests.ItemTest" sourcefile="ItemTest.java" sourcepath="tests/ItemTest.java"/>
+    </Field>
+    <SourceLine classname="tests.ItemTest" start="38" end="38" startBytecode="18" endBytecode="18" sourcefile="ItemTest.java" sourcepath="tests/ItemTest.java"/>
+  </BugInstance>
+  <BugInstance type="UWF_UNWRITTEN_FIELD" priority="2" rank="12" abbrev="UwF" category="CORRECTNESS" first="96" last="98" removedByChange="true">
+    <Class classname="tests.ItemTest">
+      <SourceLine classname="tests.ItemTest" sourcefile="ItemTest.java" sourcepath="tests/ItemTest.java"/>
+    </Class>
+    <Field classname="tests.ItemTest" name="NAME" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="tests.ItemTest" sourcefile="ItemTest.java" sourcepath="tests/ItemTest.java"/>
+    </Field>
+    <SourceLine classname="tests.ItemTest" start="38" end="38" startBytecode="6" endBytecode="6" sourcefile="ItemTest.java" sourcepath="tests/ItemTest.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Sat, 20 Oct 2018 00:46:39 -0700" total_classes="1" referenced_classes="11" total_bugs="1" total_size="14" num_packages="1" java_version="1.8.0_151" vm_version="25.151-b12" cpu_seconds="0.56" clock_seconds="0.16" peak_mbytes="693.35" alloc_mbytes="1024.00" gc_seconds="0.01" priority_2="1">
+    <PackageStats package="model" total_bugs="1" total_types="2" total_size="14" priority_2="1">
+      <ClassStats class="model.ItemOrder" sourceFile="ItemOrder.java" interface="false" size="14" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="60" invocations="2" avgMicrosecondsPerInvocation="30214" maxMicrosecondsPerInvocation="56875" standardDeviationMircosecondsPerInvocation="26661"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="47" invocations="303" avgMicrosecondsPerInvocation="156" maxMicrosecondsPerInvocation="2490" standardDeviationMircosecondsPerInvocation="302"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="17" invocations="303" avgMicrosecondsPerInvocation="56" maxMicrosecondsPerInvocation="190" standardDeviationMircosecondsPerInvocation="21"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1539388195884" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1539388195884" release="" codeSize="240" numClasses="11"/>
+    <AppVersion sequence="2" timestamp="1539917199670" release="" codeSize="24" numClasses="1"/>
+    <AppVersion sequence="3" timestamp="1539917303871" release="" codeSize="24" numClasses="1"/>
+    <AppVersion sequence="4" timestamp="1539917412511" release="" codeSize="24" numClasses="1"/>
+    <AppVersion sequence="5" timestamp="1539917453903" release="" codeSize="24" numClasses="1"/>
+    <AppVersion sequence="6" timestamp="1539917472810" release="" codeSize="30" numClasses="1"/>
+    <AppVersion sequence="7" timestamp="1539917496915" release="" codeSize="30" numClasses="1"/>
+    <AppVersion sequence="8" timestamp="1539917654298" release="" codeSize="30" numClasses="1"/>
+    <AppVersion sequence="9" timestamp="1539917669732" release="" codeSize="24" numClasses="1"/>
+    <AppVersion sequence="10" timestamp="1539917691464" release="" codeSize="30" numClasses="1"/>
+    <AppVersion sequence="11" timestamp="1539917718614" release="" codeSize="30" numClasses="1"/>
+    <AppVersion sequence="12" timestamp="1539917751570" release="" codeSize="30" numClasses="1"/>
+    <AppVersion sequence="13" timestamp="1539917757569" release="" codeSize="30" numClasses="1"/>
+    <AppVersion sequence="14" timestamp="1539917848668" release="" codeSize="30" numClasses="1"/>
+    <AppVersion sequence="15" timestamp="1539917940465" release="" codeSize="30" numClasses="1"/>
+    <AppVersion sequence="16" timestamp="1539918208480" release="" codeSize="10" numClasses="1"/>
+    <AppVersion sequence="17" timestamp="1539918211891" release="" codeSize="14" numClasses="1"/>
+    <AppVersion sequence="18" timestamp="1539918234015" release="" codeSize="10" numClasses="1"/>
+    <AppVersion sequence="19" timestamp="1539918259150" release="" codeSize="14" numClasses="1"/>
+    <AppVersion sequence="20" timestamp="1539926682201" release="" codeSize="31" numClasses="1"/>
+    <AppVersion sequence="21" timestamp="1539928015106" release="" codeSize="31" numClasses="1"/>
+    <AppVersion sequence="22" timestamp="1539928047360" release="" codeSize="31" numClasses="1"/>
+    <AppVersion sequence="23" timestamp="1539928052009" release="" codeSize="34" numClasses="1"/>
+    <AppVersion sequence="24" timestamp="1539928069244" release="" codeSize="33" numClasses="1"/>
+    <AppVersion sequence="25" timestamp="1539928071384" release="" codeSize="33" numClasses="1"/>
+    <AppVersion sequence="26" timestamp="1539928092473" release="" codeSize="33" numClasses="1"/>
+    <AppVersion sequence="27" timestamp="1539928122537" release="" codeSize="33" numClasses="1"/>
+    <AppVersion sequence="28" timestamp="1539928127121" release="" codeSize="33" numClasses="1"/>
+    <AppVersion sequence="29" timestamp="1539928131328" release="" codeSize="33" numClasses="1"/>
+    <AppVersion sequence="30" timestamp="1539928139529" release="" codeSize="33" numClasses="1"/>
+    <AppVersion sequence="31" timestamp="1539928149802" release="" codeSize="33" numClasses="1"/>
+    <AppVersion sequence="32" timestamp="1539928156110" release="" codeSize="33" numClasses="1"/>
+    <AppVersion sequence="33" timestamp="1539928170334" release="" codeSize="25" numClasses="1"/>
+    <AppVersion sequence="34" timestamp="1539928173418" release="" codeSize="25" numClasses="1"/>
+    <AppVersion sequence="35" timestamp="1539928202379" release="" codeSize="36" numClasses="1"/>
+    <AppVersion sequence="36" timestamp="1539928308939" release="" codeSize="36" numClasses="1"/>
+    <AppVersion sequence="37" timestamp="1539928358494" release="" codeSize="36" numClasses="1"/>
+    <AppVersion sequence="38" timestamp="1539928360591" release="" codeSize="36" numClasses="1"/>
+    <AppVersion sequence="39" timestamp="1539928703264" release="" codeSize="41" numClasses="1"/>
+    <AppVersion sequence="40" timestamp="1539929077886" release="" codeSize="41" numClasses="1"/>
+    <AppVersion sequence="41" timestamp="1539929117579" release="" codeSize="43" numClasses="1"/>
+    <AppVersion sequence="42" timestamp="1539929199479" release="" codeSize="45" numClasses="1"/>
+    <AppVersion sequence="43" timestamp="1539929290663" release="" codeSize="45" numClasses="1"/>
+    <AppVersion sequence="44" timestamp="1539929367959" release="" codeSize="51" numClasses="1"/>
+    <AppVersion sequence="45" timestamp="1539929386543" release="" codeSize="51" numClasses="1"/>
+    <AppVersion sequence="46" timestamp="1539929410894" release="" codeSize="45" numClasses="1"/>
+    <AppVersion sequence="47" timestamp="1539929458829" release="" codeSize="47" numClasses="1"/>
+    <AppVersion sequence="48" timestamp="1539929590919" release="" codeSize="50" numClasses="1"/>
+    <AppVersion sequence="49" timestamp="1539929597204" release="" codeSize="50" numClasses="1"/>
+    <AppVersion sequence="50" timestamp="1539929607734" release="" codeSize="50" numClasses="1"/>
+    <AppVersion sequence="51" timestamp="1539929614433" release="" codeSize="48" numClasses="1"/>
+    <AppVersion sequence="52" timestamp="1539929618980" release="" codeSize="48" numClasses="1"/>
+    <AppVersion sequence="53" timestamp="1539929639259" release="" codeSize="48" numClasses="1"/>
+    <AppVersion sequence="54" timestamp="1539929770419" release="" codeSize="43" numClasses="1"/>
+    <AppVersion sequence="55" timestamp="1539929787529" release="" codeSize="43" numClasses="1"/>
+    <AppVersion sequence="56" timestamp="1539929794135" release="" codeSize="43" numClasses="1"/>
+    <AppVersion sequence="57" timestamp="1539929802756" release="" codeSize="56" numClasses="1"/>
+    <AppVersion sequence="58" timestamp="1539929812748" release="" codeSize="56" numClasses="1"/>
+    <AppVersion sequence="59" timestamp="1539929821743" release="" codeSize="56" numClasses="1"/>
+    <AppVersion sequence="60" timestamp="1539929847111" release="" codeSize="56" numClasses="1"/>
+    <AppVersion sequence="61" timestamp="1539929862661" release="" codeSize="56" numClasses="1"/>
+    <AppVersion sequence="62" timestamp="1539929908260" release="" codeSize="56" numClasses="1"/>
+    <AppVersion sequence="63" timestamp="1539929919573" release="" codeSize="56" numClasses="1"/>
+    <AppVersion sequence="64" timestamp="1539929985958" release="" codeSize="56" numClasses="1"/>
+    <AppVersion sequence="65" timestamp="1539930019588" release="" codeSize="56" numClasses="1"/>
+    <AppVersion sequence="66" timestamp="1539930047629" release="" codeSize="56" numClasses="1"/>
+    <AppVersion sequence="67" timestamp="1539930139311" release="" codeSize="33" numClasses="1"/>
+    <AppVersion sequence="68" timestamp="1539930146612" release="" codeSize="33" numClasses="1"/>
+    <AppVersion sequence="69" timestamp="1539930163654" release="" codeSize="33" numClasses="1"/>
+    <AppVersion sequence="70" timestamp="1539930181009" release="" codeSize="33" numClasses="1"/>
+    <AppVersion sequence="71" timestamp="1539980845710" release="" codeSize="10" numClasses="1"/>
+    <AppVersion sequence="72" timestamp="1539981139623" release="" codeSize="10" numClasses="1"/>
+    <AppVersion sequence="73" timestamp="1539982101180" release="" codeSize="11" numClasses="1"/>
+    <AppVersion sequence="74" timestamp="1539982157428" release="" codeSize="12" numClasses="1"/>
+    <AppVersion sequence="75" timestamp="1539982457917" release="" codeSize="12" numClasses="1"/>
+    <AppVersion sequence="76" timestamp="1539982572762" release="" codeSize="12" numClasses="1"/>
+    <AppVersion sequence="77" timestamp="1539982609362" release="" codeSize="14" numClasses="1"/>
+    <AppVersion sequence="78" timestamp="1539982645278" release="" codeSize="14" numClasses="1"/>
+    <AppVersion sequence="79" timestamp="1539982683993" release="" codeSize="14" numClasses="1"/>
+    <AppVersion sequence="80" timestamp="1539982707153" release="" codeSize="33" numClasses="1"/>
+    <AppVersion sequence="81" timestamp="1539982737053" release="" codeSize="35" numClasses="1"/>
+    <AppVersion sequence="82" timestamp="1539982741273" release="" codeSize="35" numClasses="1"/>
+    <AppVersion sequence="83" timestamp="1539982754129" release="" codeSize="35" numClasses="1"/>
+    <AppVersion sequence="84" timestamp="1539982759389" release="" codeSize="25" numClasses="1"/>
+    <AppVersion sequence="85" timestamp="1539982764697" release="" codeSize="35" numClasses="1"/>
+    <AppVersion sequence="86" timestamp="1539982769601" release="" codeSize="35" numClasses="1"/>
+    <AppVersion sequence="87" timestamp="1539982779129" release="" codeSize="35" numClasses="1"/>
+    <AppVersion sequence="88" timestamp="1539982816649" release="" codeSize="26" numClasses="1"/>
+    <AppVersion sequence="89" timestamp="1539982925630" release="" codeSize="26" numClasses="1"/>
+    <AppVersion sequence="90" timestamp="1539982941654" release="" codeSize="37" numClasses="1"/>
+    <AppVersion sequence="91" timestamp="1539982954678" release="" codeSize="37" numClasses="1"/>
+    <AppVersion sequence="92" timestamp="1539982957390" release="" codeSize="37" numClasses="1"/>
+    <AppVersion sequence="93" timestamp="1539982963922" release="" codeSize="37" numClasses="1"/>
+    <AppVersion sequence="94" timestamp="1539983017994" release="" codeSize="38" numClasses="1"/>
+    <AppVersion sequence="95" timestamp="1539983054174" release="" codeSize="30" numClasses="1"/>
+    <AppVersion sequence="96" timestamp="1539983056546" release="" codeSize="42" numClasses="1"/>
+    <AppVersion sequence="97" timestamp="1539983084854" release="" codeSize="42" numClasses="1"/>
+    <AppVersion sequence="98" timestamp="1539983096978" release="" codeSize="44" numClasses="1"/>
+    <AppVersion sequence="99" timestamp="1539983106454" release="" codeSize="45" numClasses="1"/>
+    <AppVersion sequence="100" timestamp="1539983115570" release="" codeSize="45" numClasses="1"/>
+    <AppVersion sequence="101" timestamp="1539983132422" release="" codeSize="45" numClasses="1"/>
+    <AppVersion sequence="102" timestamp="1539983146474" release="" codeSize="45" numClasses="1"/>
+    <AppVersion sequence="103" timestamp="1539983160990" release="" codeSize="44" numClasses="1"/>
+    <AppVersion sequence="104" timestamp="1539983175746" release="" codeSize="44" numClasses="1"/>
+    <AppVersion sequence="105" timestamp="1539983186126" release="" codeSize="46" numClasses="1"/>
+    <AppVersion sequence="106" timestamp="1539983194406" release="" codeSize="45" numClasses="1"/>
+    <AppVersion sequence="107" timestamp="1539983208258" release="" codeSize="45" numClasses="1"/>
+    <AppVersion sequence="108" timestamp="1539983215878" release="" codeSize="45" numClasses="1"/>
+    <AppVersion sequence="109" timestamp="1539983222970" release="" codeSize="45" numClasses="1"/>
+    <AppVersion sequence="110" timestamp="1539983231726" release="" codeSize="45" numClasses="1"/>
+    <AppVersion sequence="111" timestamp="1539983239154" release="" codeSize="45" numClasses="1"/>
+    <AppVersion sequence="112" timestamp="1539983244534" release="" codeSize="45" numClasses="1"/>
+    <AppVersion sequence="113" timestamp="1539983251818" release="" codeSize="45" numClasses="1"/>
+    <AppVersion sequence="114" timestamp="1539983261518" release="" codeSize="45" numClasses="1"/>
+    <AppVersion sequence="115" timestamp="1539983267822" release="" codeSize="45" numClasses="1"/>
+    <AppVersion sequence="116" timestamp="1539983305134" release="" codeSize="44" numClasses="1"/>
+    <AppVersion sequence="117" timestamp="1539983342582" release="" codeSize="50" numClasses="1"/>
+    <AppVersion sequence="118" timestamp="1539983466135" release="" codeSize="49" numClasses="1"/>
+    <AppVersion sequence="119" timestamp="1539983491075" release="" codeSize="51" numClasses="1"/>
+    <AppVersion sequence="120" timestamp="1539983494487" release="" codeSize="52" numClasses="1"/>
+    <AppVersion sequence="121" timestamp="1539983502607" release="" codeSize="52" numClasses="1"/>
+    <AppVersion sequence="122" timestamp="1539983513975" release="" codeSize="52" numClasses="1"/>
+    <AppVersion sequence="123" timestamp="1539983536211" release="" codeSize="52" numClasses="1"/>
+    <AppVersion sequence="124" timestamp="1539983551187" release="" codeSize="30" numClasses="1"/>
+    <AppVersion sequence="125" timestamp="1539983593807" release="" codeSize="52" numClasses="1"/>
+    <AppVersion sequence="126" timestamp="1539983618471" release="" codeSize="52" numClasses="1"/>
+    <AppVersion sequence="127" timestamp="1539983633163" release="" codeSize="52" numClasses="1"/>
+    <AppVersion sequence="128" timestamp="1539983642391" release="" codeSize="52" numClasses="1"/>
+    <AppVersion sequence="129" timestamp="1539983737098" release="" codeSize="51" numClasses="1"/>
+    <AppVersion sequence="130" timestamp="1539983744966" release="" codeSize="51" numClasses="1"/>
+    <AppVersion sequence="131" timestamp="1539983754634" release="" codeSize="52" numClasses="1"/>
+    <AppVersion sequence="132" timestamp="1539983788340" release="" codeSize="52" numClasses="1"/>
+    <AppVersion sequence="133" timestamp="1539983797539" release="" codeSize="52" numClasses="1"/>
+    <AppVersion sequence="134" timestamp="1539983799851" release="" codeSize="52" numClasses="1"/>
+    <AppVersion sequence="135" timestamp="1539983820859" release="" codeSize="52" numClasses="1"/>
+    <AppVersion sequence="136" timestamp="1539983857580" release="" codeSize="52" numClasses="1"/>
+    <AppVersion sequence="137" timestamp="1539983910871" release="" codeSize="53" numClasses="1"/>
+    <AppVersion sequence="138" timestamp="1539983957499" release="" codeSize="53" numClasses="1"/>
+    <AppVersion sequence="139" timestamp="1539983964835" release="" codeSize="53" numClasses="1"/>
+    <AppVersion sequence="140" timestamp="1539983971255" release="" codeSize="54" numClasses="1"/>
+    <AppVersion sequence="141" timestamp="1539984037266" release="" codeSize="56" numClasses="1"/>
+    <AppVersion sequence="142" timestamp="1539984039378" release="" codeSize="58" numClasses="1"/>
+    <AppVersion sequence="143" timestamp="1539984123836" release="" codeSize="58" numClasses="1"/>
+    <AppVersion sequence="144" timestamp="1539984128992" release="" codeSize="58" numClasses="1"/>
+    <AppVersion sequence="145" timestamp="1539984145260" release="" codeSize="58" numClasses="1"/>
+    <AppVersion sequence="146" timestamp="1539984174733" release="" codeSize="58" numClasses="1"/>
+    <AppVersion sequence="147" timestamp="1539984208172" release="" codeSize="63" numClasses="1"/>
+    <AppVersion sequence="148" timestamp="1539984217048" release="" codeSize="68" numClasses="1"/>
+    <AppVersion sequence="149" timestamp="1539984226212" release="" codeSize="73" numClasses="1"/>
+    <AppVersion sequence="150" timestamp="1539984230012" release="" codeSize="73" numClasses="1"/>
+    <AppVersion sequence="151" timestamp="1539984235236" release="" codeSize="78" numClasses="1"/>
+    <AppVersion sequence="152" timestamp="1539984258604" release="" codeSize="78" numClasses="1"/>
+    <AppVersion sequence="153" timestamp="1539984319088" release="" codeSize="84" numClasses="1"/>
+    <AppVersion sequence="154" timestamp="1539984329928" release="" codeSize="84" numClasses="1"/>
+    <AppVersion sequence="155" timestamp="1539984524151" release="" codeSize="45" numClasses="1"/>
+    <AppVersion sequence="156" timestamp="1539984535127" release="" codeSize="45" numClasses="1"/>
+    <AppVersion sequence="157" timestamp="1539984565795" release="" codeSize="85" numClasses="1"/>
+    <AppVersion sequence="158" timestamp="1539984619143" release="" codeSize="86" numClasses="1"/>
+    <AppVersion sequence="159" timestamp="1539984625308" release="" codeSize="86" numClasses="1"/>
+    <AppVersion sequence="160" timestamp="1539984799076" release="" codeSize="88" numClasses="1"/>
+    <AppVersion sequence="161" timestamp="1539984941496" release="" codeSize="93" numClasses="1"/>
+    <AppVersion sequence="162" timestamp="1539984946228" release="" codeSize="93" numClasses="1"/>
+    <AppVersion sequence="163" timestamp="1539984969938" release="" codeSize="93" numClasses="1"/>
+    <AppVersion sequence="164" timestamp="1539984982174" release="" codeSize="93" numClasses="1"/>
+    <AppVersion sequence="165" timestamp="1539984984287" release="" codeSize="93" numClasses="1"/>
+    <AppVersion sequence="166" timestamp="1539985034379" release="" codeSize="14" numClasses="1"/>
+    <AppVersion sequence="167" timestamp="1539985049543" release="" codeSize="14" numClasses="1"/>
+    <AppVersion sequence="168" timestamp="1539985065431" release="" codeSize="14" numClasses="1"/>
+    <AppVersion sequence="169" timestamp="1539985136519" release="" codeSize="14" numClasses="1"/>
+    <AppVersion sequence="170" timestamp="1539985459559" release="" codeSize="14" numClasses="1"/>
+    <AppVersion sequence="171" timestamp="1539985473907" release="" codeSize="14" numClasses="1"/>
+    <AppVersion sequence="172" timestamp="1539985480959" release="" codeSize="16" numClasses="1"/>
+    <AppVersion sequence="173" timestamp="1539985485451" release="" codeSize="16" numClasses="1"/>
+    <AppVersion sequence="174" timestamp="1539986737557" release="" codeSize="16" numClasses="1"/>
+    <AppVersion sequence="175" timestamp="1539988655900" release="" codeSize="16" numClasses="1"/>
+    <AppVersion sequence="176" timestamp="1539997753133" release="" codeSize="181" numClasses="4"/>
+    <AppVersion sequence="177" timestamp="1539998291601" release="" codeSize="16" numClasses="1"/>
+    <AppVersion sequence="178" timestamp="1539998494383" release="" codeSize="15" numClasses="1"/>
+    <AppVersion sequence="179" timestamp="1539998803812" release="" codeSize="18" numClasses="1"/>
+    <AppVersion sequence="180" timestamp="1540012657732" release="" codeSize="19" numClasses="1"/>
+    <AppVersion sequence="181" timestamp="1540012678814" release="" codeSize="19" numClasses="1"/>
+    <AppVersion sequence="182" timestamp="1540012685938" release="" codeSize="19" numClasses="1"/>
+    <AppVersion sequence="183" timestamp="1540012736603" release="" codeSize="14" numClasses="1"/>
+    <AppVersion sequence="184" timestamp="1540012788495" release="" codeSize="15" numClasses="1"/>
+    <AppVersion sequence="185" timestamp="1540012807637" release="" codeSize="22" numClasses="1"/>
+    <AppVersion sequence="186" timestamp="1540012824423" release="" codeSize="22" numClasses="1"/>
+    <AppVersion sequence="187" timestamp="1540012838819" release="" codeSize="22" numClasses="1"/>
+    <AppVersion sequence="188" timestamp="1540015048927" release="" codeSize="23" numClasses="1"/>
+    <AppVersion sequence="189" timestamp="1540015060156" release="" codeSize="23" numClasses="1"/>
+    <AppVersion sequence="190" timestamp="1540015080140" release="" codeSize="24" numClasses="1"/>
+    <AppVersion sequence="191" timestamp="1540015117978" release="" codeSize="24" numClasses="1"/>
+    <AppVersion sequence="192" timestamp="1540015272016" release="" codeSize="25" numClasses="1"/>
+    <AppVersion sequence="193" timestamp="1540015286428" release="" codeSize="17" numClasses="1"/>
+    <AppVersion sequence="194" timestamp="1540015296042" release="" codeSize="17" numClasses="1"/>
+    <AppVersion sequence="195" timestamp="1540015302840" release="" codeSize="25" numClasses="1"/>
+    <AppVersion sequence="196" timestamp="1540015323698" release="" codeSize="26" numClasses="1"/>
+    <AppVersion sequence="197" timestamp="1540015374109" release="" codeSize="26" numClasses="1"/>
+    <AppVersion sequence="198" timestamp="1540015376259" release="" codeSize="26" numClasses="1"/>
+    <AppVersion sequence="199" timestamp="1540015398270" release="" codeSize="28" numClasses="1"/>
+    <AppVersion sequence="200" timestamp="1540015510528" release="" codeSize="27" numClasses="1"/>
+    <AppVersion sequence="201" timestamp="1540015707112" release="" codeSize="27" numClasses="1"/>
+    <AppVersion sequence="202" timestamp="1540015767477" release="" codeSize="27" numClasses="1"/>
+    <AppVersion sequence="203" timestamp="1540015831006" release="" codeSize="35" numClasses="1"/>
+    <AppVersion sequence="204" timestamp="1540015854379" release="" codeSize="36" numClasses="1"/>
+    <AppVersion sequence="205" timestamp="1540015882100" release="" codeSize="36" numClasses="1"/>
+    <AppVersion sequence="206" timestamp="1540015903640" release="" codeSize="36" numClasses="1"/>
+    <AppVersion sequence="207" timestamp="1540015952354" release="" codeSize="28" numClasses="1"/>
+    <AppVersion sequence="208" timestamp="1540016092639" release="" codeSize="35" numClasses="1"/>
+    <AppVersion sequence="209" timestamp="1540016097677" release="" codeSize="32" numClasses="1"/>
+    <AppVersion sequence="210" timestamp="1540016158827" release="" codeSize="32" numClasses="1"/>
+    <AppVersion sequence="211" timestamp="1540016161936" release="" codeSize="32" numClasses="1"/>
+    <AppVersion sequence="212" timestamp="1540016183897" release="" codeSize="32" numClasses="1"/>
+    <AppVersion sequence="213" timestamp="1540016191627" release="" codeSize="32" numClasses="1"/>
+    <AppVersion sequence="214" timestamp="1540016231951" release="" codeSize="32" numClasses="1"/>
+    <AppVersion sequence="215" timestamp="1540016291884" release="" codeSize="32" numClasses="1"/>
+    <AppVersion sequence="216" timestamp="1540016318518" release="" codeSize="32" numClasses="1"/>
+    <AppVersion sequence="217" timestamp="1540016378725" release="" codeSize="33" numClasses="1"/>
+    <AppVersion sequence="218" timestamp="1540016390948" release="" codeSize="34" numClasses="1"/>
+    <AppVersion sequence="219" timestamp="1540016400850" release="" codeSize="35" numClasses="1"/>
+    <AppVersion sequence="220" timestamp="1540016420868" release="" codeSize="35" numClasses="1"/>
+    <AppVersion sequence="221" timestamp="1540016440350" release="" codeSize="37" numClasses="1"/>
+    <AppVersion sequence="222" timestamp="1540016446902" release="" codeSize="37" numClasses="1"/>
+    <AppVersion sequence="223" timestamp="1540016464518" release="" codeSize="37" numClasses="1"/>
+    <AppVersion sequence="224" timestamp="1540016470980" release="" codeSize="37" numClasses="1"/>
+    <AppVersion sequence="225" timestamp="1540016534836" release="" codeSize="38" numClasses="1"/>
+    <AppVersion sequence="226" timestamp="1540016547814" release="" codeSize="38" numClasses="1"/>
+    <AppVersion sequence="227" timestamp="1540016582284" release="" codeSize="37" numClasses="1"/>
+    <AppVersion sequence="228" timestamp="1540016586429" release="" codeSize="40" numClasses="1"/>
+    <AppVersion sequence="229" timestamp="1540016630204" release="" codeSize="37" numClasses="1"/>
+    <AppVersion sequence="230" timestamp="1540016636272" release="" codeSize="41" numClasses="1"/>
+    <AppVersion sequence="231" timestamp="1540016647334" release="" codeSize="40" numClasses="1"/>
+    <AppVersion sequence="232" timestamp="1540016780676" release="" codeSize="43" numClasses="1"/>
+    <AppVersion sequence="233" timestamp="1540016799332" release="" codeSize="43" numClasses="1"/>
+    <AppVersion sequence="234" timestamp="1540019327530" release="" codeSize="45" numClasses="1"/>
+    <AppVersion sequence="235" timestamp="1540019641999" release="" codeSize="44" numClasses="1"/>
+    <AppVersion sequence="236" timestamp="1540019672366" release="" codeSize="41" numClasses="1"/>
+    <AppVersion sequence="237" timestamp="1540019684393" release="" codeSize="41" numClasses="1"/>
+    <AppVersion sequence="238" timestamp="1540019695544" release="" codeSize="41" numClasses="1"/>
+    <AppVersion sequence="239" timestamp="1540019726992" release="" codeSize="41" numClasses="1"/>
+    <AppVersion sequence="240" timestamp="1540019762313" release="" codeSize="41" numClasses="1"/>
+    <AppVersion sequence="241" timestamp="1540019800058" release="" codeSize="44" numClasses="1"/>
+    <AppVersion sequence="242" timestamp="1540019810520" release="" codeSize="43" numClasses="1"/>
+    <AppVersion sequence="243" timestamp="1540019827693" release="" codeSize="43" numClasses="1"/>
+    <AppVersion sequence="244" timestamp="1540019874908" release="" codeSize="36" numClasses="1"/>
+    <AppVersion sequence="245" timestamp="1540019888682" release="" codeSize="44" numClasses="1"/>
+    <AppVersion sequence="246" timestamp="1540020098871" release="" codeSize="44" numClasses="1"/>
+    <AppVersion sequence="247" timestamp="1540021588293" release="" codeSize="58" numClasses="1"/>
+  </History>
+</BugCollection>

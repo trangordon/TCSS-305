@@ -1,0 +1,83 @@
+package view;
+
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.geom.Rectangle2D;
+import javax.swing.JPanel;
+
+/**
+ * Tetris Panel.
+ * @author Gordon Tran
+ * @version November
+ */
+public class BoardPanel extends JPanel {
+
+    /**
+     * Generated ID. 
+     */
+    private static final long serialVersionUID = -3256290564832372809L;
+    
+    /**The tetris board string.*/
+    private String[] myBoardS = new String[0];
+    
+    /**Sets board string.
+     * @param theBoardS the string
+     */
+    public void setMyBoardS(final String theBoardS) {
+        final String[] output = theBoardS.split("\n");
+        myBoardS = output;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void paintComponent(final Graphics theG) {
+        final Graphics2D g2 = (Graphics2D) theG;
+        super.paintComponent(g2);
+        
+//        int row = 0;
+        for (int j = 5; j < myBoardS.length; j++) {
+            for (int i = 1; i < myBoardS[j].length(); i++) {
+                if (myBoardS[j].charAt(i) != ' ') { 
+                    //&& myBoardS[j].charAt(i) != '|' && myBoardS[j].charAt(i) != '-' ) {
+                    switch (myBoardS[j].charAt(i)) {
+                        case 'I': g2.setColor(Color.CYAN);
+                            break;
+                        case 'J': g2.setColor(Color.ORANGE);
+                            break;
+                        case 'L': g2.setColor(Color.BLUE);
+                            break;
+                        case 'O': g2.setColor(Color.YELLOW);
+                            break;
+                        case 'S': g2.setColor(Color.RED);
+                            break;
+                        case 'T': g2.setColor(Color.MAGENTA);
+                            break;
+                        case 'Z': g2.setColor(Color.GREEN);
+                            break;
+                        default: 
+                            break;
+                    }
+                    
+                    g2.fill(new Rectangle2D.Double((i - 1) * 31, 
+                                                   (j - 5) * 31,
+                                                   30, 30));
+                    g2.setColor(Color.BLACK);
+                    g2.draw(new Rectangle2D.Double((i - 1) * 31, 
+                                                   (j - 5) * 31,
+                                                   30, 30));
+                }
+            }
+        }
+//        for (final String line: myBoardS) {
+//            for (int i = 0; i < line.length(); i++) {
+//                if (line.charAt(i) != ' ')
+//                    g2.draw(new Rectangle2D.Double(i, row, 30, 30));
+//            }
+//            row += 1;
+//        }
+        
+    }
+}

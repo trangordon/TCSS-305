@@ -1,0 +1,13 @@
+eclipse.preferences.version=1
+firstStartup=false
+history.comment=U3RyZWFtbGluZSBjb2RlIHNvbWUNCg\=\=;U291bmQgZWZmZWN0cyBhbmQgbm90IHdvcmtpbmcgbXVzaWM\=;QWRkZWQgc2l6ZXMNCg\=\=;U2l6aW5n;UGFydCBBDQo\=;Zmlyc3QgY29tbWl0DQo\=;RmluaXNoIGphdmEgZG9jcw0K;QWRkZWQgdHJ1Y2sgdGVzdCBjbGFzcyBhbmQgY2xlYW5lZCB1cCByZXBlYXRlZCBjb2Rl;RmluaXNoZWQgYWxsIHRoZSBjbGFzc2VzIHRvIGJlIHdvcmtpbmc\=;V29ya2VkIG9uIG1vdmVtZW50IG1ldGhvZHMgYW5kIHN1cGVyIG1ldGhvZHMNCg\=\=
+history.selectProjectNamePage=c3ZuK3NzaDovL3JlcG9zLmluc3R0ZWNoLndhc2hpbmd0b24uZWR1L2hvbWUvSU5TVFRFQ0gvdHJhbmdvcmQvc3ZuL2NzczMwNWExOC90cmFuZ29yZC1hc3NpZ25tZW50Mw\=\=;c3ZuK3NzaDovL3JlcG9zLmluc3R0ZWNoLndhc2hpbmd0b24uZWR1L2hvbWUvSU5TVFRFQ0gvdHJhbmdvcmQvc3ZuL2NzczMwNWExOC91c2VybmFtZS1hc3NpZ25tZW50Mg\=\=;c3ZuK3NzaDovL3JlcG9zLmluc3R0ZWNoLndhc2hpbmd0b24uZWR1L2hvbWUvSU5TVFRFQ0gvdHJhbmdvcmQvc3ZuL2NzczMwNWExOC90cmFuZ29yZC1hc3NpZ25tZW50MQ\=\=
+org.eclipse.team.svn.ui.panel.callback.PromptCredentialsPanel.height=292
+org.eclipse.team.svn.ui.panel.callback.PromptCredentialsPanel.width=470
+org.eclipse.team.svn.ui.panel.common.CommentPanel.height=146
+org.eclipse.team.svn.ui.panel.common.CommentPanel.width=510
+org.eclipse.team.svn.ui.panel.local.CommitPanel.height=406
+org.eclipse.team.svn.ui.panel.local.CommitPanel.width=600
+org.eclipse.team.svn.ui.panel.local.UpdateToRevisionPanel.height=203
+org.eclipse.team.svn.ui.panel.local.UpdateToRevisionPanel.width=470
+preference.repository.repositoryBrowser=false
